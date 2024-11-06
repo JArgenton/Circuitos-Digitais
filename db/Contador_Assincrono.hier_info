@@ -1,0 +1,773 @@
+|Contador_Assincrono
+Palavra[0] => registrador:registrador.Entrada[0]
+Palavra[1] => registrador:registrador.Entrada[1]
+Palavra[2] => registrador:registrador.Entrada[2]
+Palavra[3] => registrador:registrador.Entrada[3]
+PB0 => registrador:registrador.Clk
+PB1 => registrador:registrador.LSin
+Switch => somador_sub_lab2:somador.Cin
+HEX0[0] <= conversor_hexa:conversor0.Output[0]
+HEX0[1] <= conversor_hexa:conversor0.Output[1]
+HEX0[2] <= conversor_hexa:conversor0.Output[2]
+HEX0[3] <= conversor_hexa:conversor0.Output[3]
+HEX0[4] <= conversor_hexa:conversor0.Output[4]
+HEX0[5] <= conversor_hexa:conversor0.Output[5]
+HEX0[6] <= conversor_hexa:conversor0.Output[6]
+HEX1[0] <= conversor_hexa:conversor1.Output[0]
+HEX1[1] <= conversor_hexa:conversor1.Output[1]
+HEX1[2] <= conversor_hexa:conversor1.Output[2]
+HEX1[3] <= conversor_hexa:conversor1.Output[3]
+HEX1[4] <= conversor_hexa:conversor1.Output[4]
+HEX1[5] <= conversor_hexa:conversor1.Output[5]
+HEX1[6] <= conversor_hexa:conversor1.Output[6]
+HEX2[0] <= conversor_hexa:conversor2.Output[0]
+HEX2[1] <= conversor_hexa:conversor2.Output[1]
+HEX2[2] <= conversor_hexa:conversor2.Output[2]
+HEX2[3] <= conversor_hexa:conversor2.Output[3]
+HEX2[4] <= conversor_hexa:conversor2.Output[4]
+HEX2[5] <= conversor_hexa:conversor2.Output[5]
+HEX2[6] <= conversor_hexa:conversor2.Output[6]
+HEX3[0] <= conversor_hexa:conversor3.Output[0]
+HEX3[1] <= conversor_hexa:conversor3.Output[1]
+HEX3[2] <= conversor_hexa:conversor3.Output[2]
+HEX3[3] <= conversor_hexa:conversor3.Output[3]
+HEX3[4] <= conversor_hexa:conversor3.Output[4]
+HEX3[5] <= conversor_hexa:conversor3.Output[5]
+HEX3[6] <= conversor_hexa:conversor3.Output[6]
+HEX4[0] <= conversor_hexa:conversor4.Output[0]
+HEX4[1] <= conversor_hexa:conversor4.Output[1]
+HEX4[2] <= conversor_hexa:conversor4.Output[2]
+HEX4[3] <= conversor_hexa:conversor4.Output[3]
+HEX4[4] <= conversor_hexa:conversor4.Output[4]
+HEX4[5] <= conversor_hexa:conversor4.Output[5]
+HEX4[6] <= conversor_hexa:conversor4.Output[6]
+
+
+|Contador_Assincrono|Registrador:registrador
+Clk => registrador_paralelo:FFP_ParaleloA.Clock
+Clk => registrador_paralelo:FFP_ParaleloB.Clock
+Clk => registrador_paralelo:FFP_ParaleloC.Clock
+Clk => registrador_paralelo:FFP_ParaleloD.Clock
+Clk => registrador_paralelo:FFP_ParaleloE.Clock
+Entrada[0] => registrador_paralelo:FFP_ParaleloA.entrada[0]
+Entrada[1] => registrador_paralelo:FFP_ParaleloA.entrada[1]
+Entrada[2] => registrador_paralelo:FFP_ParaleloA.entrada[2]
+Entrada[3] => registrador_paralelo:FFP_ParaleloA.entrada[3]
+Somain[0] => load_x_deslocamento:Desloc0.Din
+Somain[1] => load_x_deslocamento:Desloc1.Din
+Somain[2] => load_x_deslocamento:Desloc2.Din
+Somain[3] => load_x_deslocamento:Desloc03.Din
+Somain[4] => load_x_deslocamento:Desloc5.Din
+LSin => load_x_deslocamento:Desloc0.LS
+LSin => load_x_deslocamento:Desloc1.LS
+LSin => load_x_deslocamento:Desloc2.LS
+LSin => load_x_deslocamento:Desloc03.LS
+LSin => load_x_deslocamento:Desloc5.LS
+LSin => load_x_deslocamento:Desloc6.LS
+LSin => load_x_deslocamento:Desloc7.LS
+LSin => load_x_deslocamento:Desloc8.LS
+HEX_0[0] <= registrador_paralelo:FFP_ParaleloA.saida[0]
+HEX_0[1] <= registrador_paralelo:FFP_ParaleloA.saida[1]
+HEX_0[2] <= registrador_paralelo:FFP_ParaleloA.saida[2]
+HEX_0[3] <= registrador_paralelo:FFP_ParaleloA.saida[3]
+HEX_1[0] <= registrador_paralelo:FFP_ParaleloB.saida[0]
+HEX_1[1] <= registrador_paralelo:FFP_ParaleloB.saida[1]
+HEX_1[2] <= registrador_paralelo:FFP_ParaleloB.saida[2]
+HEX_1[3] <= registrador_paralelo:FFP_ParaleloB.saida[3]
+HEX_2[0] <= registrador_paralelo:FFP_ParaleloC.saida[0]
+HEX_2[1] <= registrador_paralelo:FFP_ParaleloC.saida[1]
+HEX_2[2] <= registrador_paralelo:FFP_ParaleloC.saida[2]
+HEX_2[3] <= registrador_paralelo:FFP_ParaleloC.saida[3]
+HEX_3[0] <= load_x_deslocamento:Desloc0.Qout
+HEX_3[1] <= load_x_deslocamento:Desloc1.Qout
+HEX_3[2] <= load_x_deslocamento:Desloc2.Qout
+HEX_3[3] <= load_x_deslocamento:Desloc03.Qout
+HEX_4[0] <= load_x_deslocamento:Desloc5.Qout
+HEX_4[1] <= load_x_deslocamento:Desloc6.Qout
+HEX_4[2] <= load_x_deslocamento:Desloc7.Qout
+HEX_4[3] <= load_x_deslocamento:Desloc8.Qout
+
+
+|Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloA
+Clock => flip_flop_d:FFP_A.clock
+Clock => flip_flop_d:FFP_B.clock
+Clock => flip_flop_d:FFP_C.clock
+Clock => flip_flop_d:FFP_D.clock
+entrada[0] => flip_flop_d:FFP_D.D
+entrada[1] => flip_flop_d:FFP_C.D
+entrada[2] => flip_flop_d:FFP_B.D
+entrada[3] => flip_flop_d:FFP_A.D
+saida[0] <= flip_flop_d:FFP_D.Q
+saida[1] <= flip_flop_d:FFP_C.Q
+saida[2] <= flip_flop_d:FFP_B.Q
+saida[3] <= flip_flop_d:FFP_A.Q
+
+
+|Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloA|Flip_Flop_D:FFP_A
+clock => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloA|Flip_Flop_D:FFP_B
+clock => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloA|Flip_Flop_D:FFP_C
+clock => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloA|Flip_Flop_D:FFP_D
+clock => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloB
+Clock => flip_flop_d:FFP_A.clock
+Clock => flip_flop_d:FFP_B.clock
+Clock => flip_flop_d:FFP_C.clock
+Clock => flip_flop_d:FFP_D.clock
+entrada[0] => flip_flop_d:FFP_D.D
+entrada[1] => flip_flop_d:FFP_C.D
+entrada[2] => flip_flop_d:FFP_B.D
+entrada[3] => flip_flop_d:FFP_A.D
+saida[0] <= flip_flop_d:FFP_D.Q
+saida[1] <= flip_flop_d:FFP_C.Q
+saida[2] <= flip_flop_d:FFP_B.Q
+saida[3] <= flip_flop_d:FFP_A.Q
+
+
+|Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloB|Flip_Flop_D:FFP_A
+clock => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloB|Flip_Flop_D:FFP_B
+clock => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloB|Flip_Flop_D:FFP_C
+clock => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloB|Flip_Flop_D:FFP_D
+clock => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloC
+Clock => flip_flop_d:FFP_A.clock
+Clock => flip_flop_d:FFP_B.clock
+Clock => flip_flop_d:FFP_C.clock
+Clock => flip_flop_d:FFP_D.clock
+entrada[0] => flip_flop_d:FFP_D.D
+entrada[1] => flip_flop_d:FFP_C.D
+entrada[2] => flip_flop_d:FFP_B.D
+entrada[3] => flip_flop_d:FFP_A.D
+saida[0] <= flip_flop_d:FFP_D.Q
+saida[1] <= flip_flop_d:FFP_C.Q
+saida[2] <= flip_flop_d:FFP_B.Q
+saida[3] <= flip_flop_d:FFP_A.Q
+
+
+|Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloC|Flip_Flop_D:FFP_A
+clock => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloC|Flip_Flop_D:FFP_B
+clock => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloC|Flip_Flop_D:FFP_C
+clock => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloC|Flip_Flop_D:FFP_D
+clock => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador_Assincrono|Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc0
+Din => Qout.IN0
+LS => Qout.IN0
+LS => Qout.IN1
+Flip => Qout.IN1
+Qout <= Qout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador_Assincrono|Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc1
+Din => Qout.IN0
+LS => Qout.IN0
+LS => Qout.IN1
+Flip => Qout.IN1
+Qout <= Qout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador_Assincrono|Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc2
+Din => Qout.IN0
+LS => Qout.IN0
+LS => Qout.IN1
+Flip => Qout.IN1
+Qout <= Qout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador_Assincrono|Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc03
+Din => Qout.IN0
+LS => Qout.IN0
+LS => Qout.IN1
+Flip => Qout.IN1
+Qout <= Qout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloD
+Clock => flip_flop_d:FFP_A.clock
+Clock => flip_flop_d:FFP_B.clock
+Clock => flip_flop_d:FFP_C.clock
+Clock => flip_flop_d:FFP_D.clock
+entrada[0] => flip_flop_d:FFP_D.D
+entrada[1] => flip_flop_d:FFP_C.D
+entrada[2] => flip_flop_d:FFP_B.D
+entrada[3] => flip_flop_d:FFP_A.D
+saida[0] <= flip_flop_d:FFP_D.Q
+saida[1] <= flip_flop_d:FFP_C.Q
+saida[2] <= flip_flop_d:FFP_B.Q
+saida[3] <= flip_flop_d:FFP_A.Q
+
+
+|Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloD|Flip_Flop_D:FFP_A
+clock => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloD|Flip_Flop_D:FFP_B
+clock => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloD|Flip_Flop_D:FFP_C
+clock => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloD|Flip_Flop_D:FFP_D
+clock => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador_Assincrono|Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc5
+Din => Qout.IN0
+LS => Qout.IN0
+LS => Qout.IN1
+Flip => Qout.IN1
+Qout <= Qout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador_Assincrono|Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc6
+Din => Qout.IN0
+LS => Qout.IN0
+LS => Qout.IN1
+Flip => Qout.IN1
+Qout <= Qout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador_Assincrono|Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc7
+Din => Qout.IN0
+LS => Qout.IN0
+LS => Qout.IN1
+Flip => Qout.IN1
+Qout <= Qout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador_Assincrono|Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc8
+Din => Qout.IN0
+LS => Qout.IN0
+LS => Qout.IN1
+Flip => Qout.IN1
+Qout <= Qout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloE
+Clock => flip_flop_d:FFP_A.clock
+Clock => flip_flop_d:FFP_B.clock
+Clock => flip_flop_d:FFP_C.clock
+Clock => flip_flop_d:FFP_D.clock
+entrada[0] => flip_flop_d:FFP_D.D
+entrada[1] => flip_flop_d:FFP_C.D
+entrada[2] => flip_flop_d:FFP_B.D
+entrada[3] => flip_flop_d:FFP_A.D
+saida[0] <= flip_flop_d:FFP_D.Q
+saida[1] <= flip_flop_d:FFP_C.Q
+saida[2] <= flip_flop_d:FFP_B.Q
+saida[3] <= flip_flop_d:FFP_A.Q
+
+
+|Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloE|Flip_Flop_D:FFP_A
+clock => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloE|Flip_Flop_D:FFP_B
+clock => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloE|Flip_Flop_D:FFP_C
+clock => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloE|Flip_Flop_D:FFP_D
+clock => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador_Assincrono|somador_sub_lab2:somador
+Ain[0] => soma_4bits:somador.A[0]
+Ain[1] => soma_4bits:somador.A[1]
+Ain[2] => soma_4bits:somador.A[2]
+Ain[3] => soma_4bits:somador.A[3]
+Bin[0] => inversor_4bits:inversor.Word[0]
+Bin[1] => inversor_4bits:inversor.Word[1]
+Bin[2] => inversor_4bits:inversor.Word[2]
+Bin[3] => inversor_4bits:inversor.Word[3]
+Cin => inversor_4bits:inversor.inverter
+Cin => soma_4bits:somador.Ci
+CCout <= soma_4bits:somador.Cout
+Sout[0] <= soma_4bits:somador.S[0]
+Sout[1] <= soma_4bits:somador.S[1]
+Sout[2] <= soma_4bits:somador.S[2]
+Sout[3] <= soma_4bits:somador.S[3]
+
+
+|Contador_Assincrono|somador_sub_lab2:somador|Inversor_4bits:inversor
+Word[0] => Saida.IN0
+Word[1] => Saida.IN0
+Word[2] => Saida.IN0
+Word[3] => Saida.IN0
+inverter => Saida.IN1
+inverter => Saida.IN1
+inverter => Saida.IN1
+inverter => Saida.IN1
+Saida[0] <= Saida.DB_MAX_OUTPUT_PORT_TYPE
+Saida[1] <= Saida.DB_MAX_OUTPUT_PORT_TYPE
+Saida[2] <= Saida.DB_MAX_OUTPUT_PORT_TYPE
+Saida[3] <= Saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador_Assincrono|somador_sub_lab2:somador|soma_4bits:somador
+A[0] => soma_bit:SomaBit0.inputs[2]
+A[1] => soma_bit:SomaBit1.inputs[2]
+A[2] => soma_bit:SomaBit2.inputs[2]
+A[3] => soma_bit:SomaBit3.inputs[2]
+B[0] => soma_bit:SomaBit0.inputs[1]
+B[1] => soma_bit:SomaBit1.inputs[1]
+B[2] => soma_bit:SomaBit2.inputs[1]
+B[3] => soma_bit:SomaBit3.inputs[1]
+Ci => soma_bit:SomaBit0.inputs[0]
+Cout <= soma_bit:SomaBit3.Cout
+S[0] <= soma_bit:SomaBit0.S
+S[1] <= soma_bit:SomaBit1.S
+S[2] <= soma_bit:SomaBit2.S
+S[3] <= soma_bit:SomaBit3.S
+
+
+|Contador_Assincrono|somador_sub_lab2:somador|soma_4bits:somador|soma_bit:SomaBit0
+inputs[0] => S.IN1
+inputs[0] => S.IN1
+inputs[0] => Cout.IN0
+inputs[0] => Cout.IN0
+inputs[0] => S.IN1
+inputs[0] => S.IN1
+inputs[1] => S.IN0
+inputs[1] => S.IN0
+inputs[1] => Cout.IN1
+inputs[1] => S.IN0
+inputs[1] => S.IN0
+inputs[2] => S.IN1
+inputs[2] => S.IN1
+inputs[2] => Cout.IN1
+inputs[2] => S.IN1
+inputs[2] => S.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador_Assincrono|somador_sub_lab2:somador|soma_4bits:somador|soma_bit:SomaBit1
+inputs[0] => S.IN1
+inputs[0] => S.IN1
+inputs[0] => Cout.IN0
+inputs[0] => Cout.IN0
+inputs[0] => S.IN1
+inputs[0] => S.IN1
+inputs[1] => S.IN0
+inputs[1] => S.IN0
+inputs[1] => Cout.IN1
+inputs[1] => S.IN0
+inputs[1] => S.IN0
+inputs[2] => S.IN1
+inputs[2] => S.IN1
+inputs[2] => Cout.IN1
+inputs[2] => S.IN1
+inputs[2] => S.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador_Assincrono|somador_sub_lab2:somador|soma_4bits:somador|soma_bit:SomaBit2
+inputs[0] => S.IN1
+inputs[0] => S.IN1
+inputs[0] => Cout.IN0
+inputs[0] => Cout.IN0
+inputs[0] => S.IN1
+inputs[0] => S.IN1
+inputs[1] => S.IN0
+inputs[1] => S.IN0
+inputs[1] => Cout.IN1
+inputs[1] => S.IN0
+inputs[1] => S.IN0
+inputs[2] => S.IN1
+inputs[2] => S.IN1
+inputs[2] => Cout.IN1
+inputs[2] => S.IN1
+inputs[2] => S.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador_Assincrono|somador_sub_lab2:somador|soma_4bits:somador|soma_bit:SomaBit3
+inputs[0] => S.IN1
+inputs[0] => S.IN1
+inputs[0] => Cout.IN0
+inputs[0] => Cout.IN0
+inputs[0] => S.IN1
+inputs[0] => S.IN1
+inputs[1] => S.IN0
+inputs[1] => S.IN0
+inputs[1] => Cout.IN1
+inputs[1] => S.IN0
+inputs[1] => S.IN0
+inputs[2] => S.IN1
+inputs[2] => S.IN1
+inputs[2] => Cout.IN1
+inputs[2] => S.IN1
+inputs[2] => S.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador_Assincrono|Conversor_HEXA:conversor0
+Input[0] => a.IN1
+Input[0] => b.IN1
+Input[0] => b.IN1
+Input[0] => c.IN0
+Input[0] => c.IN0
+Input[0] => d.IN1
+Input[0] => d.IN1
+Input[0] => g.IN0
+Input[0] => g.IN0
+Input[0] => f.IN0
+Input[0] => f.IN0
+Input[0] => e.IN0
+Input[0] => d.IN1
+Input[0] => d.IN1
+Input[0] => b.IN1
+Input[0] => a.IN0
+Input[1] => b.IN0
+Input[1] => d.IN0
+Input[1] => f.IN0
+Input[1] => g.IN0
+Input[1] => g.IN1
+Input[1] => g.IN1
+Input[1] => f.IN1
+Input[1] => d.IN0
+Input[1] => d.IN0
+Input[1] => c.IN1
+Input[1] => c.IN0
+Input[1] => a.IN1
+Input[2] => d.IN1
+Input[2] => d.IN1
+Input[2] => e.IN0
+Input[2] => f.IN1
+Input[2] => g.IN0
+Input[2] => g.IN1
+Input[2] => g.IN0
+Input[2] => e.IN1
+Input[2] => d.IN0
+Input[3] => a.IN1
+Input[3] => d.IN1
+Input[3] => e.IN1
+Input[3] => f.IN1
+Input[3] => g.IN1
+Input[3] => g.IN1
+Input[3] => g.IN1
+Input[3] => d.IN1
+Input[3] => c.IN1
+Input[3] => c.IN1
+Input[3] => b.IN1
+Output[0] <= a.DB_MAX_OUTPUT_PORT_TYPE
+Output[1] <= b.DB_MAX_OUTPUT_PORT_TYPE
+Output[2] <= c.DB_MAX_OUTPUT_PORT_TYPE
+Output[3] <= d.DB_MAX_OUTPUT_PORT_TYPE
+Output[4] <= e.DB_MAX_OUTPUT_PORT_TYPE
+Output[5] <= f.DB_MAX_OUTPUT_PORT_TYPE
+Output[6] <= g.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador_Assincrono|Conversor_HEXA:conversor1
+Input[0] => a.IN1
+Input[0] => b.IN1
+Input[0] => b.IN1
+Input[0] => c.IN0
+Input[0] => c.IN0
+Input[0] => d.IN1
+Input[0] => d.IN1
+Input[0] => g.IN0
+Input[0] => g.IN0
+Input[0] => f.IN0
+Input[0] => f.IN0
+Input[0] => e.IN0
+Input[0] => d.IN1
+Input[0] => d.IN1
+Input[0] => b.IN1
+Input[0] => a.IN0
+Input[1] => b.IN0
+Input[1] => d.IN0
+Input[1] => f.IN0
+Input[1] => g.IN0
+Input[1] => g.IN1
+Input[1] => g.IN1
+Input[1] => f.IN1
+Input[1] => d.IN0
+Input[1] => d.IN0
+Input[1] => c.IN1
+Input[1] => c.IN0
+Input[1] => a.IN1
+Input[2] => d.IN1
+Input[2] => d.IN1
+Input[2] => e.IN0
+Input[2] => f.IN1
+Input[2] => g.IN0
+Input[2] => g.IN1
+Input[2] => g.IN0
+Input[2] => e.IN1
+Input[2] => d.IN0
+Input[3] => a.IN1
+Input[3] => d.IN1
+Input[3] => e.IN1
+Input[3] => f.IN1
+Input[3] => g.IN1
+Input[3] => g.IN1
+Input[3] => g.IN1
+Input[3] => d.IN1
+Input[3] => c.IN1
+Input[3] => c.IN1
+Input[3] => b.IN1
+Output[0] <= a.DB_MAX_OUTPUT_PORT_TYPE
+Output[1] <= b.DB_MAX_OUTPUT_PORT_TYPE
+Output[2] <= c.DB_MAX_OUTPUT_PORT_TYPE
+Output[3] <= d.DB_MAX_OUTPUT_PORT_TYPE
+Output[4] <= e.DB_MAX_OUTPUT_PORT_TYPE
+Output[5] <= f.DB_MAX_OUTPUT_PORT_TYPE
+Output[6] <= g.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador_Assincrono|Conversor_HEXA:conversor2
+Input[0] => a.IN1
+Input[0] => b.IN1
+Input[0] => b.IN1
+Input[0] => c.IN0
+Input[0] => c.IN0
+Input[0] => d.IN1
+Input[0] => d.IN1
+Input[0] => g.IN0
+Input[0] => g.IN0
+Input[0] => f.IN0
+Input[0] => f.IN0
+Input[0] => e.IN0
+Input[0] => d.IN1
+Input[0] => d.IN1
+Input[0] => b.IN1
+Input[0] => a.IN0
+Input[1] => b.IN0
+Input[1] => d.IN0
+Input[1] => f.IN0
+Input[1] => g.IN0
+Input[1] => g.IN1
+Input[1] => g.IN1
+Input[1] => f.IN1
+Input[1] => d.IN0
+Input[1] => d.IN0
+Input[1] => c.IN1
+Input[1] => c.IN0
+Input[1] => a.IN1
+Input[2] => d.IN1
+Input[2] => d.IN1
+Input[2] => e.IN0
+Input[2] => f.IN1
+Input[2] => g.IN0
+Input[2] => g.IN1
+Input[2] => g.IN0
+Input[2] => e.IN1
+Input[2] => d.IN0
+Input[3] => a.IN1
+Input[3] => d.IN1
+Input[3] => e.IN1
+Input[3] => f.IN1
+Input[3] => g.IN1
+Input[3] => g.IN1
+Input[3] => g.IN1
+Input[3] => d.IN1
+Input[3] => c.IN1
+Input[3] => c.IN1
+Input[3] => b.IN1
+Output[0] <= a.DB_MAX_OUTPUT_PORT_TYPE
+Output[1] <= b.DB_MAX_OUTPUT_PORT_TYPE
+Output[2] <= c.DB_MAX_OUTPUT_PORT_TYPE
+Output[3] <= d.DB_MAX_OUTPUT_PORT_TYPE
+Output[4] <= e.DB_MAX_OUTPUT_PORT_TYPE
+Output[5] <= f.DB_MAX_OUTPUT_PORT_TYPE
+Output[6] <= g.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador_Assincrono|Conversor_HEXA:conversor3
+Input[0] => a.IN1
+Input[0] => b.IN1
+Input[0] => b.IN1
+Input[0] => c.IN0
+Input[0] => c.IN0
+Input[0] => d.IN1
+Input[0] => d.IN1
+Input[0] => g.IN0
+Input[0] => g.IN0
+Input[0] => f.IN0
+Input[0] => f.IN0
+Input[0] => e.IN0
+Input[0] => d.IN1
+Input[0] => d.IN1
+Input[0] => b.IN1
+Input[0] => a.IN0
+Input[1] => b.IN0
+Input[1] => d.IN0
+Input[1] => f.IN0
+Input[1] => g.IN0
+Input[1] => g.IN1
+Input[1] => g.IN1
+Input[1] => f.IN1
+Input[1] => d.IN0
+Input[1] => d.IN0
+Input[1] => c.IN1
+Input[1] => c.IN0
+Input[1] => a.IN1
+Input[2] => d.IN1
+Input[2] => d.IN1
+Input[2] => e.IN0
+Input[2] => f.IN1
+Input[2] => g.IN0
+Input[2] => g.IN1
+Input[2] => g.IN0
+Input[2] => e.IN1
+Input[2] => d.IN0
+Input[3] => a.IN1
+Input[3] => d.IN1
+Input[3] => e.IN1
+Input[3] => f.IN1
+Input[3] => g.IN1
+Input[3] => g.IN1
+Input[3] => g.IN1
+Input[3] => d.IN1
+Input[3] => c.IN1
+Input[3] => c.IN1
+Input[3] => b.IN1
+Output[0] <= a.DB_MAX_OUTPUT_PORT_TYPE
+Output[1] <= b.DB_MAX_OUTPUT_PORT_TYPE
+Output[2] <= c.DB_MAX_OUTPUT_PORT_TYPE
+Output[3] <= d.DB_MAX_OUTPUT_PORT_TYPE
+Output[4] <= e.DB_MAX_OUTPUT_PORT_TYPE
+Output[5] <= f.DB_MAX_OUTPUT_PORT_TYPE
+Output[6] <= g.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador_Assincrono|Conversor_HEXA:conversor4
+Input[0] => a.IN1
+Input[0] => b.IN1
+Input[0] => b.IN1
+Input[0] => c.IN0
+Input[0] => c.IN0
+Input[0] => d.IN1
+Input[0] => d.IN1
+Input[0] => g.IN0
+Input[0] => g.IN0
+Input[0] => f.IN0
+Input[0] => f.IN0
+Input[0] => e.IN0
+Input[0] => d.IN1
+Input[0] => d.IN1
+Input[0] => b.IN1
+Input[0] => a.IN0
+Input[1] => b.IN0
+Input[1] => d.IN0
+Input[1] => f.IN0
+Input[1] => g.IN0
+Input[1] => g.IN1
+Input[1] => g.IN1
+Input[1] => f.IN1
+Input[1] => d.IN0
+Input[1] => d.IN0
+Input[1] => c.IN1
+Input[1] => c.IN0
+Input[1] => a.IN1
+Input[2] => d.IN1
+Input[2] => d.IN1
+Input[2] => e.IN0
+Input[2] => f.IN1
+Input[2] => g.IN0
+Input[2] => g.IN1
+Input[2] => g.IN0
+Input[2] => e.IN1
+Input[2] => d.IN0
+Input[3] => a.IN1
+Input[3] => d.IN1
+Input[3] => e.IN1
+Input[3] => f.IN1
+Input[3] => g.IN1
+Input[3] => g.IN1
+Input[3] => g.IN1
+Input[3] => d.IN1
+Input[3] => c.IN1
+Input[3] => c.IN1
+Input[3] => b.IN1
+Output[0] <= a.DB_MAX_OUTPUT_PORT_TYPE
+Output[1] <= b.DB_MAX_OUTPUT_PORT_TYPE
+Output[2] <= c.DB_MAX_OUTPUT_PORT_TYPE
+Output[3] <= d.DB_MAX_OUTPUT_PORT_TYPE
+Output[4] <= e.DB_MAX_OUTPUT_PORT_TYPE
+Output[5] <= f.DB_MAX_OUTPUT_PORT_TYPE
+Output[6] <= g.DB_MAX_OUTPUT_PORT_TYPE
+
+

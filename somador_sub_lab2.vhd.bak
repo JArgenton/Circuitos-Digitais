@@ -1,7 +1,7 @@
 library IEEE;
 use ieee.std_logic_1164.all;
 
-entity somador_sub_lab2 is
+entity SOMADOR_E_SUBTRATOR_HEXA is
     port(
         Ain: in std_logic_vector(3 downto 0);  -- Palavra A
         Bin: in std_logic_vector(3 downto 0);  -- Palavra B
@@ -9,9 +9,9 @@ entity somador_sub_lab2 is
         CCout: out std_logic;                   -- Carry-out (agora é 'out' em vez de 'buffer')
         Sout: out std_logic_vector(3 downto 0)  -- Palavra resultado
     );
-end somador_sub_lab2;
+end SOMADOR_E_SUBTRATOR_HEXA;
 
-architecture Soma_E_SUB of somador_sub_lab2 is
+architecture Soma_E_SUB of SOMADOR_E_SUBTRATOR_HEXA is
     signal AUX: std_logic_vector(3 downto 0); -- Sinal auxiliar para armazenar a saída do inversor
     signal Sout_Aux: std_logic_vector(3 downto 0); -- Sinal intermediário para Sout
 begin

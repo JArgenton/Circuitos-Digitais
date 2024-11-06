@@ -205,38 +205,6 @@ D => Q~reg0.DATAIN
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Contador_Assincrono|Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc0
-Din => Qout.IN0
-LS => Qout.IN0
-LS => Qout.IN1
-Flip => Qout.IN1
-Qout <= Qout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Contador_Assincrono|Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc1
-Din => Qout.IN0
-LS => Qout.IN0
-LS => Qout.IN1
-Flip => Qout.IN1
-Qout <= Qout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Contador_Assincrono|Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc2
-Din => Qout.IN0
-LS => Qout.IN0
-LS => Qout.IN1
-Flip => Qout.IN1
-Qout <= Qout.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Contador_Assincrono|Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc03
-Din => Qout.IN0
-LS => Qout.IN0
-LS => Qout.IN1
-Flip => Qout.IN1
-Qout <= Qout.DB_MAX_OUTPUT_PORT_TYPE
-
-
 |Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloD
 Clock => flip_flop_d:FFP_A.clock
 Clock => flip_flop_d:FFP_B.clock
@@ -276,7 +244,7 @@ D => Q~reg0.DATAIN
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Contador_Assincrono|Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc5
+|Contador_Assincrono|Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc0
 Din => Qout.IN0
 LS => Qout.IN0
 LS => Qout.IN1
@@ -284,7 +252,7 @@ Flip => Qout.IN1
 Qout <= Qout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Contador_Assincrono|Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc6
+|Contador_Assincrono|Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc1
 Din => Qout.IN0
 LS => Qout.IN0
 LS => Qout.IN1
@@ -292,7 +260,7 @@ Flip => Qout.IN1
 Qout <= Qout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Contador_Assincrono|Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc7
+|Contador_Assincrono|Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc2
 Din => Qout.IN0
 LS => Qout.IN0
 LS => Qout.IN1
@@ -300,7 +268,7 @@ Flip => Qout.IN1
 Qout <= Qout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Contador_Assincrono|Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc8
+|Contador_Assincrono|Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc03
 Din => Qout.IN0
 LS => Qout.IN0
 LS => Qout.IN1
@@ -345,6 +313,38 @@ Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 clock => Q~reg0.CLK
 D => Q~reg0.DATAIN
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador_Assincrono|Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc5
+Din => Qout.IN0
+LS => Qout.IN0
+LS => Qout.IN1
+Flip => Qout.IN1
+Qout <= Qout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador_Assincrono|Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc6
+Din => Qout.IN0
+LS => Qout.IN0
+LS => Qout.IN1
+Flip => Qout.IN1
+Qout <= Qout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador_Assincrono|Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc7
+Din => Qout.IN0
+LS => Qout.IN0
+LS => Qout.IN1
+Flip => Qout.IN1
+Qout <= Qout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador_Assincrono|Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc8
+Din => Qout.IN0
+LS => Qout.IN0
+LS => Qout.IN1
+Flip => Qout.IN1
+Qout <= Qout.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Contador_Assincrono|somador_sub_lab2:somador

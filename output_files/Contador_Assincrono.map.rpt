@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Contador_Assincrono
-Wed Nov  6 19:36:48 2024
+Wed Nov  6 20:07:43 2024
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -14,13 +14,12 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Port Connectivity Checks: "Registrador:registrador|Registrador_Paralelo:FFP_ParaleloE"
- 10. Port Connectivity Checks: "Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc8"
- 11. Port Connectivity Checks: "Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc7"
- 12. Port Connectivity Checks: "Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc6"
- 13. Post-Synthesis Netlist Statistics for Top Partition
- 14. Elapsed Time Per Partition
- 15. Analysis & Synthesis Messages
+  9. Port Connectivity Checks: "Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc8"
+ 10. Port Connectivity Checks: "Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc7"
+ 11. Port Connectivity Checks: "Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc6"
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
@@ -46,15 +45,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Nov  6 19:36:48 2024       ;
+; Analysis & Synthesis Status        ; Successful - Wed Nov  6 20:07:43 2024       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Contador_Assincrono                         ;
 ; Top-level Entity Name              ; Contador_Assincrono                         ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 67                                          ;
+; Total logic elements               ; 71                                          ;
 ;     Total combinational functions  ; 55                                          ;
-;     Dedicated logic registers      ; 16                                          ;
-; Total registers                    ; 16                                          ;
+;     Dedicated logic registers      ; 20                                          ;
+; Total registers                    ; 20                                          ;
 ; Total pins                         ; 42                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -191,7 +190,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 67        ;
+; Estimated Total logic elements              ; 71        ;
 ;                                             ;           ;
 ; Total combinational functions               ; 55        ;
 ; Logic element usage by number of LUT inputs ;           ;
@@ -203,8 +202,8 @@ refer to the applicable agreement for further details.
 ;     -- normal mode                          ; 55        ;
 ;     -- arithmetic mode                      ; 0         ;
 ;                                             ;           ;
-; Total registers                             ; 16        ;
-;     -- Dedicated logic registers            ; 16        ;
+; Total registers                             ; 20        ;
+;     -- Dedicated logic registers            ; 20        ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 42        ;
@@ -212,8 +211,8 @@ refer to the applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; PB0~input ;
-; Maximum fan-out                             ; 16        ;
-; Total fan-out                               ; 318       ;
+; Maximum fan-out                             ; 20        ;
+; Total fan-out                               ; 326       ;
 ; Average fan-out                             ; 2.05      ;
 +---------------------------------------------+-----------+
 
@@ -223,13 +222,13 @@ refer to the applicable agreement for further details.
 +--------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node                 ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                               ; Entity Name          ; Library Name ;
 +--------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------------------+----------------------+--------------+
-; |Contador_Assincrono                       ; 55 (0)              ; 16 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 42   ; 0            ; 0          ; |Contador_Assincrono                                                                              ; Contador_Assincrono  ; work         ;
+; |Contador_Assincrono                       ; 55 (0)              ; 20 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 42   ; 0            ; 0          ; |Contador_Assincrono                                                                              ; Contador_Assincrono  ; work         ;
 ;    |Conversor_HEXA:conversor0|             ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Contador_Assincrono|Conversor_HEXA:conversor0                                                    ; Conversor_HEXA       ; work         ;
 ;    |Conversor_HEXA:conversor1|             ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Contador_Assincrono|Conversor_HEXA:conversor1                                                    ; Conversor_HEXA       ; work         ;
 ;    |Conversor_HEXA:conversor2|             ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Contador_Assincrono|Conversor_HEXA:conversor2                                                    ; Conversor_HEXA       ; work         ;
 ;    |Conversor_HEXA:conversor3|             ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Contador_Assincrono|Conversor_HEXA:conversor3                                                    ; Conversor_HEXA       ; work         ;
 ;    |Conversor_HEXA:conversor4|             ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Contador_Assincrono|Conversor_HEXA:conversor4                                                    ; Conversor_HEXA       ; work         ;
-;    |Registrador:registrador|               ; 8 (0)               ; 16 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Contador_Assincrono|Registrador:registrador                                                      ; Registrador          ; work         ;
+;    |Registrador:registrador|               ; 8 (0)               ; 20 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Contador_Assincrono|Registrador:registrador                                                      ; Registrador          ; work         ;
 ;       |LOAD_X_DESLOCAMENTO:Desloc03|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Contador_Assincrono|Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc03                         ; LOAD_X_DESLOCAMENTO  ; work         ;
 ;       |LOAD_X_DESLOCAMENTO:Desloc0|        ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Contador_Assincrono|Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc0                          ; LOAD_X_DESLOCAMENTO  ; work         ;
 ;       |LOAD_X_DESLOCAMENTO:Desloc1|        ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Contador_Assincrono|Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc1                          ; LOAD_X_DESLOCAMENTO  ; work         ;
@@ -255,6 +254,11 @@ refer to the applicable agreement for further details.
 ;          |Flip_Flop_D:FFP_B|               ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloD|Flip_Flop_D:FFP_B ; Flip_Flop_D          ; work         ;
 ;          |Flip_Flop_D:FFP_C|               ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloD|Flip_Flop_D:FFP_C ; Flip_Flop_D          ; work         ;
 ;          |Flip_Flop_D:FFP_D|               ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloD|Flip_Flop_D:FFP_D ; Flip_Flop_D          ; work         ;
+;       |Registrador_Paralelo:FFP_ParaleloE| ; 0 (0)               ; 4 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloE                   ; Registrador_Paralelo ; work         ;
+;          |Flip_Flop_D:FFP_A|               ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloE|Flip_Flop_D:FFP_A ; Flip_Flop_D          ; work         ;
+;          |Flip_Flop_D:FFP_B|               ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloE|Flip_Flop_D:FFP_B ; Flip_Flop_D          ; work         ;
+;          |Flip_Flop_D:FFP_C|               ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloE|Flip_Flop_D:FFP_C ; Flip_Flop_D          ; work         ;
+;          |Flip_Flop_D:FFP_D|               ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloE|Flip_Flop_D:FFP_D ; Flip_Flop_D          ; work         ;
 ;    |somador_sub_lab2:somador|              ; 4 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Contador_Assincrono|somador_sub_lab2:somador                                                     ; somador_sub_lab2     ; work         ;
 ;       |soma_4bits:somador|                 ; 4 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Contador_Assincrono|somador_sub_lab2:somador|soma_4bits:somador                                  ; soma_4bits           ; work         ;
 ;          |soma_bit:SomaBit1|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Contador_Assincrono|somador_sub_lab2:somador|soma_4bits:somador|soma_bit:SomaBit1                ; soma_bit             ; work         ;
@@ -269,7 +273,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 16    ;
+; Total registers                              ; 20    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -277,15 +281,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
-
-
-+-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Registrador:registrador|Registrador_Paralelo:FFP_ParaleloE"                          ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; Port  ; Type   ; Severity ; Details                                                                             ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; saida ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------+
@@ -321,8 +316,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 42                          ;
-; cycloneiii_ff         ; 16                          ;
-;     plain             ; 16                          ;
+; cycloneiii_ff         ; 20                          ;
+;     plain             ; 20                          ;
 ; cycloneiii_lcell_comb ; 90                          ;
 ;     normal            ; 90                          ;
 ;         1 data inputs ; 35                          ;
@@ -331,7 +326,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;         4 data inputs ; 46                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 8.00                        ;
-; Average LUT depth     ; 3.79                        ;
+; Average LUT depth     ; 3.73                        ;
 +-----------------------+-----------------------------+
 
 
@@ -350,7 +345,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Nov  6 19:36:34 2024
+    Info: Processing started: Wed Nov  6 20:07:29 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Contador_Assincrono -c Contador_Assincrono
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -386,10 +381,9 @@ Info (12021): Found 2 design units, including 1 entities, in source file soma_bi
     Info (12023): Found entity 1: soma_bit File: /home/pedro/Documents/Circuitos Digitais/Contador_Assincrono/Circuitos-Digitais/soma_bit.vhd Line: 4
 Info (12127): Elaborating entity "Contador_Assincrono" for the top level hierarchy
 Info (12128): Elaborating entity "Registrador" for hierarchy "Registrador:registrador" File: /home/pedro/Documents/Circuitos Digitais/Contador_Assincrono/Circuitos-Digitais/Contador_Assincrono.vhd Line: 29
-Warning (10036): Verilog HDL or VHDL warning at Registrador_completo.vhd(27): object "HEX_4_inter" assigned a value but never read File: /home/pedro/Documents/Circuitos Digitais/Contador_Assincrono/Circuitos-Digitais/Registrador_completo.vhd Line: 27
 Info (12128): Elaborating entity "Registrador_Paralelo" for hierarchy "Registrador:registrador|Registrador_Paralelo:FFP_ParaleloA" File: /home/pedro/Documents/Circuitos Digitais/Contador_Assincrono/Circuitos-Digitais/Registrador_completo.vhd Line: 31
 Info (12128): Elaborating entity "Flip_Flop_D" for hierarchy "Registrador:registrador|Registrador_Paralelo:FFP_ParaleloA|Flip_Flop_D:FFP_A" File: /home/pedro/Documents/Circuitos Digitais/Contador_Assincrono/Circuitos-Digitais/Registrador_paralelo.vhd Line: 17
-Info (12128): Elaborating entity "LOAD_X_DESLOCAMENTO" for hierarchy "Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc0" File: /home/pedro/Documents/Circuitos Digitais/Contador_Assincrono/Circuitos-Digitais/Registrador_completo.vhd Line: 52
+Info (12128): Elaborating entity "LOAD_X_DESLOCAMENTO" for hierarchy "Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc0" File: /home/pedro/Documents/Circuitos Digitais/Contador_Assincrono/Circuitos-Digitais/Registrador_completo.vhd Line: 58
 Info (12128): Elaborating entity "somador_sub_lab2" for hierarchy "somador_sub_lab2:somador" File: /home/pedro/Documents/Circuitos Digitais/Contador_Assincrono/Circuitos-Digitais/Contador_Assincrono.vhd Line: 42
 Info (12128): Elaborating entity "Inversor_4bits" for hierarchy "somador_sub_lab2:somador|Inversor_4bits:inversor" File: /home/pedro/Documents/Circuitos Digitais/Contador_Assincrono/Circuitos-Digitais/somador_sub_lab2.vhd Line: 20
 Info (12128): Elaborating entity "soma_4bits" for hierarchy "somador_sub_lab2:somador|soma_4bits:somador" File: /home/pedro/Documents/Circuitos Digitais/Contador_Assincrono/Circuitos-Digitais/somador_sub_lab2.vhd Line: 28
@@ -398,13 +392,13 @@ Info (12128): Elaborating entity "Conversor_HEXA" for hierarchy "Conversor_HEXA:
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 113 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 117 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 7 input pins
     Info (21059): Implemented 35 output pins
-    Info (21061): Implemented 71 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 1025 megabytes
-    Info: Processing ended: Wed Nov  6 19:36:48 2024
+    Info (21061): Implemented 75 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 1022 megabytes
+    Info: Processing ended: Wed Nov  6 20:07:43 2024
     Info: Elapsed time: 00:00:14
     Info: Total CPU time (on all processors): 00:00:35
 

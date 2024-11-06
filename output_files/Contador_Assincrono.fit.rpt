@@ -1,5 +1,5 @@
 Fitter report for Contador_Assincrono
-Wed Nov  6 19:36:57 2024
+Wed Nov  6 20:07:52 2024
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -64,17 +64,17 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Wed Nov  6 19:36:57 2024       ;
+; Fitter Status                      ; Successful - Wed Nov  6 20:07:52 2024       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Contador_Assincrono                         ;
 ; Top-level Entity Name              ; Contador_Assincrono                         ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 59 / 49,760 ( < 1 % )                       ;
+; Total logic elements               ; 62 / 49,760 ( < 1 % )                       ;
 ;     Total combinational functions  ; 56 / 49,760 ( < 1 % )                       ;
-;     Dedicated logic registers      ; 16 / 49,760 ( < 1 % )                       ;
-; Total registers                    ; 16                                          ;
+;     Dedicated logic registers      ; 20 / 49,760 ( < 1 % )                       ;
+; Total registers                    ; 20                                          ;
 ; Total pins                         ; 42 / 360 ( 12 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
@@ -150,12 +150,13 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 1.09        ;
+; Average used               ; 1.12        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-16        ;   0.6%      ;
+;     Processor 2            ;   0.8%      ;
+;     Processors 3-16        ;   0.8%      ;
 +----------------------------+-------------+
 
 
@@ -165,8 +166,8 @@ refer to the applicable agreement for further details.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 175 ) ; 0.00 % ( 0 / 175 )         ; 0.00 % ( 0 / 175 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 175 ) ; 0.00 % ( 0 / 175 )         ; 0.00 % ( 0 / 175 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 179 ) ; 0.00 % ( 0 / 179 )         ; 0.00 % ( 0 / 179 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 179 ) ; 0.00 % ( 0 / 179 )         ; 0.00 % ( 0 / 179 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -189,7 +190,7 @@ refer to the applicable agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 159 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 163 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 16 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -205,23 +206,23 @@ The pin-out file can be found in /home/pedro/Documents/Circuitos Digitais/Contad
 +---------------------------------------------+-----------------------+
 ; Resource                                    ; Usage                 ;
 +---------------------------------------------+-----------------------+
-; Total logic elements                        ; 59 / 49,760 ( < 1 % ) ;
-;     -- Combinational with no register       ; 43                    ;
-;     -- Register only                        ; 3                     ;
-;     -- Combinational with a register        ; 13                    ;
+; Total logic elements                        ; 62 / 49,760 ( < 1 % ) ;
+;     -- Combinational with no register       ; 42                    ;
+;     -- Register only                        ; 6                     ;
+;     -- Combinational with a register        ; 14                    ;
 ;                                             ;                       ;
 ; Logic element usage by number of LUT inputs ;                       ;
 ;     -- 4 input functions                    ; 46                    ;
 ;     -- 3 input functions                    ; 7                     ;
 ;     -- <=2 input functions                  ; 3                     ;
-;     -- Register only                        ; 3                     ;
+;     -- Register only                        ; 6                     ;
 ;                                             ;                       ;
 ; Logic elements by mode                      ;                       ;
 ;     -- normal mode                          ; 56                    ;
 ;     -- arithmetic mode                      ; 0                     ;
 ;                                             ;                       ;
-; Total registers*                            ; 16 / 51,509 ( < 1 % ) ;
-;     -- Dedicated logic registers            ; 16 / 49,760 ( < 1 % ) ;
+; Total registers*                            ; 20 / 51,509 ( < 1 % ) ;
+;     -- Dedicated logic registers            ; 20 / 49,760 ( < 1 % ) ;
 ;     -- I/O registers                        ; 0 / 1,749 ( 0 % )     ;
 ;                                             ;                       ;
 ; Total LABs:  partially or completely used   ; 6 / 3,110 ( < 1 % )   ;
@@ -245,11 +246,11 @@ The pin-out file can be found in /home/pedro/Documents/Circuitos Digitais/Contad
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )         ;
 ; Impedance control blocks                    ; 0 / 1 ( 0 % )         ;
 ; Average interconnect usage (total/H/V)      ; 0.1% / 0.1% / 0.1%    ;
-; Peak interconnect usage (total/H/V)         ; 1.6% / 1.8% / 1.3%    ;
-; Maximum fan-out                             ; 17                    ;
-; Highest non-global fan-out                  ; 17                    ;
-; Total fan-out                               ; 332                   ;
-; Average fan-out                             ; 1.87                  ;
+; Peak interconnect usage (total/H/V)         ; 1.3% / 1.6% / 0.9%    ;
+; Maximum fan-out                             ; 20                    ;
+; Highest non-global fan-out                  ; 20                    ;
+; Total fan-out                               ; 343                   ;
+; Average fan-out                             ; 1.85                  ;
 +---------------------------------------------+-----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -262,23 +263,23 @@ The pin-out file can be found in /home/pedro/Documents/Circuitos Digitais/Contad
 +---------------------------------------------+----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                  ; Low                            ;
 ;                                             ;                      ;                                ;
-; Total logic elements                        ; 59 / 49760 ( < 1 % ) ; 0 / 49760 ( 0 % )              ;
-;     -- Combinational with no register       ; 43                   ; 0                              ;
-;     -- Register only                        ; 3                    ; 0                              ;
-;     -- Combinational with a register        ; 13                   ; 0                              ;
+; Total logic elements                        ; 62 / 49760 ( < 1 % ) ; 0 / 49760 ( 0 % )              ;
+;     -- Combinational with no register       ; 42                   ; 0                              ;
+;     -- Register only                        ; 6                    ; 0                              ;
+;     -- Combinational with a register        ; 14                   ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic element usage by number of LUT inputs ;                      ;                                ;
 ;     -- 4 input functions                    ; 46                   ; 0                              ;
 ;     -- 3 input functions                    ; 7                    ; 0                              ;
 ;     -- <=2 input functions                  ; 3                    ; 0                              ;
-;     -- Register only                        ; 3                    ; 0                              ;
+;     -- Register only                        ; 6                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic elements by mode                      ;                      ;                                ;
 ;     -- normal mode                          ; 56                   ; 0                              ;
 ;     -- arithmetic mode                      ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
-; Total registers                             ; 16                   ; 0                              ;
-;     -- Dedicated logic registers            ; 16 / 49760 ( < 1 % ) ; 0 / 49760 ( 0 % )              ;
+; Total registers                             ; 20                   ; 0                              ;
+;     -- Dedicated logic registers            ; 20 / 49760 ( < 1 % ) ; 0 / 49760 ( 0 % )              ;
 ;     -- I/O registers                        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Total LABs:  partially or completely used   ; 6 / 3110 ( < 1 % )   ; 0 / 3110 ( 0 % )               ;
@@ -298,8 +299,8 @@ The pin-out file can be found in /home/pedro/Documents/Circuitos Digitais/Contad
 ;     -- Registered Output Connections        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Internal Connections                        ;                      ;                                ;
-;     -- Total Connections                    ; 338                  ; 8                              ;
-;     -- Registered Connections               ; 147                  ; 0                              ;
+;     -- Total Connections                    ; 349                  ; 8                              ;
+;     -- Registered Connections               ; 151                  ; 0                              ;
 ;                                             ;                      ;                                ;
 ; External Connections                        ;                      ;                                ;
 ;     -- Top                                  ; 0                    ; 0                              ;
@@ -331,7 +332,7 @@ The pin-out file can be found in /home/pedro/Documents/Circuitos Digitais/Contad
 +------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 ; Name       ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
-; PB0        ; B8    ; 7        ; 46           ; 54           ; 28           ; 16                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
+; PB0        ; B8    ; 7        ; 46           ; 54           ; 28           ; 20                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
 ; PB1        ; A7    ; 7        ; 49           ; 54           ; 28           ; 13                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
 ; Palavra[0] ; C11   ; 7        ; 51           ; 54           ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
 ; Palavra[1] ; D12   ; 7        ; 51           ; 54           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
@@ -965,20 +966,20 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +--------------------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+---------------------------------------------------------------------------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node                 ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; ADC blocks ; Full Hierarchy Name                                                                               ; Entity Name          ; Library Name ;
 +--------------------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+---------------------------------------------------------------------------------------------------+----------------------+--------------+
-; |Contador_Assincrono                       ; 59 (1)      ; 16 (0)                    ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 42   ; 0            ; 43 (1)       ; 3 (0)             ; 13 (0)           ; 0          ; |Contador_Assincrono                                                                              ; Contador_Assincrono  ; work         ;
+; |Contador_Assincrono                       ; 62 (1)      ; 20 (0)                    ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 42   ; 0            ; 42 (1)       ; 6 (0)             ; 14 (0)           ; 0          ; |Contador_Assincrono                                                                              ; Contador_Assincrono  ; work         ;
 ;    |Conversor_HEXA:conversor0|             ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 1 (1)            ; 0          ; |Contador_Assincrono|Conversor_HEXA:conversor0                                                    ; Conversor_HEXA       ; work         ;
-;    |Conversor_HEXA:conversor1|             ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 1 (1)            ; 0          ; |Contador_Assincrono|Conversor_HEXA:conversor1                                                    ; Conversor_HEXA       ; work         ;
-;    |Conversor_HEXA:conversor2|             ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 1 (1)            ; 0          ; |Contador_Assincrono|Conversor_HEXA:conversor2                                                    ; Conversor_HEXA       ; work         ;
+;    |Conversor_HEXA:conversor1|             ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 2 (2)            ; 0          ; |Contador_Assincrono|Conversor_HEXA:conversor1                                                    ; Conversor_HEXA       ; work         ;
+;    |Conversor_HEXA:conversor2|             ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |Contador_Assincrono|Conversor_HEXA:conversor2                                                    ; Conversor_HEXA       ; work         ;
 ;    |Conversor_HEXA:conversor3|             ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |Contador_Assincrono|Conversor_HEXA:conversor3                                                    ; Conversor_HEXA       ; work         ;
 ;    |Conversor_HEXA:conversor4|             ; 15 (15)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 15 (15)      ; 0 (0)             ; 0 (0)            ; 0          ; |Contador_Assincrono|Conversor_HEXA:conversor4                                                    ; Conversor_HEXA       ; work         ;
-;    |Registrador:registrador|               ; 17 (0)      ; 16 (0)                    ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (0)        ; 3 (0)             ; 13 (0)           ; 0          ; |Contador_Assincrono|Registrador:registrador                                                      ; Registrador          ; work         ;
+;    |Registrador:registrador|               ; 21 (0)      ; 20 (0)                    ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (0)        ; 6 (0)             ; 14 (0)           ; 0          ; |Contador_Assincrono|Registrador:registrador                                                      ; Registrador          ; work         ;
 ;       |LOAD_X_DESLOCAMENTO:Desloc03|       ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0          ; |Contador_Assincrono|Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc03                         ; LOAD_X_DESLOCAMENTO  ; work         ;
 ;       |LOAD_X_DESLOCAMENTO:Desloc0|        ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0          ; |Contador_Assincrono|Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc0                          ; LOAD_X_DESLOCAMENTO  ; work         ;
 ;       |LOAD_X_DESLOCAMENTO:Desloc1|        ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0          ; |Contador_Assincrono|Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc1                          ; LOAD_X_DESLOCAMENTO  ; work         ;
 ;       |LOAD_X_DESLOCAMENTO:Desloc2|        ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0          ; |Contador_Assincrono|Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc2                          ; LOAD_X_DESLOCAMENTO  ; work         ;
 ;       |LOAD_X_DESLOCAMENTO:Desloc5|        ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0          ; |Contador_Assincrono|Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc5                          ; LOAD_X_DESLOCAMENTO  ; work         ;
-;       |Registrador_Paralelo:FFP_ParaleloA| ; 4 (0)       ; 4 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (0)            ; 0          ; |Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloA                   ; Registrador_Paralelo ; work         ;
-;          |Flip_Flop_D:FFP_A|               ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0          ; |Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloA|Flip_Flop_D:FFP_A ; Flip_Flop_D          ; work         ;
+;       |Registrador_Paralelo:FFP_ParaleloA| ; 4 (0)       ; 4 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (0)             ; 3 (0)            ; 0          ; |Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloA                   ; Registrador_Paralelo ; work         ;
+;          |Flip_Flop_D:FFP_A|               ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0          ; |Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloA|Flip_Flop_D:FFP_A ; Flip_Flop_D          ; work         ;
 ;          |Flip_Flop_D:FFP_B|               ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0          ; |Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloA|Flip_Flop_D:FFP_B ; Flip_Flop_D          ; work         ;
 ;          |Flip_Flop_D:FFP_C|               ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0          ; |Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloA|Flip_Flop_D:FFP_C ; Flip_Flop_D          ; work         ;
 ;          |Flip_Flop_D:FFP_D|               ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0          ; |Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloA|Flip_Flop_D:FFP_D ; Flip_Flop_D          ; work         ;
@@ -987,19 +988,24 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;          |Flip_Flop_D:FFP_B|               ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0          ; |Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloB|Flip_Flop_D:FFP_B ; Flip_Flop_D          ; work         ;
 ;          |Flip_Flop_D:FFP_C|               ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0          ; |Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloB|Flip_Flop_D:FFP_C ; Flip_Flop_D          ; work         ;
 ;          |Flip_Flop_D:FFP_D|               ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0          ; |Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloB|Flip_Flop_D:FFP_D ; Flip_Flop_D          ; work         ;
-;       |Registrador_Paralelo:FFP_ParaleloC| ; 4 (0)       ; 4 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 3 (0)             ; 1 (0)            ; 0          ; |Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloC                   ; Registrador_Paralelo ; work         ;
+;       |Registrador_Paralelo:FFP_ParaleloC| ; 4 (0)       ; 4 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 2 (0)             ; 2 (0)            ; 0          ; |Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloC                   ; Registrador_Paralelo ; work         ;
 ;          |Flip_Flop_D:FFP_A|               ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0          ; |Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloC|Flip_Flop_D:FFP_A ; Flip_Flop_D          ; work         ;
-;          |Flip_Flop_D:FFP_B|               ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0          ; |Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloC|Flip_Flop_D:FFP_B ; Flip_Flop_D          ; work         ;
+;          |Flip_Flop_D:FFP_B|               ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0          ; |Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloC|Flip_Flop_D:FFP_B ; Flip_Flop_D          ; work         ;
 ;          |Flip_Flop_D:FFP_C|               ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0          ; |Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloC|Flip_Flop_D:FFP_C ; Flip_Flop_D          ; work         ;
 ;          |Flip_Flop_D:FFP_D|               ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0          ; |Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloC|Flip_Flop_D:FFP_D ; Flip_Flop_D          ; work         ;
-;       |Registrador_Paralelo:FFP_ParaleloD| ; 4 (0)       ; 4 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (0)            ; 0          ; |Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloD                   ; Registrador_Paralelo ; work         ;
-;          |Flip_Flop_D:FFP_A|               ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0          ; |Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloD|Flip_Flop_D:FFP_A ; Flip_Flop_D          ; work         ;
+;       |Registrador_Paralelo:FFP_ParaleloD| ; 4 (0)       ; 4 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 3 (0)             ; 1 (0)            ; 0          ; |Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloD                   ; Registrador_Paralelo ; work         ;
+;          |Flip_Flop_D:FFP_A|               ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0          ; |Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloD|Flip_Flop_D:FFP_A ; Flip_Flop_D          ; work         ;
 ;          |Flip_Flop_D:FFP_B|               ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0          ; |Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloD|Flip_Flop_D:FFP_B ; Flip_Flop_D          ; work         ;
-;          |Flip_Flop_D:FFP_C|               ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0          ; |Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloD|Flip_Flop_D:FFP_C ; Flip_Flop_D          ; work         ;
-;          |Flip_Flop_D:FFP_D|               ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0          ; |Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloD|Flip_Flop_D:FFP_D ; Flip_Flop_D          ; work         ;
-;    |somador_sub_lab2:somador|              ; 4 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 3 (0)            ; 0          ; |Contador_Assincrono|somador_sub_lab2:somador                                                     ; somador_sub_lab2     ; work         ;
-;       |soma_4bits:somador|                 ; 4 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 3 (0)            ; 0          ; |Contador_Assincrono|somador_sub_lab2:somador|soma_4bits:somador                                  ; soma_4bits           ; work         ;
-;          |soma_bit:SomaBit1|               ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; 0          ; |Contador_Assincrono|somador_sub_lab2:somador|soma_4bits:somador|soma_bit:SomaBit1                ; soma_bit             ; work         ;
+;          |Flip_Flop_D:FFP_C|               ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0          ; |Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloD|Flip_Flop_D:FFP_C ; Flip_Flop_D          ; work         ;
+;          |Flip_Flop_D:FFP_D|               ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0          ; |Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloD|Flip_Flop_D:FFP_D ; Flip_Flop_D          ; work         ;
+;       |Registrador_Paralelo:FFP_ParaleloE| ; 4 (0)       ; 4 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (0)            ; 0          ; |Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloE                   ; Registrador_Paralelo ; work         ;
+;          |Flip_Flop_D:FFP_A|               ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0          ; |Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloE|Flip_Flop_D:FFP_A ; Flip_Flop_D          ; work         ;
+;          |Flip_Flop_D:FFP_B|               ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0          ; |Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloE|Flip_Flop_D:FFP_B ; Flip_Flop_D          ; work         ;
+;          |Flip_Flop_D:FFP_C|               ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0          ; |Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloE|Flip_Flop_D:FFP_C ; Flip_Flop_D          ; work         ;
+;          |Flip_Flop_D:FFP_D|               ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0          ; |Contador_Assincrono|Registrador:registrador|Registrador_Paralelo:FFP_ParaleloE|Flip_Flop_D:FFP_D ; Flip_Flop_D          ; work         ;
+;    |somador_sub_lab2:somador|              ; 4 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (0)            ; 0          ; |Contador_Assincrono|somador_sub_lab2:somador                                                     ; somador_sub_lab2     ; work         ;
+;       |soma_4bits:somador|                 ; 4 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (0)            ; 0          ; |Contador_Assincrono|somador_sub_lab2:somador|soma_4bits:somador                                  ; soma_4bits           ; work         ;
+;          |soma_bit:SomaBit1|               ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0          ; |Contador_Assincrono|somador_sub_lab2:somador|soma_4bits:somador|soma_bit:SomaBit1                ; soma_bit             ; work         ;
 ;          |soma_bit:SomaBit2|               ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0          ; |Contador_Assincrono|somador_sub_lab2:somador|soma_4bits:somador|soma_bit:SomaBit2                ; soma_bit             ; work         ;
 ;          |soma_bit:SomaBit3|               ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0          ; |Contador_Assincrono|somador_sub_lab2:somador|soma_4bits:somador|soma_bit:SomaBit3                ; soma_bit             ; work         ;
 +--------------------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+---------------------------------------------------------------------------------------------------+----------------------+--------------+
@@ -1052,63 +1058,67 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; PB0        ; Input    ; --            ; (0) 0 ps      ; --                    ; --  ; --   ;
 ; Palavra[2] ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 ; Palavra[3] ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
-; Palavra[0] ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
+; Palavra[0] ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 +------------+----------+---------------+---------------+-----------------------+-----+------+
 
 
-+---------------------------------------------------------------------------------------------------------------------+
-; Pad To Core Delay Chain Fanout                                                                                      ;
-+---------------------------------------------------------------------------------------+-------------------+---------+
-; Source Pin / Fanout                                                                   ; Pad To Core Index ; Setting ;
-+---------------------------------------------------------------------------------------+-------------------+---------+
-; PB1                                                                                   ;                   ;         ;
-;      - Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc1|Qout~1                     ; 0                 ; 6       ;
-;      - Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc2|Qout~1                     ; 0                 ; 6       ;
-;      - Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc03|Qout~1                    ; 0                 ; 6       ;
-;      - Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc0|Qout~0                     ; 0                 ; 6       ;
-;      - Conversor_HEXA:conversor4|a~1                                                  ; 0                 ; 6       ;
-;      - Conversor_HEXA:conversor4|b~1                                                  ; 0                 ; 6       ;
-;      - Conversor_HEXA:conversor4|c~1                                                  ; 0                 ; 6       ;
-;      - Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc5|Qout~0                     ; 0                 ; 6       ;
-;      - Conversor_HEXA:conversor4|d~0                                                  ; 0                 ; 6       ;
-;      - Conversor_HEXA:conversor4|d~1                                                  ; 0                 ; 6       ;
-;      - Conversor_HEXA:conversor4|e~1                                                  ; 0                 ; 6       ;
-;      - Conversor_HEXA:conversor4|f~1                                                  ; 0                 ; 6       ;
-;      - Conversor_HEXA:conversor4|g~1                                                  ; 0                 ; 6       ;
-; Switch                                                                                ;                   ;         ;
-;      - Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc1|Qout~0                     ; 0                 ; 6       ;
-;      - somador_sub_lab2:somador|soma_4bits:somador|soma_bit:SomaBit1|Cout~0           ; 0                 ; 6       ;
-;      - somador_sub_lab2:somador|soma_4bits:somador|soma_bit:SomaBit1|Cout~1           ; 0                 ; 6       ;
-;      - Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc2|Qout~0                     ; 0                 ; 6       ;
-;      - somador_sub_lab2:somador|soma_4bits:somador|soma_bit:SomaBit2|Cout~0           ; 0                 ; 6       ;
-;      - Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc03|Qout~0                    ; 0                 ; 6       ;
-;      - somador_sub_lab2:somador|soma_4bits:somador|soma_bit:SomaBit3|Cout~0           ; 0                 ; 6       ;
-; Palavra[1]                                                                            ;                   ;         ;
-;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloA|Flip_Flop_D:FFP_C|Q ; 0                 ; 6       ;
-; PB0                                                                                   ;                   ;         ;
-;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloA|Flip_Flop_D:FFP_A|Q ; 1                 ; 0       ;
-;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloA|Flip_Flop_D:FFP_B|Q ; 1                 ; 0       ;
-;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloA|Flip_Flop_D:FFP_C|Q ; 1                 ; 0       ;
-;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloA|Flip_Flop_D:FFP_D|Q ; 1                 ; 0       ;
-;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloB|Flip_Flop_D:FFP_A|Q ; 1                 ; 0       ;
-;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloB|Flip_Flop_D:FFP_B|Q ; 1                 ; 0       ;
-;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloB|Flip_Flop_D:FFP_C|Q ; 1                 ; 0       ;
-;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloB|Flip_Flop_D:FFP_D|Q ; 1                 ; 0       ;
-;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloC|Flip_Flop_D:FFP_A|Q ; 1                 ; 0       ;
-;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloC|Flip_Flop_D:FFP_B|Q ; 1                 ; 0       ;
-;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloC|Flip_Flop_D:FFP_C|Q ; 1                 ; 0       ;
-;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloC|Flip_Flop_D:FFP_D|Q ; 1                 ; 0       ;
-;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloD|Flip_Flop_D:FFP_A|Q ; 1                 ; 0       ;
-;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloD|Flip_Flop_D:FFP_B|Q ; 1                 ; 0       ;
-;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloD|Flip_Flop_D:FFP_C|Q ; 1                 ; 0       ;
-;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloD|Flip_Flop_D:FFP_D|Q ; 1                 ; 0       ;
-; Palavra[2]                                                                            ;                   ;         ;
-;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloA|Flip_Flop_D:FFP_B|Q ; 0                 ; 6       ;
-; Palavra[3]                                                                            ;                   ;         ;
-;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloA|Flip_Flop_D:FFP_A|Q ; 0                 ; 6       ;
-; Palavra[0]                                                                            ;                   ;         ;
-;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloA|Flip_Flop_D:FFP_D|Q ; 1                 ; 6       ;
-+---------------------------------------------------------------------------------------+-------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Pad To Core Delay Chain Fanout                                                                                             ;
++----------------------------------------------------------------------------------------------+-------------------+---------+
+; Source Pin / Fanout                                                                          ; Pad To Core Index ; Setting ;
++----------------------------------------------------------------------------------------------+-------------------+---------+
+; PB1                                                                                          ;                   ;         ;
+;      - Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc1|Qout~1                            ; 0                 ; 6       ;
+;      - Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc2|Qout~1                            ; 0                 ; 6       ;
+;      - Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc03|Qout~1                           ; 0                 ; 6       ;
+;      - Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc0|Qout~0                            ; 0                 ; 6       ;
+;      - Conversor_HEXA:conversor4|a~1                                                         ; 0                 ; 6       ;
+;      - Conversor_HEXA:conversor4|b~1                                                         ; 0                 ; 6       ;
+;      - Conversor_HEXA:conversor4|c~1                                                         ; 0                 ; 6       ;
+;      - Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc5|Qout~0                            ; 0                 ; 6       ;
+;      - Conversor_HEXA:conversor4|d~0                                                         ; 0                 ; 6       ;
+;      - Conversor_HEXA:conversor4|d~1                                                         ; 0                 ; 6       ;
+;      - Conversor_HEXA:conversor4|e~1                                                         ; 0                 ; 6       ;
+;      - Conversor_HEXA:conversor4|f~1                                                         ; 0                 ; 6       ;
+;      - Conversor_HEXA:conversor4|g~1                                                         ; 0                 ; 6       ;
+; Switch                                                                                       ;                   ;         ;
+;      - Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc1|Qout~0                            ; 0                 ; 6       ;
+;      - somador_sub_lab2:somador|soma_4bits:somador|soma_bit:SomaBit1|Cout~0                  ; 0                 ; 6       ;
+;      - somador_sub_lab2:somador|soma_4bits:somador|soma_bit:SomaBit1|Cout~1                  ; 0                 ; 6       ;
+;      - Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc2|Qout~0                            ; 0                 ; 6       ;
+;      - somador_sub_lab2:somador|soma_4bits:somador|soma_bit:SomaBit2|Cout~0                  ; 0                 ; 6       ;
+;      - Registrador:registrador|LOAD_X_DESLOCAMENTO:Desloc03|Qout~0                           ; 0                 ; 6       ;
+;      - somador_sub_lab2:somador|soma_4bits:somador|soma_bit:SomaBit3|Cout~0                  ; 0                 ; 6       ;
+; Palavra[1]                                                                                   ;                   ;         ;
+;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloA|Flip_Flop_D:FFP_C|Q        ; 0                 ; 6       ;
+; PB0                                                                                          ;                   ;         ;
+;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloA|Flip_Flop_D:FFP_A|Q        ; 1                 ; 0       ;
+;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloA|Flip_Flop_D:FFP_B|Q        ; 1                 ; 0       ;
+;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloA|Flip_Flop_D:FFP_C|Q        ; 1                 ; 0       ;
+;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloA|Flip_Flop_D:FFP_D|Q        ; 1                 ; 0       ;
+;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloB|Flip_Flop_D:FFP_A|Q        ; 1                 ; 0       ;
+;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloB|Flip_Flop_D:FFP_B|Q        ; 1                 ; 0       ;
+;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloB|Flip_Flop_D:FFP_C|Q        ; 1                 ; 0       ;
+;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloB|Flip_Flop_D:FFP_D|Q        ; 1                 ; 0       ;
+;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloC|Flip_Flop_D:FFP_A|Q        ; 1                 ; 0       ;
+;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloC|Flip_Flop_D:FFP_B|Q        ; 1                 ; 0       ;
+;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloC|Flip_Flop_D:FFP_C|Q        ; 1                 ; 0       ;
+;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloC|Flip_Flop_D:FFP_D|Q        ; 1                 ; 0       ;
+;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloD|Flip_Flop_D:FFP_A|Q        ; 1                 ; 0       ;
+;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloD|Flip_Flop_D:FFP_B|Q        ; 1                 ; 0       ;
+;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloD|Flip_Flop_D:FFP_C|Q        ; 1                 ; 0       ;
+;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloD|Flip_Flop_D:FFP_D|Q        ; 1                 ; 0       ;
+;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloE|Flip_Flop_D:FFP_A|Q        ; 1                 ; 0       ;
+;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloE|Flip_Flop_D:FFP_B|Q        ; 1                 ; 0       ;
+;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloE|Flip_Flop_D:FFP_C|Q        ; 1                 ; 0       ;
+;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloE|Flip_Flop_D:FFP_D|Q        ; 1                 ; 0       ;
+; Palavra[2]                                                                                   ;                   ;         ;
+;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloA|Flip_Flop_D:FFP_B|Q        ; 0                 ; 6       ;
+; Palavra[3]                                                                                   ;                   ;         ;
+;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloA|Flip_Flop_D:FFP_A|Q~feeder ; 0                 ; 6       ;
+; Palavra[0]                                                                                   ;                   ;         ;
+;      - Registrador:registrador|Registrador_Paralelo:FFP_ParaleloA|Flip_Flop_D:FFP_D|Q        ; 0                 ; 6       ;
++----------------------------------------------------------------------------------------------+-------------------+---------+
 
 
 +------------------------------------------------------------------------------------------------------------------+
@@ -1116,49 +1126,49 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+----------+---------+-------+--------+----------------------+------------------+---------------------------+
 ; Name ; Location ; Fan-Out ; Usage ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------+----------+---------+-------+--------+----------------------+------------------+---------------------------+
-; PB0  ; PIN_B8   ; 16      ; Clock ; no     ; --                   ; --               ; --                        ;
+; PB0  ; PIN_B8   ; 20      ; Clock ; no     ; --                   ; --               ; --                        ;
 +------+----------+---------+-------+--------+----------------------+------------------+---------------------------+
 
 
-+------------------------------------------------+
-; Routing Usage Summary                          ;
-+-----------------------+------------------------+
-; Routing Resource Type ; Usage                  ;
-+-----------------------+------------------------+
-; Block interconnects   ; 85 / 148,641 ( < 1 % ) ;
-; C16 interconnects     ; 13 / 5,382 ( < 1 % )   ;
-; C4 interconnects      ; 73 / 106,704 ( < 1 % ) ;
-; Direct links          ; 6 / 148,641 ( < 1 % )  ;
-; Global clocks         ; 0 / 20 ( 0 % )         ;
-; Local interconnects   ; 21 / 49,760 ( < 1 % )  ;
-; NSLEEPs               ; 0 / 500 ( 0 % )        ;
-; R24 interconnects     ; 13 / 5,406 ( < 1 % )   ;
-; R4 interconnects      ; 95 / 147,764 ( < 1 % ) ;
-+-----------------------+------------------------+
++-------------------------------------------------+
+; Routing Usage Summary                           ;
++-----------------------+-------------------------+
+; Routing Resource Type ; Usage                   ;
++-----------------------+-------------------------+
+; Block interconnects   ; 91 / 148,641 ( < 1 % )  ;
+; C16 interconnects     ; 12 / 5,382 ( < 1 % )    ;
+; C4 interconnects      ; 71 / 106,704 ( < 1 % )  ;
+; Direct links          ; 9 / 148,641 ( < 1 % )   ;
+; Global clocks         ; 0 / 20 ( 0 % )          ;
+; Local interconnects   ; 20 / 49,760 ( < 1 % )   ;
+; NSLEEPs               ; 0 / 500 ( 0 % )         ;
+; R24 interconnects     ; 10 / 5,406 ( < 1 % )    ;
+; R4 interconnects      ; 106 / 147,764 ( < 1 % ) ;
++-----------------------+-------------------------+
 
 
-+--------------------------------------------------------------------------+
-; LAB Logic Elements                                                       ;
-+--------------------------------------------+-----------------------------+
-; Number of Logic Elements  (Average = 9.83) ; Number of LABs  (Total = 6) ;
-+--------------------------------------------+-----------------------------+
-; 1                                          ; 1                           ;
-; 2                                          ; 0                           ;
-; 3                                          ; 0                           ;
-; 4                                          ; 0                           ;
-; 5                                          ; 0                           ;
-; 6                                          ; 1                           ;
-; 7                                          ; 1                           ;
-; 8                                          ; 0                           ;
-; 9                                          ; 0                           ;
-; 10                                         ; 0                           ;
-; 11                                         ; 0                           ;
-; 12                                         ; 0                           ;
-; 13                                         ; 1                           ;
-; 14                                         ; 0                           ;
-; 15                                         ; 0                           ;
-; 16                                         ; 2                           ;
-+--------------------------------------------+-----------------------------+
++---------------------------------------------------------------------------+
+; LAB Logic Elements                                                        ;
++---------------------------------------------+-----------------------------+
+; Number of Logic Elements  (Average = 10.33) ; Number of LABs  (Total = 6) ;
++---------------------------------------------+-----------------------------+
+; 1                                           ; 1                           ;
+; 2                                           ; 0                           ;
+; 3                                           ; 0                           ;
+; 4                                           ; 0                           ;
+; 5                                           ; 0                           ;
+; 6                                           ; 1                           ;
+; 7                                           ; 1                           ;
+; 8                                           ; 0                           ;
+; 9                                           ; 0                           ;
+; 10                                          ; 0                           ;
+; 11                                          ; 0                           ;
+; 12                                          ; 0                           ;
+; 13                                          ; 0                           ;
+; 14                                          ; 0                           ;
+; 15                                          ; 0                           ;
+; 16                                          ; 3                           ;
++---------------------------------------------+-----------------------------+
 
 
 +------------------------------------------------------------------+
@@ -1173,7 +1183,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                        ;
 +----------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 12.50) ; Number of LABs  (Total = 6) ;
+; Number of Signals Sourced  (Average = 13.67) ; Number of LABs  (Total = 6) ;
 +----------------------------------------------+-----------------------------+
 ; 0                                            ; 0                           ;
 ; 1                                            ; 1                           ;
@@ -1191,11 +1201,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 13                                           ; 0                           ;
 ; 14                                           ; 0                           ;
 ; 15                                           ; 0                           ;
-; 16                                           ; 2                           ;
+; 16                                           ; 1                           ;
 ; 17                                           ; 0                           ;
 ; 18                                           ; 0                           ;
 ; 19                                           ; 0                           ;
-; 20                                           ; 0                           ;
+; 20                                           ; 1                           ;
 ; 21                                           ; 0                           ;
 ; 22                                           ; 0                           ;
 ; 23                                           ; 0                           ;
@@ -1204,7 +1214,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 26                                           ; 0                           ;
 ; 27                                           ; 0                           ;
 ; 28                                           ; 0                           ;
-; 29                                           ; 1                           ;
+; 29                                           ; 0                           ;
+; 30                                           ; 0                           ;
+; 31                                           ; 0                           ;
+; 32                                           ; 1                           ;
 +----------------------------------------------+-----------------------------+
 
 
@@ -1226,8 +1239,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 10                                              ; 0                           ;
 ; 11                                              ; 0                           ;
 ; 12                                              ; 0                           ;
-; 13                                              ; 1                           ;
-; 14                                              ; 0                           ;
+; 13                                              ; 0                           ;
+; 14                                              ; 1                           ;
 ; 15                                              ; 0                           ;
 ; 16                                              ; 0                           ;
 ; 17                                              ; 0                           ;
@@ -1235,8 +1248,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 19                                              ; 0                           ;
 ; 20                                              ; 0                           ;
 ; 21                                              ; 0                           ;
-; 22                                              ; 0                           ;
-; 23                                              ; 1                           ;
+; 22                                              ; 1                           ;
 +-------------------------------------------------+-----------------------------+
 
 
@@ -1251,11 +1263,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 3                                           ; 0                           ;
 ; 4                                           ; 2                           ;
 ; 5                                           ; 0                           ;
-; 6                                           ; 2                           ;
-; 7                                           ; 0                           ;
+; 6                                           ; 1                           ;
+; 7                                           ; 1                           ;
 ; 8                                           ; 0                           ;
-; 9                                           ; 0                           ;
-; 10                                          ; 1                           ;
+; 9                                           ; 1                           ;
 +---------------------------------------------+-----------------------------+
 
 
@@ -1446,7 +1457,7 @@ Info (332130): Timing requirements not specified -- quality metrics such as perf
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -1458,7 +1469,7 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
     Info (170196): Router estimated peak interconnect usage is 1% of the available device resources in the region that extends from location X67_Y44 to location X78_Y54
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
 Info (11888): Total time spent on timing analysis during the Fitter is 0.08 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
@@ -1467,9 +1478,9 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file /home/pedro/Documents/Circuitos Digitais/Contador_Assincrono/Circuitos-Digitais/output_files/Contador_Assincrono.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 2593 megabytes
-    Info: Processing ended: Wed Nov  6 19:36:57 2024
-    Info: Elapsed time: 00:00:09
+    Info: Peak virtual memory: 2594 megabytes
+    Info: Processing ended: Wed Nov  6 20:07:52 2024
+    Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:18
 
 

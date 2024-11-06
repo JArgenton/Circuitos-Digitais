@@ -49,9 +49,15 @@ begin
             saida   => HEX_2_inter
         );
 
-    Desloc0 : entity work.LOAD_X_DESLOCAMENTO
+    FFP_ParaleloD : entity work.Registrador_Paralelo
         port map(
-            Flip => HEX_2_inter(0),
+            clock   => Clk,
+            entrada => HEX_2_inter,
+            saida   => HEX_3_inter
+        );
+		  	Desloc0 : entity work.LOAD_X_DESLOCAMENTO
+        port map(
+            Flip => HEX_3_inter(0),
             Din  => Somain(0),
             LS   => LSin,
             Qout => desloc3(0)
@@ -59,7 +65,7 @@ begin
         
     Desloc1 : entity work.LOAD_X_DESLOCAMENTO
         port map(
-            Flip => HEX_2_inter(1),
+            Flip => HEX_3_inter(1),
             Din  => Somain(1),
             LS   => LSin,
             Qout => desloc3(1)
@@ -67,7 +73,7 @@ begin
         
     Desloc2 : entity work.LOAD_X_DESLOCAMENTO
         port map(
-            Flip => HEX_2_inter(2),
+            Flip => HEX_3_inter(2),
             Din  => Somain(2),
             LS   => LSin,
             Qout => desloc3(2)
@@ -75,22 +81,22 @@ begin
         
     Desloc03 : entity work.LOAD_X_DESLOCAMENTO
         port map(
-            Flip => HEX_2_inter(3),
+            Flip => HEX_3_inter(3),
             Din  => Somain(3),
             LS   => LSin,
             Qout => desloc3(3)
         );
 
-    FFP_ParaleloD : entity work.Registrador_Paralelo
+    FFP_ParaleloE : entity work.Registrador_Paralelo
         port map(
             clock   => Clk,
             entrada => desloc3,
-            saida   => HEX_3_inter
+            saida   => HEX_4_inter
         );
-
-    Desloc5 : entity work.LOAD_X_DESLOCAMENTO
+		  
+	    Desloc5 : entity work.LOAD_X_DESLOCAMENTO
         port map(
-            Flip => HEX_3_inter(0),
+            Flip => HEX_4_inter(0),
             Din  => Somain(4),
             LS   => LSin,
             Qout => desloc4(0)
@@ -98,7 +104,7 @@ begin
 
     Desloc6 : entity work.LOAD_X_DESLOCAMENTO
         port map(
-            Flip => HEX_3_inter(1),
+            Flip => HEX_4_inter(1),
             Din  => '0',
             LS   => LSin,
             Qout => desloc4(1)
@@ -106,7 +112,7 @@ begin
 
     Desloc7 : entity work.LOAD_X_DESLOCAMENTO
         port map(
-            Flip => HEX_3_inter(2),
+            Flip => HEX_4_inter(2),
             Din  => '0',
             LS   => LSin,
             Qout => desloc4(2)
@@ -114,17 +120,10 @@ begin
 
     Desloc8 : entity work.LOAD_X_DESLOCAMENTO
         port map(
-            Flip => HEX_3_inter(3),
+            Flip => HEX_4_inter(3),
             Din  => '0',
             LS   => LSin,
             Qout => desloc4(3)
-        );
-
-    FFP_ParaleloE : entity work.Registrador_Paralelo
-        port map(
-            clock   => Clk,
-            entrada => desloc4,
-            saida   => HEX_4_inter
         );
 
     -- Conectando os sinais intermediários às saídas HEX

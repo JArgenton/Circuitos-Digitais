@@ -16,7 +16,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
-// DATE "11/06/2024 19:37:03"
+// DATE "11/06/2024 20:07:58"
 
 // 
 // Device: Altera 10M50DAF484C7G Package FBGA484
@@ -144,14 +144,15 @@ wire \HEX4[4]~output_o ;
 wire \HEX4[5]~output_o ;
 wire \HEX4[6]~output_o ;
 wire \PB0~input_o ;
-wire \Palavra[0]~input_o ;
-wire \registrador|FFP_ParaleloA|FFP_D|Q~q ;
 wire \Palavra[2]~input_o ;
 wire \registrador|FFP_ParaleloA|FFP_B|Q~q ;
+wire \Palavra[0]~input_o ;
+wire \registrador|FFP_ParaleloA|FFP_D|Q~q ;
+wire \Palavra[3]~input_o ;
+wire \registrador|FFP_ParaleloA|FFP_A|Q~feeder_combout ;
+wire \registrador|FFP_ParaleloA|FFP_A|Q~q ;
 wire \Palavra[1]~input_o ;
 wire \registrador|FFP_ParaleloA|FFP_C|Q~q ;
-wire \Palavra[3]~input_o ;
-wire \registrador|FFP_ParaleloA|FFP_A|Q~q ;
 wire \conversor0|a~0_combout ;
 wire \conversor0|b~0_combout ;
 wire \conversor0|c~0_combout ;
@@ -159,10 +160,10 @@ wire \conversor0|d~0_combout ;
 wire \conversor0|e~0_combout ;
 wire \conversor0|f~0_combout ;
 wire \conversor0|g~0_combout ;
-wire \registrador|FFP_ParaleloB|FFP_B|Q~q ;
 wire \registrador|FFP_ParaleloB|FFP_C|Q~q ;
-wire \registrador|FFP_ParaleloB|FFP_A|Q~q ;
 wire \registrador|FFP_ParaleloB|FFP_D|Q~q ;
+wire \registrador|FFP_ParaleloB|FFP_B|Q~q ;
+wire \registrador|FFP_ParaleloB|FFP_A|Q~q ;
 wire \conversor1|a~0_combout ;
 wire \conversor1|b~0_combout ;
 wire \conversor1|c~0_combout ;
@@ -171,10 +172,9 @@ wire \conversor1|e~0_combout ;
 wire \conversor1|f~0_combout ;
 wire \conversor1|g~0_combout ;
 wire \registrador|FFP_ParaleloC|FFP_A|Q~q ;
-wire \registrador|FFP_ParaleloC|FFP_B|Q~feeder_combout ;
-wire \registrador|FFP_ParaleloC|FFP_B|Q~q ;
 wire \registrador|FFP_ParaleloC|FFP_C|Q~feeder_combout ;
 wire \registrador|FFP_ParaleloC|FFP_C|Q~q ;
+wire \registrador|FFP_ParaleloC|FFP_B|Q~q ;
 wire \registrador|FFP_ParaleloC|FFP_D|Q~feeder_combout ;
 wire \registrador|FFP_ParaleloC|FFP_D|Q~q ;
 wire \conversor2|a~0_combout ;
@@ -185,17 +185,24 @@ wire \conversor2|e~0_combout ;
 wire \conversor2|f~0_combout ;
 wire \conversor2|g~0_combout ;
 wire \PB1~input_o ;
+wire \registrador|FFP_ParaleloD|FFP_D|Q~feeder_combout ;
+wire \registrador|FFP_ParaleloD|FFP_D|Q~q ;
 wire \registrador|Desloc0|Qout~0_combout ;
+wire \registrador|FFP_ParaleloD|FFP_C|Q~feeder_combout ;
+wire \registrador|FFP_ParaleloD|FFP_C|Q~q ;
 wire \Switch~input_o ;
+wire \registrador|Desloc1|Qout~0_combout ;
+wire \registrador|Desloc1|Qout~1_combout ;
+wire \registrador|FFP_ParaleloD|FFP_A|Q~feeder_combout ;
+wire \registrador|FFP_ParaleloD|FFP_A|Q~q ;
+wire \registrador|Desloc03|Qout~0_combout ;
 wire \somador|somador|SomaBit1|Cout~0_combout ;
 wire \somador|somador|SomaBit1|Cout~1_combout ;
 wire \somador|somador|SomaBit2|Cout~0_combout ;
-wire \registrador|Desloc03|Qout~0_combout ;
 wire \registrador|Desloc03|Qout~1_combout ;
+wire \registrador|FFP_ParaleloD|FFP_B|Q~q ;
 wire \registrador|Desloc2|Qout~0_combout ;
 wire \registrador|Desloc2|Qout~1_combout ;
-wire \registrador|Desloc1|Qout~0_combout ;
-wire \registrador|Desloc1|Qout~1_combout ;
 wire \conversor3|a~0_combout ;
 wire \conversor3|b~0_combout ;
 wire \conversor3|c~0_combout ;
@@ -204,10 +211,10 @@ wire \conversor3|e~0_combout ;
 wire \conversor3|f~0_combout ;
 wire \conversor3|g~0_combout ;
 wire \somador|somador|SomaBit3|Cout~0_combout ;
-wire \registrador|FFP_ParaleloD|FFP_D|Q~q ;
-wire \registrador|FFP_ParaleloD|FFP_C|Q~q ;
-wire \registrador|FFP_ParaleloD|FFP_B|Q~q ;
-wire \registrador|FFP_ParaleloD|FFP_A|Q~q ;
+wire \registrador|FFP_ParaleloE|FFP_B|Q~q ;
+wire \registrador|FFP_ParaleloE|FFP_D|Q~q ;
+wire \registrador|FFP_ParaleloE|FFP_A|Q~q ;
+wire \registrador|FFP_ParaleloE|FFP_C|Q~q ;
 wire \conversor4|a~0_combout ;
 wire \conversor4|a~1_combout ;
 wire \conversor4|b~0_combout ;
@@ -215,8 +222,8 @@ wire \conversor4|b~1_combout ;
 wire \conversor4|c~0_combout ;
 wire \conversor4|c~1_combout ;
 wire \conversor4|d~0_combout ;
-wire \conversor4|d~1_combout ;
 wire \registrador|Desloc5|Qout~0_combout ;
+wire \conversor4|d~1_combout ;
 wire \conversor4|d~2_combout ;
 wire \conversor4|e~0_combout ;
 wire \conversor4|e~1_combout ;
@@ -231,7 +238,7 @@ hard_block auto_generated_inst(
 	.devclrn(devclrn),
 	.devoe(devoe));
 
-// Location: LCCOMB_X44_Y41_N24
+// Location: LCCOMB_X44_Y43_N16
 fiftyfivenm_lcell_comb \~QUARTUS_CREATED_GND~I (
 // Equation(s):
 // \~QUARTUS_CREATED_GND~I_combout  = GND
@@ -715,37 +722,6 @@ defparam \PB0~input .listen_to_nsleep_signal = "false";
 defparam \PB0~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X51_Y54_N22
-fiftyfivenm_io_ibuf \Palavra[0]~input (
-	.i(Palavra[0]),
-	.ibar(gnd),
-	.nsleep(vcc),
-	.o(\Palavra[0]~input_o ));
-// synopsys translate_off
-defparam \Palavra[0]~input .bus_hold = "false";
-defparam \Palavra[0]~input .listen_to_nsleep_signal = "false";
-defparam \Palavra[0]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-// Location: FF_X67_Y50_N9
-dffeas \registrador|FFP_ParaleloA|FFP_D|Q (
-	.clk(\PB0~input_o ),
-	.d(gnd),
-	.asdata(\Palavra[0]~input_o ),
-	.clrn(vcc),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(vcc),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\registrador|FFP_ParaleloA|FFP_D|Q~q ),
-	.prn(vcc));
-// synopsys translate_off
-defparam \registrador|FFP_ParaleloA|FFP_D|Q .is_wysiwyg = "true";
-defparam \registrador|FFP_ParaleloA|FFP_D|Q .power_up = "low";
-// synopsys translate_on
-
 // Location: IOIBUF_X54_Y54_N29
 fiftyfivenm_io_ibuf \Palavra[2]~input (
 	.i(Palavra[2]),
@@ -758,7 +734,7 @@ defparam \Palavra[2]~input .listen_to_nsleep_signal = "false";
 defparam \Palavra[2]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: FF_X67_Y50_N27
+// Location: FF_X66_Y50_N29
 dffeas \registrador|FFP_ParaleloA|FFP_B|Q (
 	.clk(\PB0~input_o ),
 	.d(gnd),
@@ -777,6 +753,85 @@ defparam \registrador|FFP_ParaleloA|FFP_B|Q .is_wysiwyg = "true";
 defparam \registrador|FFP_ParaleloA|FFP_B|Q .power_up = "low";
 // synopsys translate_on
 
+// Location: IOIBUF_X51_Y54_N22
+fiftyfivenm_io_ibuf \Palavra[0]~input (
+	.i(Palavra[0]),
+	.ibar(gnd),
+	.nsleep(vcc),
+	.o(\Palavra[0]~input_o ));
+// synopsys translate_off
+defparam \Palavra[0]~input .bus_hold = "false";
+defparam \Palavra[0]~input .listen_to_nsleep_signal = "false";
+defparam \Palavra[0]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: FF_X66_Y50_N27
+dffeas \registrador|FFP_ParaleloA|FFP_D|Q (
+	.clk(\PB0~input_o ),
+	.d(gnd),
+	.asdata(\Palavra[0]~input_o ),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\registrador|FFP_ParaleloA|FFP_D|Q~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \registrador|FFP_ParaleloA|FFP_D|Q .is_wysiwyg = "true";
+defparam \registrador|FFP_ParaleloA|FFP_D|Q .power_up = "low";
+// synopsys translate_on
+
+// Location: IOIBUF_X54_Y54_N22
+fiftyfivenm_io_ibuf \Palavra[3]~input (
+	.i(Palavra[3]),
+	.ibar(gnd),
+	.nsleep(vcc),
+	.o(\Palavra[3]~input_o ));
+// synopsys translate_off
+defparam \Palavra[3]~input .bus_hold = "false";
+defparam \Palavra[3]~input .listen_to_nsleep_signal = "false";
+defparam \Palavra[3]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X66_Y50_N0
+fiftyfivenm_lcell_comb \registrador|FFP_ParaleloA|FFP_A|Q~feeder (
+// Equation(s):
+// \registrador|FFP_ParaleloA|FFP_A|Q~feeder_combout  = \Palavra[3]~input_o 
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(\Palavra[3]~input_o ),
+	.cin(gnd),
+	.combout(\registrador|FFP_ParaleloA|FFP_A|Q~feeder_combout ),
+	.cout());
+// synopsys translate_off
+defparam \registrador|FFP_ParaleloA|FFP_A|Q~feeder .lut_mask = 16'hFF00;
+defparam \registrador|FFP_ParaleloA|FFP_A|Q~feeder .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X66_Y50_N1
+dffeas \registrador|FFP_ParaleloA|FFP_A|Q (
+	.clk(\PB0~input_o ),
+	.d(\registrador|FFP_ParaleloA|FFP_A|Q~feeder_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\registrador|FFP_ParaleloA|FFP_A|Q~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \registrador|FFP_ParaleloA|FFP_A|Q .is_wysiwyg = "true";
+defparam \registrador|FFP_ParaleloA|FFP_A|Q .power_up = "low";
+// synopsys translate_on
+
 // Location: IOIBUF_X51_Y54_N1
 fiftyfivenm_io_ibuf \Palavra[1]~input (
 	.i(Palavra[1]),
@@ -789,7 +844,7 @@ defparam \Palavra[1]~input .listen_to_nsleep_signal = "false";
 defparam \Palavra[1]~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: FF_X67_Y50_N5
+// Location: FF_X66_Y50_N17
 dffeas \registrador|FFP_ParaleloA|FFP_C|Q (
 	.clk(\PB0~input_o ),
 	.d(gnd),
@@ -808,183 +863,133 @@ defparam \registrador|FFP_ParaleloA|FFP_C|Q .is_wysiwyg = "true";
 defparam \registrador|FFP_ParaleloA|FFP_C|Q .power_up = "low";
 // synopsys translate_on
 
-// Location: IOIBUF_X54_Y54_N22
-fiftyfivenm_io_ibuf \Palavra[3]~input (
-	.i(Palavra[3]),
-	.ibar(gnd),
-	.nsleep(vcc),
-	.o(\Palavra[3]~input_o ));
-// synopsys translate_off
-defparam \Palavra[3]~input .bus_hold = "false";
-defparam \Palavra[3]~input .listen_to_nsleep_signal = "false";
-defparam \Palavra[3]~input .simulate_z_as = "z";
-// synopsys translate_on
-
-// Location: FF_X67_Y50_N23
-dffeas \registrador|FFP_ParaleloA|FFP_A|Q (
-	.clk(\PB0~input_o ),
-	.d(gnd),
-	.asdata(\Palavra[3]~input_o ),
-	.clrn(vcc),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(vcc),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\registrador|FFP_ParaleloA|FFP_A|Q~q ),
-	.prn(vcc));
-// synopsys translate_off
-defparam \registrador|FFP_ParaleloA|FFP_A|Q .is_wysiwyg = "true";
-defparam \registrador|FFP_ParaleloA|FFP_A|Q .power_up = "low";
-// synopsys translate_on
-
-// Location: LCCOMB_X67_Y50_N4
+// Location: LCCOMB_X67_Y53_N12
 fiftyfivenm_lcell_comb \conversor0|a~0 (
 // Equation(s):
 // \conversor0|a~0_combout  = (\registrador|FFP_ParaleloA|FFP_B|Q~q  & ((\registrador|FFP_ParaleloA|FFP_C|Q~q ) # (\registrador|FFP_ParaleloA|FFP_D|Q~q  $ (\registrador|FFP_ParaleloA|FFP_A|Q~q )))) # (!\registrador|FFP_ParaleloA|FFP_B|Q~q  & 
-// ((\registrador|FFP_ParaleloA|FFP_C|Q~q  $ (\registrador|FFP_ParaleloA|FFP_A|Q~q )) # (!\registrador|FFP_ParaleloA|FFP_D|Q~q )))
+// ((\registrador|FFP_ParaleloA|FFP_A|Q~q  $ (\registrador|FFP_ParaleloA|FFP_C|Q~q )) # (!\registrador|FFP_ParaleloA|FFP_D|Q~q )))
 
-	.dataa(\registrador|FFP_ParaleloA|FFP_D|Q~q ),
-	.datab(\registrador|FFP_ParaleloA|FFP_B|Q~q ),
-	.datac(\registrador|FFP_ParaleloA|FFP_C|Q~q ),
-	.datad(\registrador|FFP_ParaleloA|FFP_A|Q~q ),
+	.dataa(\registrador|FFP_ParaleloA|FFP_B|Q~q ),
+	.datab(\registrador|FFP_ParaleloA|FFP_D|Q~q ),
+	.datac(\registrador|FFP_ParaleloA|FFP_A|Q~q ),
+	.datad(\registrador|FFP_ParaleloA|FFP_C|Q~q ),
 	.cin(gnd),
 	.combout(\conversor0|a~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \conversor0|a~0 .lut_mask = 16'hD7F9;
+defparam \conversor0|a~0 .lut_mask = 16'hBF79;
 defparam \conversor0|a~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X70_Y50_N24
+// Location: LCCOMB_X67_Y53_N6
 fiftyfivenm_lcell_comb \conversor0|b~0 (
 // Equation(s):
-// \conversor0|b~0_combout  = (\registrador|FFP_ParaleloA|FFP_A|Q~q  & ((\registrador|FFP_ParaleloA|FFP_D|Q~q  & (!\registrador|FFP_ParaleloA|FFP_C|Q~q )) # (!\registrador|FFP_ParaleloA|FFP_D|Q~q  & ((!\registrador|FFP_ParaleloA|FFP_B|Q~q ))))) # 
-// (!\registrador|FFP_ParaleloA|FFP_A|Q~q  & ((\registrador|FFP_ParaleloA|FFP_C|Q~q  $ (!\registrador|FFP_ParaleloA|FFP_D|Q~q )) # (!\registrador|FFP_ParaleloA|FFP_B|Q~q )))
+// \conversor0|b~0_combout  = (\registrador|FFP_ParaleloA|FFP_A|Q~q  & ((\registrador|FFP_ParaleloA|FFP_D|Q~q  & ((!\registrador|FFP_ParaleloA|FFP_C|Q~q ))) # (!\registrador|FFP_ParaleloA|FFP_D|Q~q  & (!\registrador|FFP_ParaleloA|FFP_B|Q~q )))) # 
+// (!\registrador|FFP_ParaleloA|FFP_A|Q~q  & ((\registrador|FFP_ParaleloA|FFP_D|Q~q  $ (!\registrador|FFP_ParaleloA|FFP_C|Q~q )) # (!\registrador|FFP_ParaleloA|FFP_B|Q~q )))
 
-	.dataa(\registrador|FFP_ParaleloA|FFP_A|Q~q ),
-	.datab(\registrador|FFP_ParaleloA|FFP_C|Q~q ),
-	.datac(\registrador|FFP_ParaleloA|FFP_D|Q~q ),
-	.datad(\registrador|FFP_ParaleloA|FFP_B|Q~q ),
+	.dataa(\registrador|FFP_ParaleloA|FFP_B|Q~q ),
+	.datab(\registrador|FFP_ParaleloA|FFP_D|Q~q ),
+	.datac(\registrador|FFP_ParaleloA|FFP_A|Q~q ),
+	.datad(\registrador|FFP_ParaleloA|FFP_C|Q~q ),
 	.cin(gnd),
 	.combout(\conversor0|b~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \conversor0|b~0 .lut_mask = 16'h617F;
+defparam \conversor0|b~0 .lut_mask = 16'h1DD7;
 defparam \conversor0|b~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X70_Y50_N22
+// Location: LCCOMB_X67_Y53_N0
 fiftyfivenm_lcell_comb \conversor0|c~0 (
 // Equation(s):
-// \conversor0|c~0_combout  = (\registrador|FFP_ParaleloA|FFP_A|Q~q  & (((!\registrador|FFP_ParaleloA|FFP_C|Q~q  & \registrador|FFP_ParaleloA|FFP_D|Q~q )) # (!\registrador|FFP_ParaleloA|FFP_B|Q~q ))) # (!\registrador|FFP_ParaleloA|FFP_A|Q~q  & 
-// (((\registrador|FFP_ParaleloA|FFP_D|Q~q ) # (\registrador|FFP_ParaleloA|FFP_B|Q~q )) # (!\registrador|FFP_ParaleloA|FFP_C|Q~q )))
+// \conversor0|c~0_combout  = (\registrador|FFP_ParaleloA|FFP_B|Q~q  & (((\registrador|FFP_ParaleloA|FFP_D|Q~q  & !\registrador|FFP_ParaleloA|FFP_C|Q~q )) # (!\registrador|FFP_ParaleloA|FFP_A|Q~q ))) # (!\registrador|FFP_ParaleloA|FFP_B|Q~q  & 
+// ((\registrador|FFP_ParaleloA|FFP_D|Q~q ) # ((\registrador|FFP_ParaleloA|FFP_A|Q~q ) # (!\registrador|FFP_ParaleloA|FFP_C|Q~q ))))
 
-	.dataa(\registrador|FFP_ParaleloA|FFP_A|Q~q ),
-	.datab(\registrador|FFP_ParaleloA|FFP_C|Q~q ),
-	.datac(\registrador|FFP_ParaleloA|FFP_D|Q~q ),
-	.datad(\registrador|FFP_ParaleloA|FFP_B|Q~q ),
+	.dataa(\registrador|FFP_ParaleloA|FFP_B|Q~q ),
+	.datab(\registrador|FFP_ParaleloA|FFP_D|Q~q ),
+	.datac(\registrador|FFP_ParaleloA|FFP_A|Q~q ),
+	.datad(\registrador|FFP_ParaleloA|FFP_C|Q~q ),
 	.cin(gnd),
 	.combout(\conversor0|c~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \conversor0|c~0 .lut_mask = 16'h75FB;
+defparam \conversor0|c~0 .lut_mask = 16'h5EDF;
 defparam \conversor0|c~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X70_Y50_N0
+// Location: LCCOMB_X66_Y50_N20
 fiftyfivenm_lcell_comb \conversor0|d~0 (
 // Equation(s):
-// \conversor0|d~0_combout  = (\registrador|FFP_ParaleloA|FFP_C|Q~q  & ((\registrador|FFP_ParaleloA|FFP_D|Q~q  & ((!\registrador|FFP_ParaleloA|FFP_B|Q~q ))) # (!\registrador|FFP_ParaleloA|FFP_D|Q~q  & ((\registrador|FFP_ParaleloA|FFP_B|Q~q ) # 
-// (!\registrador|FFP_ParaleloA|FFP_A|Q~q ))))) # (!\registrador|FFP_ParaleloA|FFP_C|Q~q  & ((\registrador|FFP_ParaleloA|FFP_A|Q~q ) # (\registrador|FFP_ParaleloA|FFP_D|Q~q  $ (!\registrador|FFP_ParaleloA|FFP_B|Q~q ))))
+// \conversor0|d~0_combout  = (\registrador|FFP_ParaleloA|FFP_C|Q~q  & ((\registrador|FFP_ParaleloA|FFP_B|Q~q  & (!\registrador|FFP_ParaleloA|FFP_D|Q~q )) # (!\registrador|FFP_ParaleloA|FFP_B|Q~q  & ((\registrador|FFP_ParaleloA|FFP_D|Q~q ) # 
+// (!\registrador|FFP_ParaleloA|FFP_A|Q~q ))))) # (!\registrador|FFP_ParaleloA|FFP_C|Q~q  & ((\registrador|FFP_ParaleloA|FFP_A|Q~q ) # (\registrador|FFP_ParaleloA|FFP_B|Q~q  $ (!\registrador|FFP_ParaleloA|FFP_D|Q~q ))))
 
-	.dataa(\registrador|FFP_ParaleloA|FFP_A|Q~q ),
-	.datab(\registrador|FFP_ParaleloA|FFP_C|Q~q ),
+	.dataa(\registrador|FFP_ParaleloA|FFP_C|Q~q ),
+	.datab(\registrador|FFP_ParaleloA|FFP_B|Q~q ),
 	.datac(\registrador|FFP_ParaleloA|FFP_D|Q~q ),
-	.datad(\registrador|FFP_ParaleloA|FFP_B|Q~q ),
+	.datad(\registrador|FFP_ParaleloA|FFP_A|Q~q ),
 	.cin(gnd),
 	.combout(\conversor0|d~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \conversor0|d~0 .lut_mask = 16'h3EE7;
+defparam \conversor0|d~0 .lut_mask = 16'h7D6B;
 defparam \conversor0|d~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X70_Y50_N6
+// Location: LCCOMB_X67_Y53_N10
 fiftyfivenm_lcell_comb \conversor0|e~0 (
 // Equation(s):
-// \conversor0|e~0_combout  = (\registrador|FFP_ParaleloA|FFP_C|Q~q  & ((\registrador|FFP_ParaleloA|FFP_A|Q~q ) # ((!\registrador|FFP_ParaleloA|FFP_D|Q~q )))) # (!\registrador|FFP_ParaleloA|FFP_C|Q~q  & ((\registrador|FFP_ParaleloA|FFP_B|Q~q  & 
-// (\registrador|FFP_ParaleloA|FFP_A|Q~q )) # (!\registrador|FFP_ParaleloA|FFP_B|Q~q  & ((!\registrador|FFP_ParaleloA|FFP_D|Q~q )))))
+// \conversor0|e~0_combout  = (\registrador|FFP_ParaleloA|FFP_C|Q~q  & (((\registrador|FFP_ParaleloA|FFP_A|Q~q ) # (!\registrador|FFP_ParaleloA|FFP_D|Q~q )))) # (!\registrador|FFP_ParaleloA|FFP_C|Q~q  & ((\registrador|FFP_ParaleloA|FFP_B|Q~q  & 
+// ((\registrador|FFP_ParaleloA|FFP_A|Q~q ))) # (!\registrador|FFP_ParaleloA|FFP_B|Q~q  & (!\registrador|FFP_ParaleloA|FFP_D|Q~q ))))
 
-	.dataa(\registrador|FFP_ParaleloA|FFP_A|Q~q ),
-	.datab(\registrador|FFP_ParaleloA|FFP_C|Q~q ),
-	.datac(\registrador|FFP_ParaleloA|FFP_D|Q~q ),
-	.datad(\registrador|FFP_ParaleloA|FFP_B|Q~q ),
+	.dataa(\registrador|FFP_ParaleloA|FFP_B|Q~q ),
+	.datab(\registrador|FFP_ParaleloA|FFP_D|Q~q ),
+	.datac(\registrador|FFP_ParaleloA|FFP_A|Q~q ),
+	.datad(\registrador|FFP_ParaleloA|FFP_C|Q~q ),
 	.cin(gnd),
 	.combout(\conversor0|e~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \conversor0|e~0 .lut_mask = 16'hAE8F;
+defparam \conversor0|e~0 .lut_mask = 16'hF3B1;
 defparam \conversor0|e~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X70_Y50_N12
+// Location: LCCOMB_X67_Y53_N28
 fiftyfivenm_lcell_comb \conversor0|f~0 (
 // Equation(s):
-// \conversor0|f~0_combout  = (\registrador|FFP_ParaleloA|FFP_C|Q~q  & ((\registrador|FFP_ParaleloA|FFP_A|Q~q ) # ((!\registrador|FFP_ParaleloA|FFP_D|Q~q  & \registrador|FFP_ParaleloA|FFP_B|Q~q )))) # (!\registrador|FFP_ParaleloA|FFP_C|Q~q  & 
-// ((\registrador|FFP_ParaleloA|FFP_A|Q~q  $ (\registrador|FFP_ParaleloA|FFP_B|Q~q )) # (!\registrador|FFP_ParaleloA|FFP_D|Q~q )))
+// \conversor0|f~0_combout  = (\registrador|FFP_ParaleloA|FFP_B|Q~q  & ((\registrador|FFP_ParaleloA|FFP_A|Q~q  $ (!\registrador|FFP_ParaleloA|FFP_C|Q~q )) # (!\registrador|FFP_ParaleloA|FFP_D|Q~q ))) # (!\registrador|FFP_ParaleloA|FFP_B|Q~q  & 
+// ((\registrador|FFP_ParaleloA|FFP_A|Q~q ) # ((!\registrador|FFP_ParaleloA|FFP_D|Q~q  & !\registrador|FFP_ParaleloA|FFP_C|Q~q ))))
 
-	.dataa(\registrador|FFP_ParaleloA|FFP_A|Q~q ),
-	.datab(\registrador|FFP_ParaleloA|FFP_C|Q~q ),
-	.datac(\registrador|FFP_ParaleloA|FFP_D|Q~q ),
-	.datad(\registrador|FFP_ParaleloA|FFP_B|Q~q ),
+	.dataa(\registrador|FFP_ParaleloA|FFP_B|Q~q ),
+	.datab(\registrador|FFP_ParaleloA|FFP_D|Q~q ),
+	.datac(\registrador|FFP_ParaleloA|FFP_A|Q~q ),
+	.datad(\registrador|FFP_ParaleloA|FFP_C|Q~q ),
 	.cin(gnd),
 	.combout(\conversor0|f~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \conversor0|f~0 .lut_mask = 16'h9FAB;
+defparam \conversor0|f~0 .lut_mask = 16'hF27B;
 defparam \conversor0|f~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X70_Y50_N14
+// Location: LCCOMB_X67_Y53_N26
 fiftyfivenm_lcell_comb \conversor0|g~0 (
 // Equation(s):
-// \conversor0|g~0_combout  = (\registrador|FFP_ParaleloA|FFP_D|Q~q  & ((\registrador|FFP_ParaleloA|FFP_A|Q~q ) # (\registrador|FFP_ParaleloA|FFP_C|Q~q  $ (\registrador|FFP_ParaleloA|FFP_B|Q~q )))) # (!\registrador|FFP_ParaleloA|FFP_D|Q~q  & 
-// ((\registrador|FFP_ParaleloA|FFP_C|Q~q ) # (\registrador|FFP_ParaleloA|FFP_A|Q~q  $ (\registrador|FFP_ParaleloA|FFP_B|Q~q ))))
+// \conversor0|g~0_combout  = (\registrador|FFP_ParaleloA|FFP_D|Q~q  & ((\registrador|FFP_ParaleloA|FFP_A|Q~q ) # (\registrador|FFP_ParaleloA|FFP_B|Q~q  $ (\registrador|FFP_ParaleloA|FFP_C|Q~q )))) # (!\registrador|FFP_ParaleloA|FFP_D|Q~q  & 
+// ((\registrador|FFP_ParaleloA|FFP_C|Q~q ) # (\registrador|FFP_ParaleloA|FFP_B|Q~q  $ (\registrador|FFP_ParaleloA|FFP_A|Q~q ))))
 
-	.dataa(\registrador|FFP_ParaleloA|FFP_A|Q~q ),
-	.datab(\registrador|FFP_ParaleloA|FFP_C|Q~q ),
-	.datac(\registrador|FFP_ParaleloA|FFP_D|Q~q ),
-	.datad(\registrador|FFP_ParaleloA|FFP_B|Q~q ),
+	.dataa(\registrador|FFP_ParaleloA|FFP_B|Q~q ),
+	.datab(\registrador|FFP_ParaleloA|FFP_D|Q~q ),
+	.datac(\registrador|FFP_ParaleloA|FFP_A|Q~q ),
+	.datad(\registrador|FFP_ParaleloA|FFP_C|Q~q ),
 	.cin(gnd),
 	.combout(\conversor0|g~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \conversor0|g~0 .lut_mask = 16'hBDEE;
+defparam \conversor0|g~0 .lut_mask = 16'hF7DA;
 defparam \conversor0|g~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: FF_X67_Y50_N19
-dffeas \registrador|FFP_ParaleloB|FFP_B|Q (
-	.clk(\PB0~input_o ),
-	.d(gnd),
-	.asdata(\registrador|FFP_ParaleloA|FFP_B|Q~q ),
-	.clrn(vcc),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(vcc),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\registrador|FFP_ParaleloB|FFP_B|Q~q ),
-	.prn(vcc));
-// synopsys translate_off
-defparam \registrador|FFP_ParaleloB|FFP_B|Q .is_wysiwyg = "true";
-defparam \registrador|FFP_ParaleloB|FFP_B|Q .power_up = "low";
-// synopsys translate_on
-
-// Location: FF_X67_Y50_N31
+// Location: FF_X66_Y50_N13
 dffeas \registrador|FFP_ParaleloB|FFP_C|Q (
 	.clk(\PB0~input_o ),
 	.d(gnd),
@@ -1003,26 +1008,7 @@ defparam \registrador|FFP_ParaleloB|FFP_C|Q .is_wysiwyg = "true";
 defparam \registrador|FFP_ParaleloB|FFP_C|Q .power_up = "low";
 // synopsys translate_on
 
-// Location: FF_X67_Y50_N15
-dffeas \registrador|FFP_ParaleloB|FFP_A|Q (
-	.clk(\PB0~input_o ),
-	.d(gnd),
-	.asdata(\registrador|FFP_ParaleloA|FFP_A|Q~q ),
-	.clrn(vcc),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(vcc),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\registrador|FFP_ParaleloB|FFP_A|Q~q ),
-	.prn(vcc));
-// synopsys translate_off
-defparam \registrador|FFP_ParaleloB|FFP_A|Q .is_wysiwyg = "true";
-defparam \registrador|FFP_ParaleloB|FFP_A|Q .power_up = "low";
-// synopsys translate_on
-
-// Location: FF_X67_Y50_N13
+// Location: FF_X66_Y50_N21
 dffeas \registrador|FFP_ParaleloB|FFP_D|Q (
 	.clk(\PB0~input_o ),
 	.d(gnd),
@@ -1041,39 +1027,77 @@ defparam \registrador|FFP_ParaleloB|FFP_D|Q .is_wysiwyg = "true";
 defparam \registrador|FFP_ParaleloB|FFP_D|Q .power_up = "low";
 // synopsys translate_on
 
-// Location: LCCOMB_X67_Y52_N28
+// Location: FF_X66_Y50_N23
+dffeas \registrador|FFP_ParaleloB|FFP_B|Q (
+	.clk(\PB0~input_o ),
+	.d(gnd),
+	.asdata(\registrador|FFP_ParaleloA|FFP_B|Q~q ),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\registrador|FFP_ParaleloB|FFP_B|Q~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \registrador|FFP_ParaleloB|FFP_B|Q .is_wysiwyg = "true";
+defparam \registrador|FFP_ParaleloB|FFP_B|Q .power_up = "low";
+// synopsys translate_on
+
+// Location: FF_X66_Y50_N5
+dffeas \registrador|FFP_ParaleloB|FFP_A|Q (
+	.clk(\PB0~input_o ),
+	.d(gnd),
+	.asdata(\registrador|FFP_ParaleloA|FFP_A|Q~q ),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\registrador|FFP_ParaleloB|FFP_A|Q~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \registrador|FFP_ParaleloB|FFP_A|Q .is_wysiwyg = "true";
+defparam \registrador|FFP_ParaleloB|FFP_A|Q .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X67_Y50_N0
 fiftyfivenm_lcell_comb \conversor1|a~0 (
 // Equation(s):
-// \conversor1|a~0_combout  = (\registrador|FFP_ParaleloB|FFP_B|Q~q  & ((\registrador|FFP_ParaleloB|FFP_C|Q~q ) # (\registrador|FFP_ParaleloB|FFP_A|Q~q  $ (\registrador|FFP_ParaleloB|FFP_D|Q~q )))) # (!\registrador|FFP_ParaleloB|FFP_B|Q~q  & 
+// \conversor1|a~0_combout  = (\registrador|FFP_ParaleloB|FFP_B|Q~q  & ((\registrador|FFP_ParaleloB|FFP_C|Q~q ) # (\registrador|FFP_ParaleloB|FFP_D|Q~q  $ (\registrador|FFP_ParaleloB|FFP_A|Q~q )))) # (!\registrador|FFP_ParaleloB|FFP_B|Q~q  & 
 // ((\registrador|FFP_ParaleloB|FFP_C|Q~q  $ (\registrador|FFP_ParaleloB|FFP_A|Q~q )) # (!\registrador|FFP_ParaleloB|FFP_D|Q~q )))
 
-	.dataa(\registrador|FFP_ParaleloB|FFP_B|Q~q ),
-	.datab(\registrador|FFP_ParaleloB|FFP_C|Q~q ),
-	.datac(\registrador|FFP_ParaleloB|FFP_A|Q~q ),
-	.datad(\registrador|FFP_ParaleloB|FFP_D|Q~q ),
+	.dataa(\registrador|FFP_ParaleloB|FFP_C|Q~q ),
+	.datab(\registrador|FFP_ParaleloB|FFP_D|Q~q ),
+	.datac(\registrador|FFP_ParaleloB|FFP_B|Q~q ),
+	.datad(\registrador|FFP_ParaleloB|FFP_A|Q~q ),
 	.cin(gnd),
 	.combout(\conversor1|a~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \conversor1|a~0 .lut_mask = 16'h9EFD;
+defparam \conversor1|a~0 .lut_mask = 16'hB7EB;
 defparam \conversor1|a~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X67_Y52_N22
+// Location: LCCOMB_X67_Y50_N30
 fiftyfivenm_lcell_comb \conversor1|b~0 (
 // Equation(s):
 // \conversor1|b~0_combout  = (\registrador|FFP_ParaleloB|FFP_C|Q~q  & ((\registrador|FFP_ParaleloB|FFP_D|Q~q  & ((!\registrador|FFP_ParaleloB|FFP_A|Q~q ))) # (!\registrador|FFP_ParaleloB|FFP_D|Q~q  & (!\registrador|FFP_ParaleloB|FFP_B|Q~q )))) # 
-// (!\registrador|FFP_ParaleloB|FFP_C|Q~q  & ((\registrador|FFP_ParaleloB|FFP_A|Q~q  $ (!\registrador|FFP_ParaleloB|FFP_D|Q~q )) # (!\registrador|FFP_ParaleloB|FFP_B|Q~q )))
+// (!\registrador|FFP_ParaleloB|FFP_C|Q~q  & ((\registrador|FFP_ParaleloB|FFP_D|Q~q  $ (!\registrador|FFP_ParaleloB|FFP_A|Q~q )) # (!\registrador|FFP_ParaleloB|FFP_B|Q~q )))
 
-	.dataa(\registrador|FFP_ParaleloB|FFP_B|Q~q ),
-	.datab(\registrador|FFP_ParaleloB|FFP_C|Q~q ),
-	.datac(\registrador|FFP_ParaleloB|FFP_A|Q~q ),
-	.datad(\registrador|FFP_ParaleloB|FFP_D|Q~q ),
+	.dataa(\registrador|FFP_ParaleloB|FFP_C|Q~q ),
+	.datab(\registrador|FFP_ParaleloB|FFP_D|Q~q ),
+	.datac(\registrador|FFP_ParaleloB|FFP_B|Q~q ),
+	.datad(\registrador|FFP_ParaleloB|FFP_A|Q~q ),
 	.cin(gnd),
 	.combout(\conversor1|b~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \conversor1|b~0 .lut_mask = 16'h3D57;
+defparam \conversor1|b~0 .lut_mask = 16'h479F;
 defparam \conversor1|b~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
@@ -1083,91 +1107,91 @@ fiftyfivenm_lcell_comb \conversor1|c~0 (
 // \conversor1|c~0_combout  = (\registrador|FFP_ParaleloB|FFP_B|Q~q  & (((!\registrador|FFP_ParaleloB|FFP_C|Q~q  & \registrador|FFP_ParaleloB|FFP_D|Q~q )) # (!\registrador|FFP_ParaleloB|FFP_A|Q~q ))) # (!\registrador|FFP_ParaleloB|FFP_B|Q~q  & 
 // (((\registrador|FFP_ParaleloB|FFP_D|Q~q ) # (\registrador|FFP_ParaleloB|FFP_A|Q~q )) # (!\registrador|FFP_ParaleloB|FFP_C|Q~q )))
 
-	.dataa(\registrador|FFP_ParaleloB|FFP_B|Q~q ),
-	.datab(\registrador|FFP_ParaleloB|FFP_C|Q~q ),
-	.datac(\registrador|FFP_ParaleloB|FFP_D|Q~q ),
+	.dataa(\registrador|FFP_ParaleloB|FFP_C|Q~q ),
+	.datab(\registrador|FFP_ParaleloB|FFP_D|Q~q ),
+	.datac(\registrador|FFP_ParaleloB|FFP_B|Q~q ),
 	.datad(\registrador|FFP_ParaleloB|FFP_A|Q~q ),
 	.cin(gnd),
 	.combout(\conversor1|c~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \conversor1|c~0 .lut_mask = 16'h75FB;
+defparam \conversor1|c~0 .lut_mask = 16'h4FFD;
 defparam \conversor1|c~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X67_Y52_N16
+// Location: LCCOMB_X66_Y50_N22
 fiftyfivenm_lcell_comb \conversor1|d~0 (
 // Equation(s):
-// \conversor1|d~0_combout  = (\registrador|FFP_ParaleloB|FFP_C|Q~q  & ((\registrador|FFP_ParaleloB|FFP_B|Q~q  & ((!\registrador|FFP_ParaleloB|FFP_D|Q~q ))) # (!\registrador|FFP_ParaleloB|FFP_B|Q~q  & ((\registrador|FFP_ParaleloB|FFP_D|Q~q ) # 
-// (!\registrador|FFP_ParaleloB|FFP_A|Q~q ))))) # (!\registrador|FFP_ParaleloB|FFP_C|Q~q  & ((\registrador|FFP_ParaleloB|FFP_A|Q~q ) # (\registrador|FFP_ParaleloB|FFP_B|Q~q  $ (!\registrador|FFP_ParaleloB|FFP_D|Q~q ))))
+// \conversor1|d~0_combout  = (\registrador|FFP_ParaleloB|FFP_C|Q~q  & ((\registrador|FFP_ParaleloB|FFP_D|Q~q  & ((!\registrador|FFP_ParaleloB|FFP_B|Q~q ))) # (!\registrador|FFP_ParaleloB|FFP_D|Q~q  & ((\registrador|FFP_ParaleloB|FFP_B|Q~q ) # 
+// (!\registrador|FFP_ParaleloB|FFP_A|Q~q ))))) # (!\registrador|FFP_ParaleloB|FFP_C|Q~q  & ((\registrador|FFP_ParaleloB|FFP_A|Q~q ) # (\registrador|FFP_ParaleloB|FFP_D|Q~q  $ (!\registrador|FFP_ParaleloB|FFP_B|Q~q ))))
 
-	.dataa(\registrador|FFP_ParaleloB|FFP_B|Q~q ),
-	.datab(\registrador|FFP_ParaleloB|FFP_C|Q~q ),
-	.datac(\registrador|FFP_ParaleloB|FFP_A|Q~q ),
-	.datad(\registrador|FFP_ParaleloB|FFP_D|Q~q ),
+	.dataa(\registrador|FFP_ParaleloB|FFP_A|Q~q ),
+	.datab(\registrador|FFP_ParaleloB|FFP_D|Q~q ),
+	.datac(\registrador|FFP_ParaleloB|FFP_B|Q~q ),
+	.datad(\registrador|FFP_ParaleloB|FFP_C|Q~q ),
 	.cin(gnd),
 	.combout(\conversor1|d~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \conversor1|d~0 .lut_mask = 16'h76BD;
+defparam \conversor1|d~0 .lut_mask = 16'h3DEB;
 defparam \conversor1|d~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X67_Y52_N2
+// Location: LCCOMB_X66_Y50_N12
 fiftyfivenm_lcell_comb \conversor1|e~0 (
 // Equation(s):
-// \conversor1|e~0_combout  = (\registrador|FFP_ParaleloB|FFP_C|Q~q  & (((\registrador|FFP_ParaleloB|FFP_A|Q~q ) # (!\registrador|FFP_ParaleloB|FFP_D|Q~q )))) # (!\registrador|FFP_ParaleloB|FFP_C|Q~q  & ((\registrador|FFP_ParaleloB|FFP_B|Q~q  & 
-// (\registrador|FFP_ParaleloB|FFP_A|Q~q )) # (!\registrador|FFP_ParaleloB|FFP_B|Q~q  & ((!\registrador|FFP_ParaleloB|FFP_D|Q~q )))))
+// \conversor1|e~0_combout  = (\registrador|FFP_ParaleloB|FFP_C|Q~q  & (((\registrador|FFP_ParaleloB|FFP_A|Q~q )) # (!\registrador|FFP_ParaleloB|FFP_D|Q~q ))) # (!\registrador|FFP_ParaleloB|FFP_C|Q~q  & ((\registrador|FFP_ParaleloB|FFP_B|Q~q  & 
+// ((\registrador|FFP_ParaleloB|FFP_A|Q~q ))) # (!\registrador|FFP_ParaleloB|FFP_B|Q~q  & (!\registrador|FFP_ParaleloB|FFP_D|Q~q ))))
 
-	.dataa(\registrador|FFP_ParaleloB|FFP_B|Q~q ),
-	.datab(\registrador|FFP_ParaleloB|FFP_C|Q~q ),
-	.datac(\registrador|FFP_ParaleloB|FFP_A|Q~q ),
-	.datad(\registrador|FFP_ParaleloB|FFP_D|Q~q ),
+	.dataa(\registrador|FFP_ParaleloB|FFP_D|Q~q ),
+	.datab(\registrador|FFP_ParaleloB|FFP_A|Q~q ),
+	.datac(\registrador|FFP_ParaleloB|FFP_C|Q~q ),
+	.datad(\registrador|FFP_ParaleloB|FFP_B|Q~q ),
 	.cin(gnd),
 	.combout(\conversor1|e~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \conversor1|e~0 .lut_mask = 16'hE0FD;
+defparam \conversor1|e~0 .lut_mask = 16'hDCD5;
 defparam \conversor1|e~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X67_Y52_N12
+// Location: LCCOMB_X67_Y50_N2
 fiftyfivenm_lcell_comb \conversor1|f~0 (
 // Equation(s):
-// \conversor1|f~0_combout  = (\registrador|FFP_ParaleloB|FFP_B|Q~q  & ((\registrador|FFP_ParaleloB|FFP_C|Q~q  $ (!\registrador|FFP_ParaleloB|FFP_A|Q~q )) # (!\registrador|FFP_ParaleloB|FFP_D|Q~q ))) # (!\registrador|FFP_ParaleloB|FFP_B|Q~q  & 
-// ((\registrador|FFP_ParaleloB|FFP_A|Q~q ) # ((!\registrador|FFP_ParaleloB|FFP_C|Q~q  & !\registrador|FFP_ParaleloB|FFP_D|Q~q ))))
+// \conversor1|f~0_combout  = (\registrador|FFP_ParaleloB|FFP_C|Q~q  & ((\registrador|FFP_ParaleloB|FFP_A|Q~q ) # ((!\registrador|FFP_ParaleloB|FFP_D|Q~q  & \registrador|FFP_ParaleloB|FFP_B|Q~q )))) # (!\registrador|FFP_ParaleloB|FFP_C|Q~q  & 
+// ((\registrador|FFP_ParaleloB|FFP_B|Q~q  $ (\registrador|FFP_ParaleloB|FFP_A|Q~q )) # (!\registrador|FFP_ParaleloB|FFP_D|Q~q )))
 
-	.dataa(\registrador|FFP_ParaleloB|FFP_B|Q~q ),
-	.datab(\registrador|FFP_ParaleloB|FFP_C|Q~q ),
-	.datac(\registrador|FFP_ParaleloB|FFP_A|Q~q ),
-	.datad(\registrador|FFP_ParaleloB|FFP_D|Q~q ),
+	.dataa(\registrador|FFP_ParaleloB|FFP_C|Q~q ),
+	.datab(\registrador|FFP_ParaleloB|FFP_D|Q~q ),
+	.datac(\registrador|FFP_ParaleloB|FFP_B|Q~q ),
+	.datad(\registrador|FFP_ParaleloB|FFP_A|Q~q ),
 	.cin(gnd),
 	.combout(\conversor1|f~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \conversor1|f~0 .lut_mask = 16'hD2FB;
+defparam \conversor1|f~0 .lut_mask = 16'hBF71;
 defparam \conversor1|f~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X67_Y52_N10
+// Location: LCCOMB_X67_Y50_N4
 fiftyfivenm_lcell_comb \conversor1|g~0 (
 // Equation(s):
-// \conversor1|g~0_combout  = (\registrador|FFP_ParaleloB|FFP_D|Q~q  & ((\registrador|FFP_ParaleloB|FFP_A|Q~q ) # (\registrador|FFP_ParaleloB|FFP_B|Q~q  $ (\registrador|FFP_ParaleloB|FFP_C|Q~q )))) # (!\registrador|FFP_ParaleloB|FFP_D|Q~q  & 
+// \conversor1|g~0_combout  = (\registrador|FFP_ParaleloB|FFP_D|Q~q  & ((\registrador|FFP_ParaleloB|FFP_A|Q~q ) # (\registrador|FFP_ParaleloB|FFP_C|Q~q  $ (\registrador|FFP_ParaleloB|FFP_B|Q~q )))) # (!\registrador|FFP_ParaleloB|FFP_D|Q~q  & 
 // ((\registrador|FFP_ParaleloB|FFP_C|Q~q ) # (\registrador|FFP_ParaleloB|FFP_B|Q~q  $ (\registrador|FFP_ParaleloB|FFP_A|Q~q ))))
 
-	.dataa(\registrador|FFP_ParaleloB|FFP_B|Q~q ),
-	.datab(\registrador|FFP_ParaleloB|FFP_C|Q~q ),
-	.datac(\registrador|FFP_ParaleloB|FFP_A|Q~q ),
-	.datad(\registrador|FFP_ParaleloB|FFP_D|Q~q ),
+	.dataa(\registrador|FFP_ParaleloB|FFP_C|Q~q ),
+	.datab(\registrador|FFP_ParaleloB|FFP_D|Q~q ),
+	.datac(\registrador|FFP_ParaleloB|FFP_B|Q~q ),
+	.datad(\registrador|FFP_ParaleloB|FFP_A|Q~q ),
 	.cin(gnd),
 	.combout(\conversor1|g~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \conversor1|g~0 .lut_mask = 16'hF6DE;
+defparam \conversor1|g~0 .lut_mask = 16'hEF7A;
 defparam \conversor1|g~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: FF_X67_Y50_N7
+// Location: FF_X66_Y50_N11
 dffeas \registrador|FFP_ParaleloC|FFP_A|Q (
 	.clk(\PB0~input_o ),
 	.d(gnd),
@@ -1186,43 +1210,7 @@ defparam \registrador|FFP_ParaleloC|FFP_A|Q .is_wysiwyg = "true";
 defparam \registrador|FFP_ParaleloC|FFP_A|Q .power_up = "low";
 // synopsys translate_on
 
-// Location: LCCOMB_X67_Y52_N30
-fiftyfivenm_lcell_comb \registrador|FFP_ParaleloC|FFP_B|Q~feeder (
-// Equation(s):
-// \registrador|FFP_ParaleloC|FFP_B|Q~feeder_combout  = \registrador|FFP_ParaleloB|FFP_B|Q~q 
-
-	.dataa(gnd),
-	.datab(gnd),
-	.datac(gnd),
-	.datad(\registrador|FFP_ParaleloB|FFP_B|Q~q ),
-	.cin(gnd),
-	.combout(\registrador|FFP_ParaleloC|FFP_B|Q~feeder_combout ),
-	.cout());
-// synopsys translate_off
-defparam \registrador|FFP_ParaleloC|FFP_B|Q~feeder .lut_mask = 16'hFF00;
-defparam \registrador|FFP_ParaleloC|FFP_B|Q~feeder .sum_lutc_input = "datac";
-// synopsys translate_on
-
-// Location: FF_X67_Y52_N31
-dffeas \registrador|FFP_ParaleloC|FFP_B|Q (
-	.clk(\PB0~input_o ),
-	.d(\registrador|FFP_ParaleloC|FFP_B|Q~feeder_combout ),
-	.asdata(vcc),
-	.clrn(vcc),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\registrador|FFP_ParaleloC|FFP_B|Q~q ),
-	.prn(vcc));
-// synopsys translate_off
-defparam \registrador|FFP_ParaleloC|FFP_B|Q .is_wysiwyg = "true";
-defparam \registrador|FFP_ParaleloC|FFP_B|Q .power_up = "low";
-// synopsys translate_on
-
-// Location: LCCOMB_X67_Y52_N4
+// Location: LCCOMB_X67_Y50_N18
 fiftyfivenm_lcell_comb \registrador|FFP_ParaleloC|FFP_C|Q~feeder (
 // Equation(s):
 // \registrador|FFP_ParaleloC|FFP_C|Q~feeder_combout  = \registrador|FFP_ParaleloB|FFP_C|Q~q 
@@ -1239,7 +1227,7 @@ defparam \registrador|FFP_ParaleloC|FFP_C|Q~feeder .lut_mask = 16'hFF00;
 defparam \registrador|FFP_ParaleloC|FFP_C|Q~feeder .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: FF_X67_Y52_N5
+// Location: FF_X67_Y50_N19
 dffeas \registrador|FFP_ParaleloC|FFP_C|Q (
 	.clk(\PB0~input_o ),
 	.d(\registrador|FFP_ParaleloC|FFP_C|Q~feeder_combout ),
@@ -1258,7 +1246,26 @@ defparam \registrador|FFP_ParaleloC|FFP_C|Q .is_wysiwyg = "true";
 defparam \registrador|FFP_ParaleloC|FFP_C|Q .power_up = "low";
 // synopsys translate_on
 
-// Location: LCCOMB_X67_Y52_N20
+// Location: FF_X66_Y50_N15
+dffeas \registrador|FFP_ParaleloC|FFP_B|Q (
+	.clk(\PB0~input_o ),
+	.d(gnd),
+	.asdata(\registrador|FFP_ParaleloB|FFP_B|Q~q ),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\registrador|FFP_ParaleloC|FFP_B|Q~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \registrador|FFP_ParaleloC|FFP_B|Q .is_wysiwyg = "true";
+defparam \registrador|FFP_ParaleloC|FFP_B|Q .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X67_Y50_N20
 fiftyfivenm_lcell_comb \registrador|FFP_ParaleloC|FFP_D|Q~feeder (
 // Equation(s):
 // \registrador|FFP_ParaleloC|FFP_D|Q~feeder_combout  = \registrador|FFP_ParaleloB|FFP_D|Q~q 
@@ -1275,7 +1282,7 @@ defparam \registrador|FFP_ParaleloC|FFP_D|Q~feeder .lut_mask = 16'hFF00;
 defparam \registrador|FFP_ParaleloC|FFP_D|Q~feeder .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: FF_X67_Y52_N21
+// Location: FF_X67_Y50_N21
 dffeas \registrador|FFP_ParaleloC|FFP_D|Q (
 	.clk(\PB0~input_o ),
 	.d(\registrador|FFP_ParaleloC|FFP_D|Q~feeder_combout ),
@@ -1294,129 +1301,129 @@ defparam \registrador|FFP_ParaleloC|FFP_D|Q .is_wysiwyg = "true";
 defparam \registrador|FFP_ParaleloC|FFP_D|Q .power_up = "low";
 // synopsys translate_on
 
-// Location: LCCOMB_X67_Y50_N24
+// Location: LCCOMB_X67_Y50_N10
 fiftyfivenm_lcell_comb \conversor2|a~0 (
 // Equation(s):
-// \conversor2|a~0_combout  = (\registrador|FFP_ParaleloC|FFP_A|Q~q  & ((\registrador|FFP_ParaleloC|FFP_B|Q~q  $ (!\registrador|FFP_ParaleloC|FFP_C|Q~q )) # (!\registrador|FFP_ParaleloC|FFP_D|Q~q ))) # (!\registrador|FFP_ParaleloC|FFP_A|Q~q  & 
+// \conversor2|a~0_combout  = (\registrador|FFP_ParaleloC|FFP_A|Q~q  & ((\registrador|FFP_ParaleloC|FFP_C|Q~q  $ (!\registrador|FFP_ParaleloC|FFP_B|Q~q )) # (!\registrador|FFP_ParaleloC|FFP_D|Q~q ))) # (!\registrador|FFP_ParaleloC|FFP_A|Q~q  & 
 // ((\registrador|FFP_ParaleloC|FFP_C|Q~q ) # (\registrador|FFP_ParaleloC|FFP_B|Q~q  $ (!\registrador|FFP_ParaleloC|FFP_D|Q~q ))))
 
 	.dataa(\registrador|FFP_ParaleloC|FFP_A|Q~q ),
-	.datab(\registrador|FFP_ParaleloC|FFP_B|Q~q ),
-	.datac(\registrador|FFP_ParaleloC|FFP_C|Q~q ),
+	.datab(\registrador|FFP_ParaleloC|FFP_C|Q~q ),
+	.datac(\registrador|FFP_ParaleloC|FFP_B|Q~q ),
 	.datad(\registrador|FFP_ParaleloC|FFP_D|Q~q ),
 	.cin(gnd),
 	.combout(\conversor2|a~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \conversor2|a~0 .lut_mask = 16'hD6FB;
+defparam \conversor2|a~0 .lut_mask = 16'hD6EF;
 defparam \conversor2|a~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X67_Y52_N26
+// Location: LCCOMB_X67_Y50_N16
 fiftyfivenm_lcell_comb \conversor2|b~0 (
 // Equation(s):
-// \conversor2|b~0_combout  = (\registrador|FFP_ParaleloC|FFP_A|Q~q  & ((\registrador|FFP_ParaleloC|FFP_D|Q~q  & ((!\registrador|FFP_ParaleloC|FFP_C|Q~q ))) # (!\registrador|FFP_ParaleloC|FFP_D|Q~q  & (!\registrador|FFP_ParaleloC|FFP_B|Q~q )))) # 
+// \conversor2|b~0_combout  = (\registrador|FFP_ParaleloC|FFP_A|Q~q  & ((\registrador|FFP_ParaleloC|FFP_D|Q~q  & (!\registrador|FFP_ParaleloC|FFP_C|Q~q )) # (!\registrador|FFP_ParaleloC|FFP_D|Q~q  & ((!\registrador|FFP_ParaleloC|FFP_B|Q~q ))))) # 
 // (!\registrador|FFP_ParaleloC|FFP_A|Q~q  & ((\registrador|FFP_ParaleloC|FFP_C|Q~q  $ (!\registrador|FFP_ParaleloC|FFP_D|Q~q )) # (!\registrador|FFP_ParaleloC|FFP_B|Q~q )))
 
-	.dataa(\registrador|FFP_ParaleloC|FFP_B|Q~q ),
-	.datab(\registrador|FFP_ParaleloC|FFP_A|Q~q ),
-	.datac(\registrador|FFP_ParaleloC|FFP_C|Q~q ),
+	.dataa(\registrador|FFP_ParaleloC|FFP_A|Q~q ),
+	.datab(\registrador|FFP_ParaleloC|FFP_C|Q~q ),
+	.datac(\registrador|FFP_ParaleloC|FFP_B|Q~q ),
 	.datad(\registrador|FFP_ParaleloC|FFP_D|Q~q ),
 	.cin(gnd),
 	.combout(\conversor2|b~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \conversor2|b~0 .lut_mask = 16'h3D57;
+defparam \conversor2|b~0 .lut_mask = 16'h671F;
 defparam \conversor2|b~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X67_Y52_N8
+// Location: LCCOMB_X67_Y50_N14
 fiftyfivenm_lcell_comb \conversor2|c~0 (
 // Equation(s):
-// \conversor2|c~0_combout  = (\registrador|FFP_ParaleloC|FFP_B|Q~q  & (((!\registrador|FFP_ParaleloC|FFP_C|Q~q  & \registrador|FFP_ParaleloC|FFP_D|Q~q )) # (!\registrador|FFP_ParaleloC|FFP_A|Q~q ))) # (!\registrador|FFP_ParaleloC|FFP_B|Q~q  & 
-// ((\registrador|FFP_ParaleloC|FFP_A|Q~q ) # ((\registrador|FFP_ParaleloC|FFP_D|Q~q ) # (!\registrador|FFP_ParaleloC|FFP_C|Q~q ))))
+// \conversor2|c~0_combout  = (\registrador|FFP_ParaleloC|FFP_A|Q~q  & (((!\registrador|FFP_ParaleloC|FFP_C|Q~q  & \registrador|FFP_ParaleloC|FFP_D|Q~q )) # (!\registrador|FFP_ParaleloC|FFP_B|Q~q ))) # (!\registrador|FFP_ParaleloC|FFP_A|Q~q  & 
+// (((\registrador|FFP_ParaleloC|FFP_B|Q~q ) # (\registrador|FFP_ParaleloC|FFP_D|Q~q )) # (!\registrador|FFP_ParaleloC|FFP_C|Q~q )))
 
-	.dataa(\registrador|FFP_ParaleloC|FFP_B|Q~q ),
-	.datab(\registrador|FFP_ParaleloC|FFP_A|Q~q ),
-	.datac(\registrador|FFP_ParaleloC|FFP_C|Q~q ),
+	.dataa(\registrador|FFP_ParaleloC|FFP_A|Q~q ),
+	.datab(\registrador|FFP_ParaleloC|FFP_C|Q~q ),
+	.datac(\registrador|FFP_ParaleloC|FFP_B|Q~q ),
 	.datad(\registrador|FFP_ParaleloC|FFP_D|Q~q ),
 	.cin(gnd),
 	.combout(\conversor2|c~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \conversor2|c~0 .lut_mask = 16'h7F67;
+defparam \conversor2|c~0 .lut_mask = 16'h7F5B;
 defparam \conversor2|c~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X67_Y52_N18
+// Location: LCCOMB_X67_Y50_N28
 fiftyfivenm_lcell_comb \conversor2|d~0 (
 // Equation(s):
 // \conversor2|d~0_combout  = (\registrador|FFP_ParaleloC|FFP_C|Q~q  & ((\registrador|FFP_ParaleloC|FFP_B|Q~q  & ((!\registrador|FFP_ParaleloC|FFP_D|Q~q ))) # (!\registrador|FFP_ParaleloC|FFP_B|Q~q  & ((\registrador|FFP_ParaleloC|FFP_D|Q~q ) # 
 // (!\registrador|FFP_ParaleloC|FFP_A|Q~q ))))) # (!\registrador|FFP_ParaleloC|FFP_C|Q~q  & ((\registrador|FFP_ParaleloC|FFP_A|Q~q ) # (\registrador|FFP_ParaleloC|FFP_B|Q~q  $ (!\registrador|FFP_ParaleloC|FFP_D|Q~q ))))
 
-	.dataa(\registrador|FFP_ParaleloC|FFP_B|Q~q ),
-	.datab(\registrador|FFP_ParaleloC|FFP_A|Q~q ),
-	.datac(\registrador|FFP_ParaleloC|FFP_C|Q~q ),
+	.dataa(\registrador|FFP_ParaleloC|FFP_A|Q~q ),
+	.datab(\registrador|FFP_ParaleloC|FFP_C|Q~q ),
+	.datac(\registrador|FFP_ParaleloC|FFP_B|Q~q ),
 	.datad(\registrador|FFP_ParaleloC|FFP_D|Q~q ),
 	.cin(gnd),
 	.combout(\conversor2|d~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \conversor2|d~0 .lut_mask = 16'h5EBD;
+defparam \conversor2|d~0 .lut_mask = 16'h3EE7;
 defparam \conversor2|d~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X67_Y50_N6
+// Location: LCCOMB_X67_Y50_N26
 fiftyfivenm_lcell_comb \conversor2|e~0 (
 // Equation(s):
-// \conversor2|e~0_combout  = (\registrador|FFP_ParaleloC|FFP_C|Q~q  & (((\registrador|FFP_ParaleloC|FFP_A|Q~q ) # (!\registrador|FFP_ParaleloC|FFP_D|Q~q )))) # (!\registrador|FFP_ParaleloC|FFP_C|Q~q  & ((\registrador|FFP_ParaleloC|FFP_B|Q~q  & 
+// \conversor2|e~0_combout  = (\registrador|FFP_ParaleloC|FFP_C|Q~q  & ((\registrador|FFP_ParaleloC|FFP_A|Q~q ) # ((!\registrador|FFP_ParaleloC|FFP_D|Q~q )))) # (!\registrador|FFP_ParaleloC|FFP_C|Q~q  & ((\registrador|FFP_ParaleloC|FFP_B|Q~q  & 
 // (\registrador|FFP_ParaleloC|FFP_A|Q~q )) # (!\registrador|FFP_ParaleloC|FFP_B|Q~q  & ((!\registrador|FFP_ParaleloC|FFP_D|Q~q )))))
 
-	.dataa(\registrador|FFP_ParaleloC|FFP_C|Q~q ),
-	.datab(\registrador|FFP_ParaleloC|FFP_B|Q~q ),
-	.datac(\registrador|FFP_ParaleloC|FFP_A|Q~q ),
+	.dataa(\registrador|FFP_ParaleloC|FFP_A|Q~q ),
+	.datab(\registrador|FFP_ParaleloC|FFP_C|Q~q ),
+	.datac(\registrador|FFP_ParaleloC|FFP_B|Q~q ),
 	.datad(\registrador|FFP_ParaleloC|FFP_D|Q~q ),
 	.cin(gnd),
 	.combout(\conversor2|e~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \conversor2|e~0 .lut_mask = 16'hE0FB;
+defparam \conversor2|e~0 .lut_mask = 16'hA8EF;
 defparam \conversor2|e~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X67_Y52_N24
+// Location: LCCOMB_X67_Y50_N24
 fiftyfivenm_lcell_comb \conversor2|f~0 (
 // Equation(s):
-// \conversor2|f~0_combout  = (\registrador|FFP_ParaleloC|FFP_B|Q~q  & ((\registrador|FFP_ParaleloC|FFP_A|Q~q  $ (!\registrador|FFP_ParaleloC|FFP_C|Q~q )) # (!\registrador|FFP_ParaleloC|FFP_D|Q~q ))) # (!\registrador|FFP_ParaleloC|FFP_B|Q~q  & 
-// ((\registrador|FFP_ParaleloC|FFP_A|Q~q ) # ((!\registrador|FFP_ParaleloC|FFP_C|Q~q  & !\registrador|FFP_ParaleloC|FFP_D|Q~q ))))
+// \conversor2|f~0_combout  = (\registrador|FFP_ParaleloC|FFP_C|Q~q  & ((\registrador|FFP_ParaleloC|FFP_A|Q~q ) # ((\registrador|FFP_ParaleloC|FFP_B|Q~q  & !\registrador|FFP_ParaleloC|FFP_D|Q~q )))) # (!\registrador|FFP_ParaleloC|FFP_C|Q~q  & 
+// ((\registrador|FFP_ParaleloC|FFP_A|Q~q  $ (\registrador|FFP_ParaleloC|FFP_B|Q~q )) # (!\registrador|FFP_ParaleloC|FFP_D|Q~q )))
 
-	.dataa(\registrador|FFP_ParaleloC|FFP_B|Q~q ),
-	.datab(\registrador|FFP_ParaleloC|FFP_A|Q~q ),
-	.datac(\registrador|FFP_ParaleloC|FFP_C|Q~q ),
+	.dataa(\registrador|FFP_ParaleloC|FFP_A|Q~q ),
+	.datab(\registrador|FFP_ParaleloC|FFP_C|Q~q ),
+	.datac(\registrador|FFP_ParaleloC|FFP_B|Q~q ),
 	.datad(\registrador|FFP_ParaleloC|FFP_D|Q~q ),
 	.cin(gnd),
 	.combout(\conversor2|f~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \conversor2|f~0 .lut_mask = 16'hC6EF;
+defparam \conversor2|f~0 .lut_mask = 16'h9AFB;
 defparam \conversor2|f~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X67_Y50_N10
+// Location: LCCOMB_X67_Y50_N22
 fiftyfivenm_lcell_comb \conversor2|g~0 (
 // Equation(s):
-// \conversor2|g~0_combout  = (\registrador|FFP_ParaleloC|FFP_D|Q~q  & ((\registrador|FFP_ParaleloC|FFP_A|Q~q ) # (\registrador|FFP_ParaleloC|FFP_B|Q~q  $ (\registrador|FFP_ParaleloC|FFP_C|Q~q )))) # (!\registrador|FFP_ParaleloC|FFP_D|Q~q  & 
+// \conversor2|g~0_combout  = (\registrador|FFP_ParaleloC|FFP_D|Q~q  & ((\registrador|FFP_ParaleloC|FFP_A|Q~q ) # (\registrador|FFP_ParaleloC|FFP_C|Q~q  $ (\registrador|FFP_ParaleloC|FFP_B|Q~q )))) # (!\registrador|FFP_ParaleloC|FFP_D|Q~q  & 
 // ((\registrador|FFP_ParaleloC|FFP_C|Q~q ) # (\registrador|FFP_ParaleloC|FFP_A|Q~q  $ (\registrador|FFP_ParaleloC|FFP_B|Q~q ))))
 
 	.dataa(\registrador|FFP_ParaleloC|FFP_A|Q~q ),
-	.datab(\registrador|FFP_ParaleloC|FFP_B|Q~q ),
-	.datac(\registrador|FFP_ParaleloC|FFP_C|Q~q ),
+	.datab(\registrador|FFP_ParaleloC|FFP_C|Q~q ),
+	.datac(\registrador|FFP_ParaleloC|FFP_B|Q~q ),
 	.datad(\registrador|FFP_ParaleloC|FFP_D|Q~q ),
 	.cin(gnd),
 	.combout(\conversor2|g~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \conversor2|g~0 .lut_mask = 16'hBEF6;
+defparam \conversor2|g~0 .lut_mask = 16'hBEDE;
 defparam \conversor2|g~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
@@ -1432,21 +1439,93 @@ defparam \PB1~input .listen_to_nsleep_signal = "false";
 defparam \PB1~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: LCCOMB_X67_Y50_N20
+// Location: LCCOMB_X67_Y50_N6
+fiftyfivenm_lcell_comb \registrador|FFP_ParaleloD|FFP_D|Q~feeder (
+// Equation(s):
+// \registrador|FFP_ParaleloD|FFP_D|Q~feeder_combout  = \registrador|FFP_ParaleloC|FFP_D|Q~q 
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(\registrador|FFP_ParaleloC|FFP_D|Q~q ),
+	.cin(gnd),
+	.combout(\registrador|FFP_ParaleloD|FFP_D|Q~feeder_combout ),
+	.cout());
+// synopsys translate_off
+defparam \registrador|FFP_ParaleloD|FFP_D|Q~feeder .lut_mask = 16'hFF00;
+defparam \registrador|FFP_ParaleloD|FFP_D|Q~feeder .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X67_Y50_N7
+dffeas \registrador|FFP_ParaleloD|FFP_D|Q (
+	.clk(\PB0~input_o ),
+	.d(\registrador|FFP_ParaleloD|FFP_D|Q~feeder_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\registrador|FFP_ParaleloD|FFP_D|Q~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \registrador|FFP_ParaleloD|FFP_D|Q .is_wysiwyg = "true";
+defparam \registrador|FFP_ParaleloD|FFP_D|Q .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X66_Y50_N24
 fiftyfivenm_lcell_comb \registrador|Desloc0|Qout~0 (
 // Equation(s):
-// \registrador|Desloc0|Qout~0_combout  = (\PB1~input_o  & (((\registrador|FFP_ParaleloC|FFP_D|Q~q )))) # (!\PB1~input_o  & (\registrador|FFP_ParaleloB|FFP_D|Q~q  $ ((\registrador|FFP_ParaleloA|FFP_D|Q~q ))))
+// \registrador|Desloc0|Qout~0_combout  = (\PB1~input_o  & (((\registrador|FFP_ParaleloD|FFP_D|Q~q )))) # (!\PB1~input_o  & (\registrador|FFP_ParaleloB|FFP_D|Q~q  $ ((\registrador|FFP_ParaleloA|FFP_D|Q~q ))))
 
 	.dataa(\registrador|FFP_ParaleloB|FFP_D|Q~q ),
 	.datab(\PB1~input_o ),
 	.datac(\registrador|FFP_ParaleloA|FFP_D|Q~q ),
-	.datad(\registrador|FFP_ParaleloC|FFP_D|Q~q ),
+	.datad(\registrador|FFP_ParaleloD|FFP_D|Q~q ),
 	.cin(gnd),
 	.combout(\registrador|Desloc0|Qout~0_combout ),
 	.cout());
 // synopsys translate_off
 defparam \registrador|Desloc0|Qout~0 .lut_mask = 16'hDE12;
 defparam \registrador|Desloc0|Qout~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X67_Y50_N8
+fiftyfivenm_lcell_comb \registrador|FFP_ParaleloD|FFP_C|Q~feeder (
+// Equation(s):
+// \registrador|FFP_ParaleloD|FFP_C|Q~feeder_combout  = \registrador|FFP_ParaleloC|FFP_C|Q~q 
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(\registrador|FFP_ParaleloC|FFP_C|Q~q ),
+	.cin(gnd),
+	.combout(\registrador|FFP_ParaleloD|FFP_C|Q~feeder_combout ),
+	.cout());
+// synopsys translate_off
+defparam \registrador|FFP_ParaleloD|FFP_C|Q~feeder .lut_mask = 16'hFF00;
+defparam \registrador|FFP_ParaleloD|FFP_C|Q~feeder .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X67_Y50_N9
+dffeas \registrador|FFP_ParaleloD|FFP_C|Q (
+	.clk(\PB0~input_o ),
+	.d(\registrador|FFP_ParaleloD|FFP_C|Q~feeder_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\registrador|FFP_ParaleloD|FFP_C|Q~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \registrador|FFP_ParaleloD|FFP_C|Q .is_wysiwyg = "true";
+defparam \registrador|FFP_ParaleloD|FFP_C|Q .power_up = "low";
 // synopsys translate_on
 
 // Location: IOIBUF_X49_Y54_N1
@@ -1461,13 +1540,100 @@ defparam \Switch~input .listen_to_nsleep_signal = "false";
 defparam \Switch~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: LCCOMB_X67_Y50_N14
-fiftyfivenm_lcell_comb \somador|somador|SomaBit1|Cout~0 (
+// Location: LCCOMB_X66_Y50_N26
+fiftyfivenm_lcell_comb \registrador|Desloc1|Qout~0 (
 // Equation(s):
-// \somador|somador|SomaBit1|Cout~0_combout  = (\registrador|FFP_ParaleloB|FFP_D|Q~q  & (\Switch~input_o  $ (\registrador|FFP_ParaleloA|FFP_D|Q~q )))
+// \registrador|Desloc1|Qout~0_combout  = \registrador|FFP_ParaleloA|FFP_C|Q~q  $ (((\registrador|FFP_ParaleloB|FFP_D|Q~q  & (\Switch~input_o  $ (\registrador|FFP_ParaleloA|FFP_D|Q~q )))))
 
 	.dataa(\Switch~input_o ),
-	.datab(\registrador|FFP_ParaleloA|FFP_D|Q~q ),
+	.datab(\registrador|FFP_ParaleloB|FFP_D|Q~q ),
+	.datac(\registrador|FFP_ParaleloA|FFP_D|Q~q ),
+	.datad(\registrador|FFP_ParaleloA|FFP_C|Q~q ),
+	.cin(gnd),
+	.combout(\registrador|Desloc1|Qout~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \registrador|Desloc1|Qout~0 .lut_mask = 16'hB748;
+defparam \registrador|Desloc1|Qout~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X66_Y50_N18
+fiftyfivenm_lcell_comb \registrador|Desloc1|Qout~1 (
+// Equation(s):
+// \registrador|Desloc1|Qout~1_combout  = (\PB1~input_o  & (((\registrador|FFP_ParaleloD|FFP_C|Q~q )))) # (!\PB1~input_o  & (\registrador|FFP_ParaleloB|FFP_C|Q~q  $ (((\registrador|Desloc1|Qout~0_combout )))))
+
+	.dataa(\registrador|FFP_ParaleloB|FFP_C|Q~q ),
+	.datab(\PB1~input_o ),
+	.datac(\registrador|FFP_ParaleloD|FFP_C|Q~q ),
+	.datad(\registrador|Desloc1|Qout~0_combout ),
+	.cin(gnd),
+	.combout(\registrador|Desloc1|Qout~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \registrador|Desloc1|Qout~1 .lut_mask = 16'hD1E2;
+defparam \registrador|Desloc1|Qout~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X66_Y50_N8
+fiftyfivenm_lcell_comb \registrador|FFP_ParaleloD|FFP_A|Q~feeder (
+// Equation(s):
+// \registrador|FFP_ParaleloD|FFP_A|Q~feeder_combout  = \registrador|FFP_ParaleloC|FFP_A|Q~q 
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\registrador|FFP_ParaleloC|FFP_A|Q~q ),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\registrador|FFP_ParaleloD|FFP_A|Q~feeder_combout ),
+	.cout());
+// synopsys translate_off
+defparam \registrador|FFP_ParaleloD|FFP_A|Q~feeder .lut_mask = 16'hF0F0;
+defparam \registrador|FFP_ParaleloD|FFP_A|Q~feeder .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X66_Y50_N9
+dffeas \registrador|FFP_ParaleloD|FFP_A|Q (
+	.clk(\PB0~input_o ),
+	.d(\registrador|FFP_ParaleloD|FFP_A|Q~feeder_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\registrador|FFP_ParaleloD|FFP_A|Q~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \registrador|FFP_ParaleloD|FFP_A|Q .is_wysiwyg = "true";
+defparam \registrador|FFP_ParaleloD|FFP_A|Q .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X66_Y50_N4
+fiftyfivenm_lcell_comb \registrador|Desloc03|Qout~0 (
+// Equation(s):
+// \registrador|Desloc03|Qout~0_combout  = \Switch~input_o  $ (\registrador|FFP_ParaleloB|FFP_A|Q~q  $ (\registrador|FFP_ParaleloA|FFP_A|Q~q ))
+
+	.dataa(\Switch~input_o ),
+	.datab(gnd),
+	.datac(\registrador|FFP_ParaleloB|FFP_A|Q~q ),
+	.datad(\registrador|FFP_ParaleloA|FFP_A|Q~q ),
+	.cin(gnd),
+	.combout(\registrador|Desloc03|Qout~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \registrador|Desloc03|Qout~0 .lut_mask = 16'hA55A;
+defparam \registrador|Desloc03|Qout~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X66_Y50_N2
+fiftyfivenm_lcell_comb \somador|somador|SomaBit1|Cout~0 (
+// Equation(s):
+// \somador|somador|SomaBit1|Cout~0_combout  = (\registrador|FFP_ParaleloB|FFP_D|Q~q  & (\registrador|FFP_ParaleloA|FFP_D|Q~q  $ (\Switch~input_o )))
+
+	.dataa(\registrador|FFP_ParaleloA|FFP_D|Q~q ),
+	.datab(\Switch~input_o ),
 	.datac(gnd),
 	.datad(\registrador|FFP_ParaleloB|FFP_D|Q~q ),
 	.cin(gnd),
@@ -1478,25 +1644,25 @@ defparam \somador|somador|SomaBit1|Cout~0 .lut_mask = 16'h6600;
 defparam \somador|somador|SomaBit1|Cout~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X67_Y50_N2
+// Location: LCCOMB_X66_Y50_N16
 fiftyfivenm_lcell_comb \somador|somador|SomaBit1|Cout~1 (
 // Equation(s):
-// \somador|somador|SomaBit1|Cout~1_combout  = (\registrador|FFP_ParaleloB|FFP_C|Q~q  & ((\somador|somador|SomaBit1|Cout~0_combout  & ((!\Switch~input_o ))) # (!\somador|somador|SomaBit1|Cout~0_combout  & (\registrador|FFP_ParaleloA|FFP_C|Q~q )))) # 
-// (!\registrador|FFP_ParaleloB|FFP_C|Q~q  & ((\somador|somador|SomaBit1|Cout~0_combout  & (\registrador|FFP_ParaleloA|FFP_C|Q~q )) # (!\somador|somador|SomaBit1|Cout~0_combout  & ((\Switch~input_o )))))
+// \somador|somador|SomaBit1|Cout~1_combout  = (\registrador|FFP_ParaleloB|FFP_C|Q~q  & ((\somador|somador|SomaBit1|Cout~0_combout  & (!\Switch~input_o )) # (!\somador|somador|SomaBit1|Cout~0_combout  & ((\registrador|FFP_ParaleloA|FFP_C|Q~q ))))) # 
+// (!\registrador|FFP_ParaleloB|FFP_C|Q~q  & ((\somador|somador|SomaBit1|Cout~0_combout  & ((\registrador|FFP_ParaleloA|FFP_C|Q~q ))) # (!\somador|somador|SomaBit1|Cout~0_combout  & (\Switch~input_o ))))
 
 	.dataa(\registrador|FFP_ParaleloB|FFP_C|Q~q ),
-	.datab(\registrador|FFP_ParaleloA|FFP_C|Q~q ),
-	.datac(\somador|somador|SomaBit1|Cout~0_combout ),
-	.datad(\Switch~input_o ),
+	.datab(\Switch~input_o ),
+	.datac(\registrador|FFP_ParaleloA|FFP_C|Q~q ),
+	.datad(\somador|somador|SomaBit1|Cout~0_combout ),
 	.cin(gnd),
 	.combout(\somador|somador|SomaBit1|Cout~1_combout ),
 	.cout());
 // synopsys translate_off
-defparam \somador|somador|SomaBit1|Cout~1 .lut_mask = 16'h4DE8;
+defparam \somador|somador|SomaBit1|Cout~1 .lut_mask = 16'h72E4;
 defparam \somador|somador|SomaBit1|Cout~1 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X67_Y50_N26
+// Location: LCCOMB_X66_Y50_N28
 fiftyfivenm_lcell_comb \somador|somador|SomaBit2|Cout~0 (
 // Equation(s):
 // \somador|somador|SomaBit2|Cout~0_combout  = (\registrador|FFP_ParaleloA|FFP_B|Q~q  & ((\somador|somador|SomaBit1|Cout~1_combout ) # (\registrador|FFP_ParaleloB|FFP_B|Q~q  $ (\Switch~input_o )))) # (!\registrador|FFP_ParaleloA|FFP_B|Q~q  & 
@@ -1514,32 +1680,15 @@ defparam \somador|somador|SomaBit2|Cout~0 .lut_mask = 16'hF660;
 defparam \somador|somador|SomaBit2|Cout~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X67_Y50_N18
-fiftyfivenm_lcell_comb \registrador|Desloc03|Qout~0 (
-// Equation(s):
-// \registrador|Desloc03|Qout~0_combout  = \registrador|FFP_ParaleloA|FFP_A|Q~q  $ (\Switch~input_o  $ (\registrador|FFP_ParaleloB|FFP_A|Q~q ))
-
-	.dataa(\registrador|FFP_ParaleloA|FFP_A|Q~q ),
-	.datab(\Switch~input_o ),
-	.datac(gnd),
-	.datad(\registrador|FFP_ParaleloB|FFP_A|Q~q ),
-	.cin(gnd),
-	.combout(\registrador|Desloc03|Qout~0_combout ),
-	.cout());
-// synopsys translate_off
-defparam \registrador|Desloc03|Qout~0 .lut_mask = 16'h9966;
-defparam \registrador|Desloc03|Qout~0 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-// Location: LCCOMB_X67_Y50_N28
+// Location: LCCOMB_X66_Y50_N6
 fiftyfivenm_lcell_comb \registrador|Desloc03|Qout~1 (
 // Equation(s):
-// \registrador|Desloc03|Qout~1_combout  = (\PB1~input_o  & (\registrador|FFP_ParaleloC|FFP_A|Q~q )) # (!\PB1~input_o  & ((\somador|somador|SomaBit2|Cout~0_combout  $ (\registrador|Desloc03|Qout~0_combout ))))
+// \registrador|Desloc03|Qout~1_combout  = (\PB1~input_o  & (\registrador|FFP_ParaleloD|FFP_A|Q~q )) # (!\PB1~input_o  & ((\registrador|Desloc03|Qout~0_combout  $ (\somador|somador|SomaBit2|Cout~0_combout ))))
 
-	.dataa(\registrador|FFP_ParaleloC|FFP_A|Q~q ),
+	.dataa(\registrador|FFP_ParaleloD|FFP_A|Q~q ),
 	.datab(\PB1~input_o ),
-	.datac(\somador|somador|SomaBit2|Cout~0_combout ),
-	.datad(\registrador|Desloc03|Qout~0_combout ),
+	.datac(\registrador|Desloc03|Qout~0_combout ),
+	.datad(\somador|somador|SomaBit2|Cout~0_combout ),
 	.cin(gnd),
 	.combout(\registrador|Desloc03|Qout~1_combout ),
 	.cout());
@@ -1548,265 +1697,15 @@ defparam \registrador|Desloc03|Qout~1 .lut_mask = 16'h8BB8;
 defparam \registrador|Desloc03|Qout~1 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X67_Y50_N30
-fiftyfivenm_lcell_comb \registrador|Desloc2|Qout~0 (
-// Equation(s):
-// \registrador|Desloc2|Qout~0_combout  = \registrador|FFP_ParaleloB|FFP_B|Q~q  $ (\Switch~input_o  $ (!\registrador|FFP_ParaleloA|FFP_B|Q~q ))
-
-	.dataa(\registrador|FFP_ParaleloB|FFP_B|Q~q ),
-	.datab(\Switch~input_o ),
-	.datac(gnd),
-	.datad(\registrador|FFP_ParaleloA|FFP_B|Q~q ),
-	.cin(gnd),
-	.combout(\registrador|Desloc2|Qout~0_combout ),
-	.cout());
-// synopsys translate_off
-defparam \registrador|Desloc2|Qout~0 .lut_mask = 16'h6699;
-defparam \registrador|Desloc2|Qout~0 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-// Location: LCCOMB_X67_Y50_N16
-fiftyfivenm_lcell_comb \registrador|Desloc2|Qout~1 (
-// Equation(s):
-// \registrador|Desloc2|Qout~1_combout  = (\PB1~input_o  & (\registrador|FFP_ParaleloC|FFP_B|Q~q )) # (!\PB1~input_o  & ((\registrador|Desloc2|Qout~0_combout  $ (!\somador|somador|SomaBit1|Cout~1_combout ))))
-
-	.dataa(\PB1~input_o ),
-	.datab(\registrador|FFP_ParaleloC|FFP_B|Q~q ),
-	.datac(\registrador|Desloc2|Qout~0_combout ),
-	.datad(\somador|somador|SomaBit1|Cout~1_combout ),
-	.cin(gnd),
-	.combout(\registrador|Desloc2|Qout~1_combout ),
-	.cout());
-// synopsys translate_off
-defparam \registrador|Desloc2|Qout~1 .lut_mask = 16'hD88D;
-defparam \registrador|Desloc2|Qout~1 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-// Location: LCCOMB_X67_Y50_N8
-fiftyfivenm_lcell_comb \registrador|Desloc1|Qout~0 (
-// Equation(s):
-// \registrador|Desloc1|Qout~0_combout  = \registrador|FFP_ParaleloA|FFP_C|Q~q  $ (((\registrador|FFP_ParaleloB|FFP_D|Q~q  & (\registrador|FFP_ParaleloA|FFP_D|Q~q  $ (\Switch~input_o )))))
-
-	.dataa(\registrador|FFP_ParaleloB|FFP_D|Q~q ),
-	.datab(\registrador|FFP_ParaleloA|FFP_C|Q~q ),
-	.datac(\registrador|FFP_ParaleloA|FFP_D|Q~q ),
-	.datad(\Switch~input_o ),
-	.cin(gnd),
-	.combout(\registrador|Desloc1|Qout~0_combout ),
-	.cout());
-// synopsys translate_off
-defparam \registrador|Desloc1|Qout~0 .lut_mask = 16'hC66C;
-defparam \registrador|Desloc1|Qout~0 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-// Location: LCCOMB_X67_Y50_N0
-fiftyfivenm_lcell_comb \registrador|Desloc1|Qout~1 (
-// Equation(s):
-// \registrador|Desloc1|Qout~1_combout  = (\PB1~input_o  & (((\registrador|FFP_ParaleloC|FFP_C|Q~q )))) # (!\PB1~input_o  & (\registrador|FFP_ParaleloB|FFP_C|Q~q  $ (((\registrador|Desloc1|Qout~0_combout )))))
-
-	.dataa(\registrador|FFP_ParaleloB|FFP_C|Q~q ),
-	.datab(\PB1~input_o ),
-	.datac(\registrador|FFP_ParaleloC|FFP_C|Q~q ),
-	.datad(\registrador|Desloc1|Qout~0_combout ),
-	.cin(gnd),
-	.combout(\registrador|Desloc1|Qout~1_combout ),
-	.cout());
-// synopsys translate_off
-defparam \registrador|Desloc1|Qout~1 .lut_mask = 16'hD1E2;
-defparam \registrador|Desloc1|Qout~1 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-// Location: LCCOMB_X74_Y46_N16
-fiftyfivenm_lcell_comb \conversor3|a~0 (
-// Equation(s):
-// \conversor3|a~0_combout  = (\registrador|Desloc03|Qout~1_combout  & ((\registrador|Desloc2|Qout~1_combout  $ (!\registrador|Desloc1|Qout~1_combout )) # (!\registrador|Desloc0|Qout~0_combout ))) # (!\registrador|Desloc03|Qout~1_combout  & 
-// ((\registrador|Desloc1|Qout~1_combout ) # (\registrador|Desloc0|Qout~0_combout  $ (!\registrador|Desloc2|Qout~1_combout ))))
-
-	.dataa(\registrador|Desloc0|Qout~0_combout ),
-	.datab(\registrador|Desloc03|Qout~1_combout ),
-	.datac(\registrador|Desloc2|Qout~1_combout ),
-	.datad(\registrador|Desloc1|Qout~1_combout ),
-	.cin(gnd),
-	.combout(\conversor3|a~0_combout ),
-	.cout());
-// synopsys translate_off
-defparam \conversor3|a~0 .lut_mask = 16'hF76D;
-defparam \conversor3|a~0 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-// Location: LCCOMB_X74_Y46_N18
-fiftyfivenm_lcell_comb \conversor3|b~0 (
-// Equation(s):
-// \conversor3|b~0_combout  = (\registrador|Desloc03|Qout~1_combout  & ((\registrador|Desloc0|Qout~0_combout  & ((!\registrador|Desloc1|Qout~1_combout ))) # (!\registrador|Desloc0|Qout~0_combout  & (!\registrador|Desloc2|Qout~1_combout )))) # 
-// (!\registrador|Desloc03|Qout~1_combout  & ((\registrador|Desloc0|Qout~0_combout  $ (!\registrador|Desloc1|Qout~1_combout )) # (!\registrador|Desloc2|Qout~1_combout )))
-
-	.dataa(\registrador|Desloc0|Qout~0_combout ),
-	.datab(\registrador|Desloc03|Qout~1_combout ),
-	.datac(\registrador|Desloc2|Qout~1_combout ),
-	.datad(\registrador|Desloc1|Qout~1_combout ),
-	.cin(gnd),
-	.combout(\conversor3|b~0_combout ),
-	.cout());
-// synopsys translate_off
-defparam \conversor3|b~0 .lut_mask = 16'h279F;
-defparam \conversor3|b~0 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-// Location: LCCOMB_X74_Y46_N0
-fiftyfivenm_lcell_comb \conversor3|c~0 (
-// Equation(s):
-// \conversor3|c~0_combout  = (\registrador|Desloc03|Qout~1_combout  & (((\registrador|Desloc0|Qout~0_combout  & !\registrador|Desloc1|Qout~1_combout )) # (!\registrador|Desloc2|Qout~1_combout ))) # (!\registrador|Desloc03|Qout~1_combout  & 
-// ((\registrador|Desloc0|Qout~0_combout ) # ((\registrador|Desloc2|Qout~1_combout ) # (!\registrador|Desloc1|Qout~1_combout ))))
-
-	.dataa(\registrador|Desloc0|Qout~0_combout ),
-	.datab(\registrador|Desloc03|Qout~1_combout ),
-	.datac(\registrador|Desloc2|Qout~1_combout ),
-	.datad(\registrador|Desloc1|Qout~1_combout ),
-	.cin(gnd),
-	.combout(\conversor3|c~0_combout ),
-	.cout());
-// synopsys translate_off
-defparam \conversor3|c~0 .lut_mask = 16'h3EBF;
-defparam \conversor3|c~0 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-// Location: LCCOMB_X74_Y46_N14
-fiftyfivenm_lcell_comb \conversor3|d~0 (
-// Equation(s):
-// \conversor3|d~0_combout  = (\registrador|Desloc1|Qout~1_combout  & ((\registrador|Desloc0|Qout~0_combout  & ((!\registrador|Desloc2|Qout~1_combout ))) # (!\registrador|Desloc0|Qout~0_combout  & ((\registrador|Desloc2|Qout~1_combout ) # 
-// (!\registrador|Desloc03|Qout~1_combout ))))) # (!\registrador|Desloc1|Qout~1_combout  & ((\registrador|Desloc03|Qout~1_combout ) # (\registrador|Desloc0|Qout~0_combout  $ (!\registrador|Desloc2|Qout~1_combout ))))
-
-	.dataa(\registrador|Desloc0|Qout~0_combout ),
-	.datab(\registrador|Desloc03|Qout~1_combout ),
-	.datac(\registrador|Desloc2|Qout~1_combout ),
-	.datad(\registrador|Desloc1|Qout~1_combout ),
-	.cin(gnd),
-	.combout(\conversor3|d~0_combout ),
-	.cout());
-// synopsys translate_off
-defparam \conversor3|d~0 .lut_mask = 16'h5BED;
-defparam \conversor3|d~0 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-// Location: LCCOMB_X74_Y46_N24
-fiftyfivenm_lcell_comb \conversor3|e~0 (
-// Equation(s):
-// \conversor3|e~0_combout  = (\registrador|Desloc1|Qout~1_combout  & (((\registrador|Desloc03|Qout~1_combout )) # (!\registrador|Desloc0|Qout~0_combout ))) # (!\registrador|Desloc1|Qout~1_combout  & ((\registrador|Desloc2|Qout~1_combout  & 
-// ((\registrador|Desloc03|Qout~1_combout ))) # (!\registrador|Desloc2|Qout~1_combout  & (!\registrador|Desloc0|Qout~0_combout ))))
-
-	.dataa(\registrador|Desloc0|Qout~0_combout ),
-	.datab(\registrador|Desloc03|Qout~1_combout ),
-	.datac(\registrador|Desloc2|Qout~1_combout ),
-	.datad(\registrador|Desloc1|Qout~1_combout ),
-	.cin(gnd),
-	.combout(\conversor3|e~0_combout ),
-	.cout());
-// synopsys translate_off
-defparam \conversor3|e~0 .lut_mask = 16'hDDC5;
-defparam \conversor3|e~0 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-// Location: LCCOMB_X74_Y46_N30
-fiftyfivenm_lcell_comb \conversor3|f~0 (
-// Equation(s):
-// \conversor3|f~0_combout  = (\registrador|Desloc0|Qout~0_combout  & (\registrador|Desloc03|Qout~1_combout  $ (((\registrador|Desloc2|Qout~1_combout  & !\registrador|Desloc1|Qout~1_combout ))))) # (!\registrador|Desloc0|Qout~0_combout  & 
-// ((\registrador|Desloc03|Qout~1_combout ) # ((\registrador|Desloc2|Qout~1_combout ) # (!\registrador|Desloc1|Qout~1_combout ))))
-
-	.dataa(\registrador|Desloc0|Qout~0_combout ),
-	.datab(\registrador|Desloc03|Qout~1_combout ),
-	.datac(\registrador|Desloc2|Qout~1_combout ),
-	.datad(\registrador|Desloc1|Qout~1_combout ),
-	.cin(gnd),
-	.combout(\conversor3|f~0_combout ),
-	.cout());
-// synopsys translate_off
-defparam \conversor3|f~0 .lut_mask = 16'hDC7D;
-defparam \conversor3|f~0 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-// Location: LCCOMB_X74_Y46_N12
-fiftyfivenm_lcell_comb \conversor3|g~0 (
-// Equation(s):
-// \conversor3|g~0_combout  = (\registrador|Desloc0|Qout~0_combout  & ((\registrador|Desloc03|Qout~1_combout ) # (\registrador|Desloc2|Qout~1_combout  $ (\registrador|Desloc1|Qout~1_combout )))) # (!\registrador|Desloc0|Qout~0_combout  & 
-// ((\registrador|Desloc1|Qout~1_combout ) # (\registrador|Desloc03|Qout~1_combout  $ (\registrador|Desloc2|Qout~1_combout ))))
-
-	.dataa(\registrador|Desloc0|Qout~0_combout ),
-	.datab(\registrador|Desloc03|Qout~1_combout ),
-	.datac(\registrador|Desloc2|Qout~1_combout ),
-	.datad(\registrador|Desloc1|Qout~1_combout ),
-	.cin(gnd),
-	.combout(\conversor3|g~0_combout ),
-	.cout());
-// synopsys translate_off
-defparam \conversor3|g~0 .lut_mask = 16'hDFBC;
-defparam \conversor3|g~0 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-// Location: LCCOMB_X67_Y50_N22
-fiftyfivenm_lcell_comb \somador|somador|SomaBit3|Cout~0 (
-// Equation(s):
-// \somador|somador|SomaBit3|Cout~0_combout  = (\somador|somador|SomaBit2|Cout~0_combout  & ((\registrador|FFP_ParaleloA|FFP_A|Q~q ) # (\Switch~input_o  $ (\registrador|FFP_ParaleloB|FFP_A|Q~q )))) # (!\somador|somador|SomaBit2|Cout~0_combout  & 
-// (\registrador|FFP_ParaleloA|FFP_A|Q~q  & (\Switch~input_o  $ (\registrador|FFP_ParaleloB|FFP_A|Q~q ))))
-
-	.dataa(\somador|somador|SomaBit2|Cout~0_combout ),
-	.datab(\Switch~input_o ),
-	.datac(\registrador|FFP_ParaleloA|FFP_A|Q~q ),
-	.datad(\registrador|FFP_ParaleloB|FFP_A|Q~q ),
-	.cin(gnd),
-	.combout(\somador|somador|SomaBit3|Cout~0_combout ),
-	.cout());
-// synopsys translate_off
-defparam \somador|somador|SomaBit3|Cout~0 .lut_mask = 16'hB2E8;
-defparam \somador|somador|SomaBit3|Cout~0 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-// Location: FF_X67_Y50_N21
-dffeas \registrador|FFP_ParaleloD|FFP_D|Q (
-	.clk(\PB0~input_o ),
-	.d(\registrador|Desloc0|Qout~0_combout ),
-	.asdata(vcc),
-	.clrn(vcc),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\registrador|FFP_ParaleloD|FFP_D|Q~q ),
-	.prn(vcc));
-// synopsys translate_off
-defparam \registrador|FFP_ParaleloD|FFP_D|Q .is_wysiwyg = "true";
-defparam \registrador|FFP_ParaleloD|FFP_D|Q .power_up = "low";
-// synopsys translate_on
-
-// Location: FF_X67_Y50_N1
-dffeas \registrador|FFP_ParaleloD|FFP_C|Q (
-	.clk(\PB0~input_o ),
-	.d(\registrador|Desloc1|Qout~1_combout ),
-	.asdata(vcc),
-	.clrn(vcc),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(\registrador|FFP_ParaleloD|FFP_C|Q~q ),
-	.prn(vcc));
-// synopsys translate_off
-defparam \registrador|FFP_ParaleloD|FFP_C|Q .is_wysiwyg = "true";
-defparam \registrador|FFP_ParaleloD|FFP_C|Q .power_up = "low";
-// synopsys translate_on
-
-// Location: FF_X67_Y50_N17
+// Location: FF_X66_Y50_N3
 dffeas \registrador|FFP_ParaleloD|FFP_B|Q (
 	.clk(\PB0~input_o ),
-	.d(\registrador|Desloc2|Qout~1_combout ),
-	.asdata(vcc),
+	.d(gnd),
+	.asdata(\registrador|FFP_ParaleloC|FFP_B|Q~q ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
-	.sload(gnd),
+	.sload(vcc),
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
@@ -1817,8 +1716,224 @@ defparam \registrador|FFP_ParaleloD|FFP_B|Q .is_wysiwyg = "true";
 defparam \registrador|FFP_ParaleloD|FFP_B|Q .power_up = "low";
 // synopsys translate_on
 
-// Location: FF_X67_Y50_N29
-dffeas \registrador|FFP_ParaleloD|FFP_A|Q (
+// Location: LCCOMB_X66_Y50_N14
+fiftyfivenm_lcell_comb \registrador|Desloc2|Qout~0 (
+// Equation(s):
+// \registrador|Desloc2|Qout~0_combout  = \Switch~input_o  $ (\registrador|FFP_ParaleloB|FFP_B|Q~q  $ (!\registrador|FFP_ParaleloA|FFP_B|Q~q ))
+
+	.dataa(\Switch~input_o ),
+	.datab(gnd),
+	.datac(\registrador|FFP_ParaleloB|FFP_B|Q~q ),
+	.datad(\registrador|FFP_ParaleloA|FFP_B|Q~q ),
+	.cin(gnd),
+	.combout(\registrador|Desloc2|Qout~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \registrador|Desloc2|Qout~0 .lut_mask = 16'h5AA5;
+defparam \registrador|Desloc2|Qout~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X66_Y50_N30
+fiftyfivenm_lcell_comb \registrador|Desloc2|Qout~1 (
+// Equation(s):
+// \registrador|Desloc2|Qout~1_combout  = (\PB1~input_o  & (\registrador|FFP_ParaleloD|FFP_B|Q~q )) # (!\PB1~input_o  & ((\registrador|Desloc2|Qout~0_combout  $ (!\somador|somador|SomaBit1|Cout~1_combout ))))
+
+	.dataa(\registrador|FFP_ParaleloD|FFP_B|Q~q ),
+	.datab(\PB1~input_o ),
+	.datac(\registrador|Desloc2|Qout~0_combout ),
+	.datad(\somador|somador|SomaBit1|Cout~1_combout ),
+	.cin(gnd),
+	.combout(\registrador|Desloc2|Qout~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \registrador|Desloc2|Qout~1 .lut_mask = 16'hB88B;
+defparam \registrador|Desloc2|Qout~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X74_Y43_N28
+fiftyfivenm_lcell_comb \conversor3|a~0 (
+// Equation(s):
+// \conversor3|a~0_combout  = (\registrador|Desloc03|Qout~1_combout  & ((\registrador|Desloc1|Qout~1_combout  $ (!\registrador|Desloc2|Qout~1_combout )) # (!\registrador|Desloc0|Qout~0_combout ))) # (!\registrador|Desloc03|Qout~1_combout  & 
+// ((\registrador|Desloc1|Qout~1_combout ) # (\registrador|Desloc0|Qout~0_combout  $ (!\registrador|Desloc2|Qout~1_combout ))))
+
+	.dataa(\registrador|Desloc0|Qout~0_combout ),
+	.datab(\registrador|Desloc1|Qout~1_combout ),
+	.datac(\registrador|Desloc03|Qout~1_combout ),
+	.datad(\registrador|Desloc2|Qout~1_combout ),
+	.cin(gnd),
+	.combout(\conversor3|a~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \conversor3|a~0 .lut_mask = 16'hDE7D;
+defparam \conversor3|a~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X74_Y43_N22
+fiftyfivenm_lcell_comb \conversor3|b~0 (
+// Equation(s):
+// \conversor3|b~0_combout  = (\registrador|Desloc1|Qout~1_combout  & ((\registrador|Desloc0|Qout~0_combout  & (!\registrador|Desloc03|Qout~1_combout )) # (!\registrador|Desloc0|Qout~0_combout  & ((!\registrador|Desloc2|Qout~1_combout ))))) # 
+// (!\registrador|Desloc1|Qout~1_combout  & ((\registrador|Desloc0|Qout~0_combout  $ (!\registrador|Desloc03|Qout~1_combout )) # (!\registrador|Desloc2|Qout~1_combout )))
+
+	.dataa(\registrador|Desloc0|Qout~0_combout ),
+	.datab(\registrador|Desloc1|Qout~1_combout ),
+	.datac(\registrador|Desloc03|Qout~1_combout ),
+	.datad(\registrador|Desloc2|Qout~1_combout ),
+	.cin(gnd),
+	.combout(\conversor3|b~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \conversor3|b~0 .lut_mask = 16'h297F;
+defparam \conversor3|b~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X74_Y43_N20
+fiftyfivenm_lcell_comb \conversor3|c~0 (
+// Equation(s):
+// \conversor3|c~0_combout  = (\registrador|Desloc03|Qout~1_combout  & (((\registrador|Desloc0|Qout~0_combout  & !\registrador|Desloc1|Qout~1_combout )) # (!\registrador|Desloc2|Qout~1_combout ))) # (!\registrador|Desloc03|Qout~1_combout  & 
+// ((\registrador|Desloc0|Qout~0_combout ) # ((\registrador|Desloc2|Qout~1_combout ) # (!\registrador|Desloc1|Qout~1_combout ))))
+
+	.dataa(\registrador|Desloc0|Qout~0_combout ),
+	.datab(\registrador|Desloc1|Qout~1_combout ),
+	.datac(\registrador|Desloc03|Qout~1_combout ),
+	.datad(\registrador|Desloc2|Qout~1_combout ),
+	.cin(gnd),
+	.combout(\conversor3|c~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \conversor3|c~0 .lut_mask = 16'h2FFB;
+defparam \conversor3|c~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X74_Y43_N2
+fiftyfivenm_lcell_comb \conversor3|d~0 (
+// Equation(s):
+// \conversor3|d~0_combout  = (\registrador|Desloc1|Qout~1_combout  & ((\registrador|Desloc0|Qout~0_combout  & ((!\registrador|Desloc2|Qout~1_combout ))) # (!\registrador|Desloc0|Qout~0_combout  & ((\registrador|Desloc2|Qout~1_combout ) # 
+// (!\registrador|Desloc03|Qout~1_combout ))))) # (!\registrador|Desloc1|Qout~1_combout  & ((\registrador|Desloc03|Qout~1_combout ) # (\registrador|Desloc0|Qout~0_combout  $ (!\registrador|Desloc2|Qout~1_combout ))))
+
+	.dataa(\registrador|Desloc0|Qout~0_combout ),
+	.datab(\registrador|Desloc1|Qout~1_combout ),
+	.datac(\registrador|Desloc03|Qout~1_combout ),
+	.datad(\registrador|Desloc2|Qout~1_combout ),
+	.cin(gnd),
+	.combout(\conversor3|d~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \conversor3|d~0 .lut_mask = 16'h76BD;
+defparam \conversor3|d~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X74_Y43_N12
+fiftyfivenm_lcell_comb \conversor3|e~0 (
+// Equation(s):
+// \conversor3|e~0_combout  = (\registrador|Desloc1|Qout~1_combout  & (((\registrador|Desloc03|Qout~1_combout )) # (!\registrador|Desloc0|Qout~0_combout ))) # (!\registrador|Desloc1|Qout~1_combout  & ((\registrador|Desloc2|Qout~1_combout  & 
+// ((\registrador|Desloc03|Qout~1_combout ))) # (!\registrador|Desloc2|Qout~1_combout  & (!\registrador|Desloc0|Qout~0_combout ))))
+
+	.dataa(\registrador|Desloc0|Qout~0_combout ),
+	.datab(\registrador|Desloc1|Qout~1_combout ),
+	.datac(\registrador|Desloc03|Qout~1_combout ),
+	.datad(\registrador|Desloc2|Qout~1_combout ),
+	.cin(gnd),
+	.combout(\conversor3|e~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \conversor3|e~0 .lut_mask = 16'hF4D5;
+defparam \conversor3|e~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X74_Y43_N10
+fiftyfivenm_lcell_comb \conversor3|f~0 (
+// Equation(s):
+// \conversor3|f~0_combout  = (\registrador|Desloc0|Qout~0_combout  & (\registrador|Desloc03|Qout~1_combout  $ (((!\registrador|Desloc1|Qout~1_combout  & \registrador|Desloc2|Qout~1_combout ))))) # (!\registrador|Desloc0|Qout~0_combout  & 
+// (((\registrador|Desloc03|Qout~1_combout ) # (\registrador|Desloc2|Qout~1_combout )) # (!\registrador|Desloc1|Qout~1_combout )))
+
+	.dataa(\registrador|Desloc0|Qout~0_combout ),
+	.datab(\registrador|Desloc1|Qout~1_combout ),
+	.datac(\registrador|Desloc03|Qout~1_combout ),
+	.datad(\registrador|Desloc2|Qout~1_combout ),
+	.cin(gnd),
+	.combout(\conversor3|f~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \conversor3|f~0 .lut_mask = 16'hD7F1;
+defparam \conversor3|f~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X74_Y43_N4
+fiftyfivenm_lcell_comb \conversor3|g~0 (
+// Equation(s):
+// \conversor3|g~0_combout  = (\registrador|Desloc0|Qout~0_combout  & ((\registrador|Desloc03|Qout~1_combout ) # (\registrador|Desloc1|Qout~1_combout  $ (\registrador|Desloc2|Qout~1_combout )))) # (!\registrador|Desloc0|Qout~0_combout  & 
+// ((\registrador|Desloc1|Qout~1_combout ) # (\registrador|Desloc03|Qout~1_combout  $ (\registrador|Desloc2|Qout~1_combout ))))
+
+	.dataa(\registrador|Desloc0|Qout~0_combout ),
+	.datab(\registrador|Desloc1|Qout~1_combout ),
+	.datac(\registrador|Desloc03|Qout~1_combout ),
+	.datad(\registrador|Desloc2|Qout~1_combout ),
+	.cin(gnd),
+	.combout(\conversor3|g~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \conversor3|g~0 .lut_mask = 16'hE7FC;
+defparam \conversor3|g~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X66_Y50_N10
+fiftyfivenm_lcell_comb \somador|somador|SomaBit3|Cout~0 (
+// Equation(s):
+// \somador|somador|SomaBit3|Cout~0_combout  = (\somador|somador|SomaBit2|Cout~0_combout  & ((\registrador|FFP_ParaleloA|FFP_A|Q~q ) # (\registrador|FFP_ParaleloB|FFP_A|Q~q  $ (\Switch~input_o )))) # (!\somador|somador|SomaBit2|Cout~0_combout  & 
+// (\registrador|FFP_ParaleloA|FFP_A|Q~q  & (\registrador|FFP_ParaleloB|FFP_A|Q~q  $ (\Switch~input_o ))))
+
+	.dataa(\somador|somador|SomaBit2|Cout~0_combout ),
+	.datab(\registrador|FFP_ParaleloA|FFP_A|Q~q ),
+	.datac(\registrador|FFP_ParaleloB|FFP_A|Q~q ),
+	.datad(\Switch~input_o ),
+	.cin(gnd),
+	.combout(\somador|somador|SomaBit3|Cout~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \somador|somador|SomaBit3|Cout~0 .lut_mask = 16'h8EE8;
+defparam \somador|somador|SomaBit3|Cout~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X66_Y50_N31
+dffeas \registrador|FFP_ParaleloE|FFP_B|Q (
+	.clk(\PB0~input_o ),
+	.d(\registrador|Desloc2|Qout~1_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\registrador|FFP_ParaleloE|FFP_B|Q~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \registrador|FFP_ParaleloE|FFP_B|Q .is_wysiwyg = "true";
+defparam \registrador|FFP_ParaleloE|FFP_B|Q .power_up = "low";
+// synopsys translate_on
+
+// Location: FF_X66_Y50_N25
+dffeas \registrador|FFP_ParaleloE|FFP_D|Q (
+	.clk(\PB0~input_o ),
+	.d(\registrador|Desloc0|Qout~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\registrador|FFP_ParaleloE|FFP_D|Q~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \registrador|FFP_ParaleloE|FFP_D|Q .is_wysiwyg = "true";
+defparam \registrador|FFP_ParaleloE|FFP_D|Q .power_up = "low";
+// synopsys translate_on
+
+// Location: FF_X66_Y50_N7
+dffeas \registrador|FFP_ParaleloE|FFP_A|Q (
 	.clk(\PB0~input_o ),
 	.d(\registrador|Desloc03|Qout~1_combout ),
 	.asdata(vcc),
@@ -1829,102 +1944,121 @@ dffeas \registrador|FFP_ParaleloD|FFP_A|Q (
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\registrador|FFP_ParaleloD|FFP_A|Q~q ),
+	.q(\registrador|FFP_ParaleloE|FFP_A|Q~q ),
 	.prn(vcc));
 // synopsys translate_off
-defparam \registrador|FFP_ParaleloD|FFP_A|Q .is_wysiwyg = "true";
-defparam \registrador|FFP_ParaleloD|FFP_A|Q .power_up = "low";
+defparam \registrador|FFP_ParaleloE|FFP_A|Q .is_wysiwyg = "true";
+defparam \registrador|FFP_ParaleloE|FFP_A|Q .power_up = "low";
 // synopsys translate_on
 
-// Location: LCCOMB_X71_Y46_N12
+// Location: FF_X66_Y50_N19
+dffeas \registrador|FFP_ParaleloE|FFP_C|Q (
+	.clk(\PB0~input_o ),
+	.d(\registrador|Desloc1|Qout~1_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\registrador|FFP_ParaleloE|FFP_C|Q~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \registrador|FFP_ParaleloE|FFP_C|Q .is_wysiwyg = "true";
+defparam \registrador|FFP_ParaleloE|FFP_C|Q .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X74_Y46_N0
 fiftyfivenm_lcell_comb \conversor4|a~0 (
 // Equation(s):
-// \conversor4|a~0_combout  = (\registrador|FFP_ParaleloD|FFP_B|Q~q  & (!\registrador|FFP_ParaleloD|FFP_C|Q~q  & (\registrador|FFP_ParaleloD|FFP_D|Q~q  $ (!\registrador|FFP_ParaleloD|FFP_A|Q~q )))) # (!\registrador|FFP_ParaleloD|FFP_B|Q~q  & 
-// (\registrador|FFP_ParaleloD|FFP_D|Q~q  & (\registrador|FFP_ParaleloD|FFP_C|Q~q  $ (!\registrador|FFP_ParaleloD|FFP_A|Q~q ))))
+// \conversor4|a~0_combout  = (\registrador|FFP_ParaleloE|FFP_B|Q~q  & (!\registrador|FFP_ParaleloE|FFP_C|Q~q  & (\registrador|FFP_ParaleloE|FFP_D|Q~q  $ (!\registrador|FFP_ParaleloE|FFP_A|Q~q )))) # (!\registrador|FFP_ParaleloE|FFP_B|Q~q  & 
+// (\registrador|FFP_ParaleloE|FFP_D|Q~q  & (\registrador|FFP_ParaleloE|FFP_A|Q~q  $ (!\registrador|FFP_ParaleloE|FFP_C|Q~q ))))
 
-	.dataa(\registrador|FFP_ParaleloD|FFP_D|Q~q ),
-	.datab(\registrador|FFP_ParaleloD|FFP_C|Q~q ),
-	.datac(\registrador|FFP_ParaleloD|FFP_B|Q~q ),
-	.datad(\registrador|FFP_ParaleloD|FFP_A|Q~q ),
+	.dataa(\registrador|FFP_ParaleloE|FFP_B|Q~q ),
+	.datab(\registrador|FFP_ParaleloE|FFP_D|Q~q ),
+	.datac(\registrador|FFP_ParaleloE|FFP_A|Q~q ),
+	.datad(\registrador|FFP_ParaleloE|FFP_C|Q~q ),
 	.cin(gnd),
 	.combout(\conversor4|a~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \conversor4|a~0 .lut_mask = 16'h2812;
+defparam \conversor4|a~0 .lut_mask = 16'h4086;
 defparam \conversor4|a~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X71_Y46_N6
+// Location: LCCOMB_X74_Y46_N6
 fiftyfivenm_lcell_comb \conversor4|a~1 (
 // Equation(s):
 // \conversor4|a~1_combout  = (\PB1~input_o  & ((!\conversor4|a~0_combout ))) # (!\PB1~input_o  & (!\somador|somador|SomaBit3|Cout~0_combout ))
 
-	.dataa(gnd),
-	.datab(\somador|somador|SomaBit3|Cout~0_combout ),
+	.dataa(\somador|somador|SomaBit3|Cout~0_combout ),
+	.datab(gnd),
 	.datac(\PB1~input_o ),
 	.datad(\conversor4|a~0_combout ),
 	.cin(gnd),
 	.combout(\conversor4|a~1_combout ),
 	.cout());
 // synopsys translate_off
-defparam \conversor4|a~1 .lut_mask = 16'h03F3;
+defparam \conversor4|a~1 .lut_mask = 16'h05F5;
 defparam \conversor4|a~1 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X71_Y46_N24
+// Location: LCCOMB_X74_Y46_N8
 fiftyfivenm_lcell_comb \conversor4|b~0 (
 // Equation(s):
-// \conversor4|b~0_combout  = (\registrador|FFP_ParaleloD|FFP_C|Q~q  & (\registrador|FFP_ParaleloD|FFP_D|Q~q  & ((!\registrador|FFP_ParaleloD|FFP_A|Q~q )))) # (!\registrador|FFP_ParaleloD|FFP_C|Q~q  & ((\registrador|FFP_ParaleloD|FFP_D|Q~q  $ 
-// (!\registrador|FFP_ParaleloD|FFP_A|Q~q )) # (!\registrador|FFP_ParaleloD|FFP_B|Q~q )))
+// \conversor4|b~0_combout  = (\registrador|FFP_ParaleloE|FFP_C|Q~q  & (((\registrador|FFP_ParaleloE|FFP_D|Q~q  & !\registrador|FFP_ParaleloE|FFP_A|Q~q )))) # (!\registrador|FFP_ParaleloE|FFP_C|Q~q  & ((\registrador|FFP_ParaleloE|FFP_D|Q~q  $ 
+// (!\registrador|FFP_ParaleloE|FFP_A|Q~q )) # (!\registrador|FFP_ParaleloE|FFP_B|Q~q )))
 
-	.dataa(\registrador|FFP_ParaleloD|FFP_D|Q~q ),
-	.datab(\registrador|FFP_ParaleloD|FFP_C|Q~q ),
-	.datac(\registrador|FFP_ParaleloD|FFP_B|Q~q ),
-	.datad(\registrador|FFP_ParaleloD|FFP_A|Q~q ),
+	.dataa(\registrador|FFP_ParaleloE|FFP_B|Q~q ),
+	.datab(\registrador|FFP_ParaleloE|FFP_D|Q~q ),
+	.datac(\registrador|FFP_ParaleloE|FFP_A|Q~q ),
+	.datad(\registrador|FFP_ParaleloE|FFP_C|Q~q ),
 	.cin(gnd),
 	.combout(\conversor4|b~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \conversor4|b~0 .lut_mask = 16'h239B;
+defparam \conversor4|b~0 .lut_mask = 16'h0CD7;
 defparam \conversor4|b~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X71_Y46_N2
+// Location: LCCOMB_X74_Y46_N14
 fiftyfivenm_lcell_comb \conversor4|b~1 (
 // Equation(s):
-// \conversor4|b~1_combout  = ((\conversor4|b~0_combout ) # ((!\registrador|FFP_ParaleloD|FFP_D|Q~q  & !\registrador|FFP_ParaleloD|FFP_B|Q~q ))) # (!\PB1~input_o )
+// \conversor4|b~1_combout  = (\conversor4|b~0_combout ) # (((!\registrador|FFP_ParaleloE|FFP_B|Q~q  & !\registrador|FFP_ParaleloE|FFP_D|Q~q )) # (!\PB1~input_o ))
 
-	.dataa(\PB1~input_o ),
-	.datab(\registrador|FFP_ParaleloD|FFP_D|Q~q ),
-	.datac(\registrador|FFP_ParaleloD|FFP_B|Q~q ),
-	.datad(\conversor4|b~0_combout ),
+	.dataa(\registrador|FFP_ParaleloE|FFP_B|Q~q ),
+	.datab(\conversor4|b~0_combout ),
+	.datac(\PB1~input_o ),
+	.datad(\registrador|FFP_ParaleloE|FFP_D|Q~q ),
 	.cin(gnd),
 	.combout(\conversor4|b~1_combout ),
 	.cout());
 // synopsys translate_off
-defparam \conversor4|b~1 .lut_mask = 16'hFF57;
+defparam \conversor4|b~1 .lut_mask = 16'hCFDF;
 defparam \conversor4|b~1 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X71_Y46_N20
+// Location: LCCOMB_X74_Y46_N24
 fiftyfivenm_lcell_comb \conversor4|c~0 (
 // Equation(s):
-// \conversor4|c~0_combout  = (\registrador|FFP_ParaleloD|FFP_B|Q~q  & (((\registrador|FFP_ParaleloD|FFP_D|Q~q  & !\registrador|FFP_ParaleloD|FFP_C|Q~q )) # (!\registrador|FFP_ParaleloD|FFP_A|Q~q ))) # (!\registrador|FFP_ParaleloD|FFP_B|Q~q  & 
-// ((\registrador|FFP_ParaleloD|FFP_D|Q~q ) # ((\registrador|FFP_ParaleloD|FFP_A|Q~q ) # (!\registrador|FFP_ParaleloD|FFP_C|Q~q ))))
+// \conversor4|c~0_combout  = (\registrador|FFP_ParaleloE|FFP_B|Q~q  & (((\registrador|FFP_ParaleloE|FFP_D|Q~q  & !\registrador|FFP_ParaleloE|FFP_C|Q~q )) # (!\registrador|FFP_ParaleloE|FFP_A|Q~q ))) # (!\registrador|FFP_ParaleloE|FFP_B|Q~q  & 
+// ((\registrador|FFP_ParaleloE|FFP_D|Q~q ) # ((\registrador|FFP_ParaleloE|FFP_A|Q~q ) # (!\registrador|FFP_ParaleloE|FFP_C|Q~q ))))
 
-	.dataa(\registrador|FFP_ParaleloD|FFP_D|Q~q ),
-	.datab(\registrador|FFP_ParaleloD|FFP_C|Q~q ),
-	.datac(\registrador|FFP_ParaleloD|FFP_B|Q~q ),
-	.datad(\registrador|FFP_ParaleloD|FFP_A|Q~q ),
+	.dataa(\registrador|FFP_ParaleloE|FFP_B|Q~q ),
+	.datab(\registrador|FFP_ParaleloE|FFP_D|Q~q ),
+	.datac(\registrador|FFP_ParaleloE|FFP_A|Q~q ),
+	.datad(\registrador|FFP_ParaleloE|FFP_C|Q~q ),
 	.cin(gnd),
 	.combout(\conversor4|c~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \conversor4|c~0 .lut_mask = 16'h2FFB;
+defparam \conversor4|c~0 .lut_mask = 16'h5EDF;
 defparam \conversor4|c~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X71_Y46_N18
+// Location: LCCOMB_X74_Y46_N2
 fiftyfivenm_lcell_comb \conversor4|c~1 (
 // Equation(s):
 // \conversor4|c~1_combout  = (\conversor4|c~0_combout ) # (!\PB1~input_o )
@@ -1941,167 +2075,167 @@ defparam \conversor4|c~1 .lut_mask = 16'hFF0F;
 defparam \conversor4|c~1 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X71_Y46_N10
+// Location: LCCOMB_X74_Y46_N22
 fiftyfivenm_lcell_comb \conversor4|d~0 (
 // Equation(s):
-// \conversor4|d~0_combout  = (\PB1~input_o  & ((\registrador|FFP_ParaleloD|FFP_C|Q~q  & (!\registrador|FFP_ParaleloD|FFP_B|Q~q  & \registrador|FFP_ParaleloD|FFP_A|Q~q )) # (!\registrador|FFP_ParaleloD|FFP_C|Q~q  & (\registrador|FFP_ParaleloD|FFP_B|Q~q  & 
-// !\registrador|FFP_ParaleloD|FFP_A|Q~q ))))
+// \conversor4|d~0_combout  = (\PB1~input_o  & ((\registrador|FFP_ParaleloE|FFP_B|Q~q  & (!\registrador|FFP_ParaleloE|FFP_A|Q~q  & !\registrador|FFP_ParaleloE|FFP_C|Q~q )) # (!\registrador|FFP_ParaleloE|FFP_B|Q~q  & (\registrador|FFP_ParaleloE|FFP_A|Q~q  & 
+// \registrador|FFP_ParaleloE|FFP_C|Q~q ))))
 
-	.dataa(\PB1~input_o ),
-	.datab(\registrador|FFP_ParaleloD|FFP_C|Q~q ),
-	.datac(\registrador|FFP_ParaleloD|FFP_B|Q~q ),
-	.datad(\registrador|FFP_ParaleloD|FFP_A|Q~q ),
+	.dataa(\registrador|FFP_ParaleloE|FFP_B|Q~q ),
+	.datab(\registrador|FFP_ParaleloE|FFP_A|Q~q ),
+	.datac(\PB1~input_o ),
+	.datad(\registrador|FFP_ParaleloE|FFP_C|Q~q ),
 	.cin(gnd),
 	.combout(\conversor4|d~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \conversor4|d~0 .lut_mask = 16'h0820;
+defparam \conversor4|d~0 .lut_mask = 16'h4020;
 defparam \conversor4|d~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X71_Y46_N8
-fiftyfivenm_lcell_comb \conversor4|d~1 (
-// Equation(s):
-// \conversor4|d~1_combout  = (\PB1~input_o  & ((\registrador|FFP_ParaleloD|FFP_C|Q~q  & (!\registrador|FFP_ParaleloD|FFP_B|Q~q  & !\registrador|FFP_ParaleloD|FFP_A|Q~q )) # (!\registrador|FFP_ParaleloD|FFP_C|Q~q  & ((\registrador|FFP_ParaleloD|FFP_A|Q~q 
-// )))))
-
-	.dataa(\PB1~input_o ),
-	.datab(\registrador|FFP_ParaleloD|FFP_C|Q~q ),
-	.datac(\registrador|FFP_ParaleloD|FFP_B|Q~q ),
-	.datad(\registrador|FFP_ParaleloD|FFP_A|Q~q ),
-	.cin(gnd),
-	.combout(\conversor4|d~1_combout ),
-	.cout());
-// synopsys translate_off
-defparam \conversor4|d~1 .lut_mask = 16'h2208;
-defparam \conversor4|d~1 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-// Location: LCCOMB_X71_Y46_N4
+// Location: LCCOMB_X74_Y46_N28
 fiftyfivenm_lcell_comb \registrador|Desloc5|Qout~0 (
 // Equation(s):
-// \registrador|Desloc5|Qout~0_combout  = (\PB1~input_o  & ((\registrador|FFP_ParaleloD|FFP_D|Q~q ))) # (!\PB1~input_o  & (\somador|somador|SomaBit3|Cout~0_combout ))
+// \registrador|Desloc5|Qout~0_combout  = (\PB1~input_o  & ((\registrador|FFP_ParaleloE|FFP_D|Q~q ))) # (!\PB1~input_o  & (\somador|somador|SomaBit3|Cout~0_combout ))
 
-	.dataa(gnd),
-	.datab(\somador|somador|SomaBit3|Cout~0_combout ),
-	.datac(\PB1~input_o ),
-	.datad(\registrador|FFP_ParaleloD|FFP_D|Q~q ),
+	.dataa(\PB1~input_o ),
+	.datab(gnd),
+	.datac(\somador|somador|SomaBit3|Cout~0_combout ),
+	.datad(\registrador|FFP_ParaleloE|FFP_D|Q~q ),
 	.cin(gnd),
 	.combout(\registrador|Desloc5|Qout~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \registrador|Desloc5|Qout~0 .lut_mask = 16'hFC0C;
+defparam \registrador|Desloc5|Qout~0 .lut_mask = 16'hFA50;
 defparam \registrador|Desloc5|Qout~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X71_Y46_N14
+// Location: LCCOMB_X74_Y46_N4
+fiftyfivenm_lcell_comb \conversor4|d~1 (
+// Equation(s):
+// \conversor4|d~1_combout  = (\PB1~input_o  & ((\registrador|FFP_ParaleloE|FFP_A|Q~q  & ((!\registrador|FFP_ParaleloE|FFP_C|Q~q ))) # (!\registrador|FFP_ParaleloE|FFP_A|Q~q  & (!\registrador|FFP_ParaleloE|FFP_B|Q~q  & \registrador|FFP_ParaleloE|FFP_C|Q~q 
+// ))))
+
+	.dataa(\registrador|FFP_ParaleloE|FFP_B|Q~q ),
+	.datab(\registrador|FFP_ParaleloE|FFP_A|Q~q ),
+	.datac(\PB1~input_o ),
+	.datad(\registrador|FFP_ParaleloE|FFP_C|Q~q ),
+	.cin(gnd),
+	.combout(\conversor4|d~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \conversor4|d~1 .lut_mask = 16'h10C0;
+defparam \conversor4|d~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X74_Y46_N10
 fiftyfivenm_lcell_comb \conversor4|d~2 (
 // Equation(s):
-// \conversor4|d~2_combout  = (\conversor4|d~0_combout  & ((\conversor4|d~1_combout  & (!\registrador|Desloc5|Qout~0_combout )) # (!\conversor4|d~1_combout  & ((\registrador|FFP_ParaleloD|FFP_D|Q~q ))))) # (!\conversor4|d~0_combout  & 
-// ((\conversor4|d~1_combout ) # ((!\registrador|Desloc5|Qout~0_combout ))))
+// \conversor4|d~2_combout  = (\conversor4|d~0_combout  & ((\conversor4|d~1_combout  & (!\registrador|Desloc5|Qout~0_combout )) # (!\conversor4|d~1_combout  & ((\registrador|FFP_ParaleloE|FFP_D|Q~q ))))) # (!\conversor4|d~0_combout  & 
+// (((\conversor4|d~1_combout )) # (!\registrador|Desloc5|Qout~0_combout )))
 
 	.dataa(\conversor4|d~0_combout ),
-	.datab(\conversor4|d~1_combout ),
-	.datac(\registrador|Desloc5|Qout~0_combout ),
-	.datad(\registrador|FFP_ParaleloD|FFP_D|Q~q ),
+	.datab(\registrador|Desloc5|Qout~0_combout ),
+	.datac(\conversor4|d~1_combout ),
+	.datad(\registrador|FFP_ParaleloE|FFP_D|Q~q ),
 	.cin(gnd),
 	.combout(\conversor4|d~2_combout ),
 	.cout());
 // synopsys translate_off
-defparam \conversor4|d~2 .lut_mask = 16'h6F4D;
+defparam \conversor4|d~2 .lut_mask = 16'h7B71;
 defparam \conversor4|d~2 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X71_Y46_N28
+// Location: LCCOMB_X74_Y46_N20
 fiftyfivenm_lcell_comb \conversor4|e~0 (
 // Equation(s):
-// \conversor4|e~0_combout  = (\registrador|FFP_ParaleloD|FFP_C|Q~q  & (((\registrador|FFP_ParaleloD|FFP_A|Q~q )) # (!\registrador|FFP_ParaleloD|FFP_D|Q~q ))) # (!\registrador|FFP_ParaleloD|FFP_C|Q~q  & ((\registrador|FFP_ParaleloD|FFP_B|Q~q  & 
-// ((\registrador|FFP_ParaleloD|FFP_A|Q~q ))) # (!\registrador|FFP_ParaleloD|FFP_B|Q~q  & (!\registrador|FFP_ParaleloD|FFP_D|Q~q ))))
+// \conversor4|e~0_combout  = (\registrador|FFP_ParaleloE|FFP_C|Q~q  & (((\registrador|FFP_ParaleloE|FFP_A|Q~q ) # (!\registrador|FFP_ParaleloE|FFP_D|Q~q )))) # (!\registrador|FFP_ParaleloE|FFP_C|Q~q  & ((\registrador|FFP_ParaleloE|FFP_B|Q~q  & 
+// ((\registrador|FFP_ParaleloE|FFP_A|Q~q ))) # (!\registrador|FFP_ParaleloE|FFP_B|Q~q  & (!\registrador|FFP_ParaleloE|FFP_D|Q~q ))))
 
-	.dataa(\registrador|FFP_ParaleloD|FFP_D|Q~q ),
-	.datab(\registrador|FFP_ParaleloD|FFP_C|Q~q ),
-	.datac(\registrador|FFP_ParaleloD|FFP_B|Q~q ),
-	.datad(\registrador|FFP_ParaleloD|FFP_A|Q~q ),
+	.dataa(\registrador|FFP_ParaleloE|FFP_B|Q~q ),
+	.datab(\registrador|FFP_ParaleloE|FFP_D|Q~q ),
+	.datac(\registrador|FFP_ParaleloE|FFP_A|Q~q ),
+	.datad(\registrador|FFP_ParaleloE|FFP_C|Q~q ),
 	.cin(gnd),
 	.combout(\conversor4|e~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \conversor4|e~0 .lut_mask = 16'hFD45;
+defparam \conversor4|e~0 .lut_mask = 16'hF3B1;
 defparam \conversor4|e~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X71_Y46_N30
+// Location: LCCOMB_X74_Y46_N30
 fiftyfivenm_lcell_comb \conversor4|e~1 (
 // Equation(s):
 // \conversor4|e~1_combout  = (\PB1~input_o  & ((\conversor4|e~0_combout ))) # (!\PB1~input_o  & (!\somador|somador|SomaBit3|Cout~0_combout ))
 
-	.dataa(gnd),
-	.datab(\somador|somador|SomaBit3|Cout~0_combout ),
+	.dataa(\somador|somador|SomaBit3|Cout~0_combout ),
+	.datab(gnd),
 	.datac(\PB1~input_o ),
 	.datad(\conversor4|e~0_combout ),
 	.cin(gnd),
 	.combout(\conversor4|e~1_combout ),
 	.cout());
 // synopsys translate_off
-defparam \conversor4|e~1 .lut_mask = 16'hF303;
+defparam \conversor4|e~1 .lut_mask = 16'hF505;
 defparam \conversor4|e~1 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X71_Y46_N0
+// Location: LCCOMB_X74_Y46_N12
 fiftyfivenm_lcell_comb \conversor4|f~0 (
 // Equation(s):
-// \conversor4|f~0_combout  = (\registrador|FFP_ParaleloD|FFP_C|Q~q  & (!\registrador|FFP_ParaleloD|FFP_B|Q~q  & !\registrador|Desloc5|Qout~0_combout )) # (!\registrador|FFP_ParaleloD|FFP_C|Q~q  & (\registrador|FFP_ParaleloD|FFP_B|Q~q  & 
-// \registrador|Desloc5|Qout~0_combout ))
+// \conversor4|f~0_combout  = (\registrador|Desloc5|Qout~0_combout  & (!\registrador|FFP_ParaleloE|FFP_C|Q~q  & \registrador|FFP_ParaleloE|FFP_B|Q~q )) # (!\registrador|Desloc5|Qout~0_combout  & (\registrador|FFP_ParaleloE|FFP_C|Q~q  & 
+// !\registrador|FFP_ParaleloE|FFP_B|Q~q ))
 
 	.dataa(gnd),
-	.datab(\registrador|FFP_ParaleloD|FFP_C|Q~q ),
-	.datac(\registrador|FFP_ParaleloD|FFP_B|Q~q ),
-	.datad(\registrador|Desloc5|Qout~0_combout ),
+	.datab(\registrador|Desloc5|Qout~0_combout ),
+	.datac(\registrador|FFP_ParaleloE|FFP_C|Q~q ),
+	.datad(\registrador|FFP_ParaleloE|FFP_B|Q~q ),
 	.cin(gnd),
 	.combout(\conversor4|f~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \conversor4|f~0 .lut_mask = 16'h300C;
+defparam \conversor4|f~0 .lut_mask = 16'h0C30;
 defparam \conversor4|f~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X71_Y46_N26
+// Location: LCCOMB_X74_Y46_N26
 fiftyfivenm_lcell_comb \conversor4|f~1 (
 // Equation(s):
-// \conversor4|f~1_combout  = (\conversor4|f~0_combout  & (\registrador|Desloc5|Qout~0_combout  $ (((\registrador|FFP_ParaleloD|FFP_A|Q~q ) # (!\PB1~input_o ))))) # (!\conversor4|f~0_combout  & (((\PB1~input_o  & \registrador|FFP_ParaleloD|FFP_A|Q~q )) # 
-// (!\registrador|Desloc5|Qout~0_combout )))
+// \conversor4|f~1_combout  = (\PB1~input_o  & ((\registrador|Desloc5|Qout~0_combout  & (\registrador|FFP_ParaleloE|FFP_A|Q~q  $ (\conversor4|f~0_combout ))) # (!\registrador|Desloc5|Qout~0_combout  & ((\registrador|FFP_ParaleloE|FFP_A|Q~q ) # 
+// (!\conversor4|f~0_combout ))))) # (!\PB1~input_o  & (!\registrador|Desloc5|Qout~0_combout ))
 
-	.dataa(\conversor4|f~0_combout ),
+	.dataa(\PB1~input_o ),
 	.datab(\registrador|Desloc5|Qout~0_combout ),
-	.datac(\PB1~input_o ),
-	.datad(\registrador|FFP_ParaleloD|FFP_A|Q~q ),
+	.datac(\registrador|FFP_ParaleloE|FFP_A|Q~q ),
+	.datad(\conversor4|f~0_combout ),
 	.cin(gnd),
 	.combout(\conversor4|f~1_combout ),
 	.cout());
 // synopsys translate_off
-defparam \conversor4|f~1 .lut_mask = 16'h7393;
+defparam \conversor4|f~1 .lut_mask = 16'h39B3;
 defparam \conversor4|f~1 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X71_Y46_N16
+// Location: LCCOMB_X74_Y46_N16
 fiftyfivenm_lcell_comb \conversor4|g~0 (
 // Equation(s):
-// \conversor4|g~0_combout  = (\registrador|FFP_ParaleloD|FFP_D|Q~q  & ((\registrador|FFP_ParaleloD|FFP_A|Q~q ) # (\registrador|FFP_ParaleloD|FFP_C|Q~q  $ (\registrador|FFP_ParaleloD|FFP_B|Q~q )))) # (!\registrador|FFP_ParaleloD|FFP_D|Q~q  & 
-// ((\registrador|FFP_ParaleloD|FFP_C|Q~q ) # (\registrador|FFP_ParaleloD|FFP_B|Q~q  $ (\registrador|FFP_ParaleloD|FFP_A|Q~q ))))
+// \conversor4|g~0_combout  = (\registrador|FFP_ParaleloE|FFP_D|Q~q  & ((\registrador|FFP_ParaleloE|FFP_A|Q~q ) # (\registrador|FFP_ParaleloE|FFP_B|Q~q  $ (\registrador|FFP_ParaleloE|FFP_C|Q~q )))) # (!\registrador|FFP_ParaleloE|FFP_D|Q~q  & 
+// ((\registrador|FFP_ParaleloE|FFP_C|Q~q ) # (\registrador|FFP_ParaleloE|FFP_B|Q~q  $ (\registrador|FFP_ParaleloE|FFP_A|Q~q ))))
 
-	.dataa(\registrador|FFP_ParaleloD|FFP_D|Q~q ),
-	.datab(\registrador|FFP_ParaleloD|FFP_C|Q~q ),
-	.datac(\registrador|FFP_ParaleloD|FFP_B|Q~q ),
-	.datad(\registrador|FFP_ParaleloD|FFP_A|Q~q ),
+	.dataa(\registrador|FFP_ParaleloE|FFP_B|Q~q ),
+	.datab(\registrador|FFP_ParaleloE|FFP_D|Q~q ),
+	.datac(\registrador|FFP_ParaleloE|FFP_A|Q~q ),
+	.datad(\registrador|FFP_ParaleloE|FFP_C|Q~q ),
 	.cin(gnd),
 	.combout(\conversor4|g~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \conversor4|g~0 .lut_mask = 16'hEF7C;
+defparam \conversor4|g~0 .lut_mask = 16'hF7DA;
 defparam \conversor4|g~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCCOMB_X71_Y46_N22
+// Location: LCCOMB_X74_Y46_N18
 fiftyfivenm_lcell_comb \conversor4|g~1 (
 // Equation(s):
 // \conversor4|g~1_combout  = (\PB1~input_o  & \conversor4|g~0_combout )

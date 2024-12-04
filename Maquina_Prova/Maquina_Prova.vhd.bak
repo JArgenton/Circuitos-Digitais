@@ -1,0 +1,27 @@
+Library IEEE;
+use ieee.std_logic_1164.all;
+
+entity Maquina_Prova is
+port(
+	Clk : in std_logic;
+	Hex : out std_logic_vector(6 downto 0)
+	);
+end Maquina_Prova;
+
+architecture arch of Maquina_Prova is
+signal Sout : std_logic_vector(3 downto 0);
+signal Saidas : std_logic_vector(3 downto 0);
+signal Entradas : std_logic_vector(3 downto 0);
+
+begin
+
+D_0 : entity work.D0
+	port map(
+		X => Entradas,
+		S => Sout(0)
+		);
+ffpD0 : entity work.flip_flop_D
+	port map(
+		
+
+end arch;

@@ -1,0 +1,65 @@
+Determining the location of the ModelSim executable...
+
+Using: /home/pedro/intelFPGA_lite/18.1/modelsim_ase/linuxaloem/
+
+To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
+Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-Altera will be used.
+
+**** Generating the ModelSim Testbench ****
+
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Ex2 -c Ex2 --vector_source="/home/pedro/Documents/Circuitos Digitais/Ex3 Prova/Waveform1.vwf" --testbench_file="/home/pedro/Documents/Circuitos Digitais/Ex3 Prova/simulation/qsim/Waveform1.vwf.vht"
+
+Info: *******************************************************************Info: Running Quartus Prime EDA Netlist Writer    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition    Info: Copyright (C) 2018  Intel Corporation. All rights reserved.    Info: Your use of Intel Corporation's design tools, logic functions     Info: and other software and tools, and its AMPP partner logic     Info: functions, and any output files from any of the foregoing     Info: (including device programming or simulation files), and any     Info: associated documentation or information are expressly subject     Info: to the terms and conditions of the Intel Program License     Info: Subscription Agreement, the Intel Quartus Prime License Agreement,    Info: the Intel FPGA IP License Agreement, or other applicable license    Info: agreement, including, without limitation, that your use is for    Info: the sole purpose of programming logic devices manufactured by    Info: Intel and sold by Intel or its authorized distributors.  Please    Info: refer to the applicable agreement for further details.    Info: Processing started: Wed Nov 27 14:05:51 2024Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Ex2 -c Ex2 --vector_source="/home/pedro/Documents/Circuitos Digitais/Ex3 Prova/Waveform1.vwf" --testbench_file="/home/pedro/Documents/Circuitos Digitais/Ex3 Prova/simulation/qsim/Waveform1.vwf.vht"Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Completed successfully. 
+
+**** Generating the functional simulation netlist ****
+
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="/home/pedro/Documents/Circuitos Digitais/Ex3 Prova/simulation/qsim/" Ex2 -c Ex2
+
+Info: *******************************************************************Info: Running Quartus Prime EDA Netlist Writer    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition    Info: Copyright (C) 2018  Intel Corporation. All rights reserved.    Info: Your use of Intel Corporation's design tools, logic functions     Info: and other software and tools, and its AMPP partner logic     Info: functions, and any output files from any of the foregoing     Info: (including device programming or simulation files), and any     Info: associated documentation or information are expressly subject     Info: to the terms and conditions of the Intel Program License     Info: Subscription Agreement, the Intel Quartus Prime License Agreement,    Info: the Intel FPGA IP License Agreement, or other applicable license    Info: agreement, including, without limitation, that your use is for    Info: the sole purpose of programming logic devices manufactured by    Info: Intel and sold by Intel or its authorized distributors.  Please    Info: refer to the applicable agreement for further details.    Info: Processing started: Wed Nov 27 14:05:52 2024Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="/home/pedro/Documents/Circuitos Digitais/Ex3 Prova/simulation/qsim/" Ex2 -c Ex2Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.Info (204019): Generated file Ex2.vho in folder "/home/pedro/Documents/Circuitos Digitais/Ex3 Prova/simulation/qsim//" for EDA simulation toolInfo: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning    Info: Peak virtual memory: 1097 megabytes    Info: Processing ended: Wed Nov 27 14:05:53 2024    Info: Elapsed time: 00:00:01    Info: Total CPU time (on all processors): 00:00:01
+Completed successfully. 
+
+**** Generating the ModelSim .do script ****
+
+/home/pedro/Documents/Circuitos Digitais/Ex3 Prova/simulation/qsim/Ex2.do generated.
+
+Completed successfully. 
+
+**** Running the ModelSim simulation ****
+
+/home/pedro/intelFPGA_lite/18.1/modelsim_ase/linuxaloem//vsim -c -do Ex2.do
+
+Reading pref.tcl
+# 10.5b
+# do Ex2.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:05:53 on Nov 27,2024# vcom -work work Ex2.vho # -- Loading package STANDARD# -- Loading package TEXTIO# -- Loading package std_logic_1164# -- Loading package altera_lnsim_components
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives# -- Loading package cyclonev_atom_pack# -- Loading package cyclonev_components
+# -- Compiling entity Ex2# -- Compiling architecture structure of Ex2# End time: 14:05:53 on Nov 27,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:05:53 on Nov 27,2024# vcom -work work Waveform1.vwf.vht # -- Loading package STANDARD# -- Loading package TEXTIO
+# -- Loading package std_logic_1164# -- Compiling entity Ex2_vhd_vec_tst# -- Compiling architecture Ex2_arch of Ex2_vhd_vec_tst# End time: 14:05:53 on Nov 27,2024, Elapsed time: 0:00:00# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Ex2_vhd_vec_tst # Start time: 14:05:53 on Nov 27,2024# Loading std.standard# Loading std.textio(body)# Loading ieee.std_logic_1164(body)# Loading work.ex2_vhd_vec_tst(ex2_arch)# Loading altera_lnsim.altera_lnsim_components# Loading ieee.vital_timing(body)# Loading ieee.vital_primitives(body)# Loading cyclonev.cyclonev_atom_pack(body)# Loading cyclonev.cyclonev_components# Loading work.ex2(structure)# Loading ieee.std_logic_arith(body)# Loading cyclonev.cyclonev_io_obuf(arch)# Loading cyclonev.cyclonev_io_ibuf(arch)# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
+# after#32
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# End time: 14:05:53 on Nov 27,2024, Elapsed time: 0:00:00# Errors: 0, Warnings: 7
+Completed successfully. 
+
+**** Converting ModelSim VCD to vector waveform ****
+
+Reading /home/pedro/Documents/Circuitos Digitais/Ex3 Prova/Waveform1.vwf...
+
+Reading /home/pedro/Documents/Circuitos Digitais/Ex3 Prova/simulation/qsim/Ex2.msim.vcd...
+
+Processing channel transitions... 
+
+Writing the resulting VWF to /home/pedro/Documents/Circuitos Digitais/Ex3 Prova/simulation/qsim/Ex2_20241127140554.sim.vwf
+
+Finished VCD to VWF conversion.
+
+Completed successfully. 
+
+All completed.

@@ -1,0 +1,488 @@
+|PISO_SIPO
+Clock => piso:piso.Clk
+Clock => sipo:sipo.clk
+Load => piso:piso.L_S
+Entrada[0] => piso:piso.Palavra[0]
+Entrada[1] => piso:piso.Palavra[1]
+Entrada[2] => piso:piso.Palavra[2]
+Entrada[3] => piso:piso.Palavra[3]
+Entrada[4] => piso:piso.Palavra[4]
+Entrada[5] => piso:piso.Palavra[5]
+Entrada[6] => piso:piso.Palavra[6]
+Entrada[7] => piso:piso.Palavra[7]
+HEX_0[0] << conversor_hexa:conversorH0.Output[0]
+HEX_0[1] << conversor_hexa:conversorH0.Output[1]
+HEX_0[2] << conversor_hexa:conversorH0.Output[2]
+HEX_0[3] << conversor_hexa:conversorH0.Output[3]
+HEX_0[4] << conversor_hexa:conversorH0.Output[4]
+HEX_0[5] << conversor_hexa:conversorH0.Output[5]
+HEX_0[6] << conversor_hexa:conversorH0.Output[6]
+HEX_1[0] << conversor_hexa:conversorH1.Output[0]
+HEX_1[1] << conversor_hexa:conversorH1.Output[1]
+HEX_1[2] << conversor_hexa:conversorH1.Output[2]
+HEX_1[3] << conversor_hexa:conversorH1.Output[3]
+HEX_1[4] << conversor_hexa:conversorH1.Output[4]
+HEX_1[5] << conversor_hexa:conversorH1.Output[5]
+HEX_1[6] << conversor_hexa:conversorH1.Output[6]
+HEX_3[0] << conversor_hexa:conversorH3.Output[0]
+HEX_3[1] << conversor_hexa:conversorH3.Output[1]
+HEX_3[2] << conversor_hexa:conversorH3.Output[2]
+HEX_3[3] << conversor_hexa:conversorH3.Output[3]
+HEX_3[4] << conversor_hexa:conversorH3.Output[4]
+HEX_3[5] << conversor_hexa:conversorH3.Output[5]
+HEX_3[6] << conversor_hexa:conversorH3.Output[6]
+HEX_4[0] << conversor_hexa:conversorH4.Output[0]
+HEX_4[1] << conversor_hexa:conversorH4.Output[1]
+HEX_4[2] << conversor_hexa:conversorH4.Output[2]
+HEX_4[3] << conversor_hexa:conversorH4.Output[3]
+HEX_4[4] << conversor_hexa:conversorH4.Output[4]
+HEX_4[5] << conversor_hexa:conversorH4.Output[5]
+HEX_4[6] << conversor_hexa:conversorH4.Output[6]
+Leds_SIPO[0] << sipo:sipo.Saidas[0]
+Leds_SIPO[1] << sipo:sipo.Saidas[1]
+Leds_SIPO[2] << sipo:sipo.Saidas[2]
+Leds_SIPO[3] << sipo:sipo.Saidas[3]
+Leds_SIPO[4] << sipo:sipo.Saidas[4]
+Leds_SIPO[5] << sipo:sipo.Saidas[5]
+Leds_SIPO[6] << sipo:sipo.Saidas[6]
+Leds_SIPO[7] << sipo:sipo.Saidas[7]
+
+
+|PISO_SIPO|PISO:piso
+Palavra[0] => flip_flop_d:FFP1.D
+Palavra[1] => load_x_deslocamento:LS1.Din
+Palavra[2] => load_x_deslocamento:LS2.Din
+Palavra[3] => load_x_deslocamento:LS3.Din
+Palavra[4] => load_x_deslocamento:LS4.Din
+Palavra[5] => load_x_deslocamento:LS5.Din
+Palavra[6] => load_x_deslocamento:LS6.Din
+Palavra[7] => load_x_deslocamento:LS7.Din
+Clk => flip_flop_d:FFP1.clock
+Clk => flip_flop_d:FFP2.clock
+Clk => flip_flop_d:FFP3.clock
+Clk => flip_flop_d:FFP4.clock
+Clk => flip_flop_d:FFP5.clock
+Clk => flip_flop_d:FFP6.clock
+Clk => flip_flop_d:FFP7.clock
+Clk => flip_flop_d:FFP8.clock
+L_S => load_x_deslocamento:LS1.LS
+L_S => load_x_deslocamento:LS2.LS
+L_S => load_x_deslocamento:LS3.LS
+L_S => load_x_deslocamento:LS4.LS
+L_S => load_x_deslocamento:LS5.LS
+L_S => load_x_deslocamento:LS6.LS
+L_S => load_x_deslocamento:LS7.LS
+Valor[0] <= flip_flop_d:FFP1.Q
+Valor[1] <= flip_flop_d:FFP2.Q
+Valor[2] <= flip_flop_d:FFP3.Q
+Valor[3] <= flip_flop_d:FFP4.Q
+Valor[4] <= flip_flop_d:FFP5.Q
+Valor[5] <= flip_flop_d:FFP6.Q
+Valor[6] <= flip_flop_d:FFP7.Q
+Valor[7] <= flip_flop_d:FFP8.Q
+
+
+|PISO_SIPO|PISO:piso|Flip_Flop_D:FFP1
+clock => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|PISO_SIPO|PISO:piso|LOAD_X_DESLOCAMENTO:LS1
+Din => Qout.IN0
+LS => Qout.IN0
+LS => Qout.IN1
+Flip => Qout.IN1
+Qout <= Qout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|PISO_SIPO|PISO:piso|Flip_Flop_D:FFP2
+clock => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|PISO_SIPO|PISO:piso|LOAD_X_DESLOCAMENTO:LS2
+Din => Qout.IN0
+LS => Qout.IN0
+LS => Qout.IN1
+Flip => Qout.IN1
+Qout <= Qout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|PISO_SIPO|PISO:piso|Flip_Flop_D:FFP3
+clock => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|PISO_SIPO|PISO:piso|LOAD_X_DESLOCAMENTO:LS3
+Din => Qout.IN0
+LS => Qout.IN0
+LS => Qout.IN1
+Flip => Qout.IN1
+Qout <= Qout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|PISO_SIPO|PISO:piso|Flip_Flop_D:FFP4
+clock => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|PISO_SIPO|PISO:piso|LOAD_X_DESLOCAMENTO:LS4
+Din => Qout.IN0
+LS => Qout.IN0
+LS => Qout.IN1
+Flip => Qout.IN1
+Qout <= Qout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|PISO_SIPO|PISO:piso|Flip_Flop_D:FFP5
+clock => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|PISO_SIPO|PISO:piso|LOAD_X_DESLOCAMENTO:LS5
+Din => Qout.IN0
+LS => Qout.IN0
+LS => Qout.IN1
+Flip => Qout.IN1
+Qout <= Qout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|PISO_SIPO|PISO:piso|Flip_Flop_D:FFP6
+clock => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|PISO_SIPO|PISO:piso|LOAD_X_DESLOCAMENTO:LS6
+Din => Qout.IN0
+LS => Qout.IN0
+LS => Qout.IN1
+Flip => Qout.IN1
+Qout <= Qout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|PISO_SIPO|PISO:piso|Flip_Flop_D:FFP7
+clock => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|PISO_SIPO|PISO:piso|LOAD_X_DESLOCAMENTO:LS7
+Din => Qout.IN0
+LS => Qout.IN0
+LS => Qout.IN1
+Flip => Qout.IN1
+Qout <= Qout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|PISO_SIPO|PISO:piso|Flip_Flop_D:FFP8
+clock => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|PISO_SIPO|SIPO:sipo
+Serial => flip_flop_d:FFP1.D
+clk => flip_flop_d:FFP1.clock
+clk => flip_flop_d:FFP2.clock
+clk => flip_flop_d:FFP3.clock
+clk => flip_flop_d:FFP4.clock
+clk => flip_flop_d:FFP5.clock
+clk => flip_flop_d:FFP6.clock
+clk => flip_flop_d:FFP7.clock
+clk => flip_flop_d:FFP8.clock
+Saidas[0] <= flip_flop_d:FFP1.Q
+Saidas[1] <= flip_flop_d:FFP2.Q
+Saidas[2] <= flip_flop_d:FFP3.Q
+Saidas[3] <= flip_flop_d:FFP4.Q
+Saidas[4] <= flip_flop_d:FFP5.Q
+Saidas[5] <= flip_flop_d:FFP6.Q
+Saidas[6] <= flip_flop_d:FFP7.Q
+Saidas[7] <= flip_flop_d:FFP8.Q
+
+
+|PISO_SIPO|SIPO:sipo|Flip_Flop_D:FFP1
+clock => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|PISO_SIPO|SIPO:sipo|Flip_Flop_D:FFP2
+clock => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|PISO_SIPO|SIPO:sipo|Flip_Flop_D:FFP3
+clock => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|PISO_SIPO|SIPO:sipo|Flip_Flop_D:FFP4
+clock => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|PISO_SIPO|SIPO:sipo|Flip_Flop_D:FFP5
+clock => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|PISO_SIPO|SIPO:sipo|Flip_Flop_D:FFP6
+clock => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|PISO_SIPO|SIPO:sipo|Flip_Flop_D:FFP7
+clock => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|PISO_SIPO|SIPO:sipo|Flip_Flop_D:FFP8
+clock => Q~reg0.CLK
+D => Q~reg0.DATAIN
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|PISO_SIPO|Conversor_HEXA:conversorH0
+Input[0] => a.IN1
+Input[0] => b.IN1
+Input[0] => b.IN1
+Input[0] => c.IN0
+Input[0] => c.IN0
+Input[0] => d.IN1
+Input[0] => d.IN1
+Input[0] => g.IN0
+Input[0] => g.IN0
+Input[0] => f.IN0
+Input[0] => f.IN0
+Input[0] => e.IN0
+Input[0] => d.IN1
+Input[0] => d.IN1
+Input[0] => b.IN1
+Input[0] => a.IN0
+Input[1] => b.IN0
+Input[1] => d.IN0
+Input[1] => f.IN0
+Input[1] => g.IN0
+Input[1] => g.IN1
+Input[1] => g.IN1
+Input[1] => f.IN1
+Input[1] => d.IN0
+Input[1] => d.IN0
+Input[1] => c.IN1
+Input[1] => c.IN0
+Input[1] => a.IN1
+Input[2] => d.IN1
+Input[2] => d.IN1
+Input[2] => e.IN0
+Input[2] => f.IN1
+Input[2] => g.IN0
+Input[2] => g.IN1
+Input[2] => g.IN0
+Input[2] => e.IN1
+Input[2] => d.IN0
+Input[3] => a.IN1
+Input[3] => d.IN1
+Input[3] => e.IN1
+Input[3] => f.IN1
+Input[3] => g.IN1
+Input[3] => g.IN1
+Input[3] => g.IN1
+Input[3] => d.IN1
+Input[3] => c.IN1
+Input[3] => c.IN1
+Input[3] => b.IN1
+Output[0] <= a.DB_MAX_OUTPUT_PORT_TYPE
+Output[1] <= b.DB_MAX_OUTPUT_PORT_TYPE
+Output[2] <= c.DB_MAX_OUTPUT_PORT_TYPE
+Output[3] <= d.DB_MAX_OUTPUT_PORT_TYPE
+Output[4] <= e.DB_MAX_OUTPUT_PORT_TYPE
+Output[5] <= f.DB_MAX_OUTPUT_PORT_TYPE
+Output[6] <= g.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|PISO_SIPO|Conversor_HEXA:conversorH1
+Input[0] => a.IN1
+Input[0] => b.IN1
+Input[0] => b.IN1
+Input[0] => c.IN0
+Input[0] => c.IN0
+Input[0] => d.IN1
+Input[0] => d.IN1
+Input[0] => g.IN0
+Input[0] => g.IN0
+Input[0] => f.IN0
+Input[0] => f.IN0
+Input[0] => e.IN0
+Input[0] => d.IN1
+Input[0] => d.IN1
+Input[0] => b.IN1
+Input[0] => a.IN0
+Input[1] => b.IN0
+Input[1] => d.IN0
+Input[1] => f.IN0
+Input[1] => g.IN0
+Input[1] => g.IN1
+Input[1] => g.IN1
+Input[1] => f.IN1
+Input[1] => d.IN0
+Input[1] => d.IN0
+Input[1] => c.IN1
+Input[1] => c.IN0
+Input[1] => a.IN1
+Input[2] => d.IN1
+Input[2] => d.IN1
+Input[2] => e.IN0
+Input[2] => f.IN1
+Input[2] => g.IN0
+Input[2] => g.IN1
+Input[2] => g.IN0
+Input[2] => e.IN1
+Input[2] => d.IN0
+Input[3] => a.IN1
+Input[3] => d.IN1
+Input[3] => e.IN1
+Input[3] => f.IN1
+Input[3] => g.IN1
+Input[3] => g.IN1
+Input[3] => g.IN1
+Input[3] => d.IN1
+Input[3] => c.IN1
+Input[3] => c.IN1
+Input[3] => b.IN1
+Output[0] <= a.DB_MAX_OUTPUT_PORT_TYPE
+Output[1] <= b.DB_MAX_OUTPUT_PORT_TYPE
+Output[2] <= c.DB_MAX_OUTPUT_PORT_TYPE
+Output[3] <= d.DB_MAX_OUTPUT_PORT_TYPE
+Output[4] <= e.DB_MAX_OUTPUT_PORT_TYPE
+Output[5] <= f.DB_MAX_OUTPUT_PORT_TYPE
+Output[6] <= g.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|PISO_SIPO|Conversor_HEXA:conversorH3
+Input[0] => a.IN1
+Input[0] => b.IN1
+Input[0] => b.IN1
+Input[0] => c.IN0
+Input[0] => c.IN0
+Input[0] => d.IN1
+Input[0] => d.IN1
+Input[0] => g.IN0
+Input[0] => g.IN0
+Input[0] => f.IN0
+Input[0] => f.IN0
+Input[0] => e.IN0
+Input[0] => d.IN1
+Input[0] => d.IN1
+Input[0] => b.IN1
+Input[0] => a.IN0
+Input[1] => b.IN0
+Input[1] => d.IN0
+Input[1] => f.IN0
+Input[1] => g.IN0
+Input[1] => g.IN1
+Input[1] => g.IN1
+Input[1] => f.IN1
+Input[1] => d.IN0
+Input[1] => d.IN0
+Input[1] => c.IN1
+Input[1] => c.IN0
+Input[1] => a.IN1
+Input[2] => d.IN1
+Input[2] => d.IN1
+Input[2] => e.IN0
+Input[2] => f.IN1
+Input[2] => g.IN0
+Input[2] => g.IN1
+Input[2] => g.IN0
+Input[2] => e.IN1
+Input[2] => d.IN0
+Input[3] => a.IN1
+Input[3] => d.IN1
+Input[3] => e.IN1
+Input[3] => f.IN1
+Input[3] => g.IN1
+Input[3] => g.IN1
+Input[3] => g.IN1
+Input[3] => d.IN1
+Input[3] => c.IN1
+Input[3] => c.IN1
+Input[3] => b.IN1
+Output[0] <= a.DB_MAX_OUTPUT_PORT_TYPE
+Output[1] <= b.DB_MAX_OUTPUT_PORT_TYPE
+Output[2] <= c.DB_MAX_OUTPUT_PORT_TYPE
+Output[3] <= d.DB_MAX_OUTPUT_PORT_TYPE
+Output[4] <= e.DB_MAX_OUTPUT_PORT_TYPE
+Output[5] <= f.DB_MAX_OUTPUT_PORT_TYPE
+Output[6] <= g.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|PISO_SIPO|Conversor_HEXA:conversorH4
+Input[0] => a.IN1
+Input[0] => b.IN1
+Input[0] => b.IN1
+Input[0] => c.IN0
+Input[0] => c.IN0
+Input[0] => d.IN1
+Input[0] => d.IN1
+Input[0] => g.IN0
+Input[0] => g.IN0
+Input[0] => f.IN0
+Input[0] => f.IN0
+Input[0] => e.IN0
+Input[0] => d.IN1
+Input[0] => d.IN1
+Input[0] => b.IN1
+Input[0] => a.IN0
+Input[1] => b.IN0
+Input[1] => d.IN0
+Input[1] => f.IN0
+Input[1] => g.IN0
+Input[1] => g.IN1
+Input[1] => g.IN1
+Input[1] => f.IN1
+Input[1] => d.IN0
+Input[1] => d.IN0
+Input[1] => c.IN1
+Input[1] => c.IN0
+Input[1] => a.IN1
+Input[2] => d.IN1
+Input[2] => d.IN1
+Input[2] => e.IN0
+Input[2] => f.IN1
+Input[2] => g.IN0
+Input[2] => g.IN1
+Input[2] => g.IN0
+Input[2] => e.IN1
+Input[2] => d.IN0
+Input[3] => a.IN1
+Input[3] => d.IN1
+Input[3] => e.IN1
+Input[3] => f.IN1
+Input[3] => g.IN1
+Input[3] => g.IN1
+Input[3] => g.IN1
+Input[3] => d.IN1
+Input[3] => c.IN1
+Input[3] => c.IN1
+Input[3] => b.IN1
+Output[0] <= a.DB_MAX_OUTPUT_PORT_TYPE
+Output[1] <= b.DB_MAX_OUTPUT_PORT_TYPE
+Output[2] <= c.DB_MAX_OUTPUT_PORT_TYPE
+Output[3] <= d.DB_MAX_OUTPUT_PORT_TYPE
+Output[4] <= e.DB_MAX_OUTPUT_PORT_TYPE
+Output[5] <= f.DB_MAX_OUTPUT_PORT_TYPE
+Output[6] <= g.DB_MAX_OUTPUT_PORT_TYPE
+
+

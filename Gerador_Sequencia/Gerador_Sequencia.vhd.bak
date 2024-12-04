@@ -1,0 +1,16 @@
+Library IEEE;
+use ieee.std_logic_1164.all;
+
+entity Gerador_Sequencia is
+port(
+	Entradas : in std_logic_vector(3 downto 0);
+	Saidas : out std_logic_vector(3 downto 0)
+	);
+end Gerador_Sequencia;
+
+architecture arch of Gerador_Sequencia is
+
+
+
+begin
+

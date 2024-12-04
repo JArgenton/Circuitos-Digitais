@@ -1,0 +1,719 @@
+$comment
+	File created using the following command:
+		vcd file Maquina_Prova.msim.vcd -direction
+$end
+$date
+	Wed Nov 27 13:14:55 2024
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module maquina_prova_vhd_vec_tst $end
+$var wire 1 ! CLK $end
+$var wire 1 " Hex [6] $end
+$var wire 1 # Hex [5] $end
+$var wire 1 $ Hex [4] $end
+$var wire 1 % Hex [3] $end
+$var wire 1 & Hex [2] $end
+$var wire 1 ' Hex [1] $end
+$var wire 1 ( Hex [0] $end
+$var wire 1 ) Output [3] $end
+$var wire 1 * Output [2] $end
+$var wire 1 + Output [1] $end
+$var wire 1 , Output [0] $end
+
+$scope module i1 $end
+$var wire 1 - gnd $end
+$var wire 1 . vcc $end
+$var wire 1 / unknown $end
+$var wire 1 0 devoe $end
+$var wire 1 1 devclrn $end
+$var wire 1 2 devpor $end
+$var wire 1 3 ww_devoe $end
+$var wire 1 4 ww_devclrn $end
+$var wire 1 5 ww_devpor $end
+$var wire 1 6 ww_CLK $end
+$var wire 1 7 ww_Hex [6] $end
+$var wire 1 8 ww_Hex [5] $end
+$var wire 1 9 ww_Hex [4] $end
+$var wire 1 : ww_Hex [3] $end
+$var wire 1 ; ww_Hex [2] $end
+$var wire 1 < ww_Hex [1] $end
+$var wire 1 = ww_Hex [0] $end
+$var wire 1 > ww_Output [3] $end
+$var wire 1 ? ww_Output [2] $end
+$var wire 1 @ ww_Output [1] $end
+$var wire 1 A ww_Output [0] $end
+$var wire 1 B \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [4] $end
+$var wire 1 C \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [3] $end
+$var wire 1 D \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [2] $end
+$var wire 1 E \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [1] $end
+$var wire 1 F \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [0] $end
+$var wire 1 G \~QUARTUS_CREATED_ADC2~_CHSEL_bus\ [4] $end
+$var wire 1 H \~QUARTUS_CREATED_ADC2~_CHSEL_bus\ [3] $end
+$var wire 1 I \~QUARTUS_CREATED_ADC2~_CHSEL_bus\ [2] $end
+$var wire 1 J \~QUARTUS_CREATED_ADC2~_CHSEL_bus\ [1] $end
+$var wire 1 K \~QUARTUS_CREATED_ADC2~_CHSEL_bus\ [0] $end
+$var wire 1 L \~QUARTUS_CREATED_GND~I_combout\ $end
+$var wire 1 M \~QUARTUS_CREATED_UNVM~~busy\ $end
+$var wire 1 N \~QUARTUS_CREATED_ADC1~~eoc\ $end
+$var wire 1 O \~QUARTUS_CREATED_ADC2~~eoc\ $end
+$var wire 1 P \Hex[0]~output_o\ $end
+$var wire 1 Q \Hex[1]~output_o\ $end
+$var wire 1 R \Hex[2]~output_o\ $end
+$var wire 1 S \Hex[3]~output_o\ $end
+$var wire 1 T \Hex[4]~output_o\ $end
+$var wire 1 U \Hex[5]~output_o\ $end
+$var wire 1 V \Hex[6]~output_o\ $end
+$var wire 1 W \Output[0]~output_o\ $end
+$var wire 1 X \Output[1]~output_o\ $end
+$var wire 1 Y \Output[2]~output_o\ $end
+$var wire 1 Z \Output[3]~output_o\ $end
+$var wire 1 [ \CLK~input_o\ $end
+$var wire 1 \ \ffpD1|Q_int~0_combout\ $end
+$var wire 1 ] \ffpD1|Q_int~q\ $end
+$var wire 1 ^ \conv|b~1_combout\ $end
+$var wire 1 _ \ffpJK3|Q_int~q\ $end
+$var wire 1 ` \ffpD0|Q_int~0_combout\ $end
+$var wire 1 a \ffpD0|Q_int~q\ $end
+$var wire 1 b \ffpJK2|Q_int~0_combout\ $end
+$var wire 1 c \ffpJK2|Q_int~q\ $end
+$var wire 1 d \conv|a~0_combout\ $end
+$var wire 1 e \conv|b~0_combout\ $end
+$var wire 1 f \conv|c~0_combout\ $end
+$var wire 1 g \conv|d~0_combout\ $end
+$var wire 1 h \conv|e~0_combout\ $end
+$var wire 1 i \conv|f~0_combout\ $end
+$var wire 1 j \conv|g~0_combout\ $end
+$var wire 1 k \conv|ALT_INV_g~0_combout\ $end
+$var wire 1 l \conv|ALT_INV_f~0_combout\ $end
+$var wire 1 m \conv|ALT_INV_e~0_combout\ $end
+$var wire 1 n \conv|ALT_INV_d~0_combout\ $end
+$var wire 1 o \conv|ALT_INV_c~0_combout\ $end
+$var wire 1 p \conv|ALT_INV_b~0_combout\ $end
+$var wire 1 q \conv|ALT_INV_a~0_combout\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0-
+1.
+x/
+10
+11
+12
+13
+14
+15
+06
+0L
+zM
+zN
+zO
+0P
+0Q
+0R
+0S
+0T
+0U
+1V
+0W
+0X
+0Y
+0Z
+0[
+1\
+0]
+0^
+0_
+0`
+0a
+0b
+0c
+1d
+1e
+1f
+1g
+1h
+1i
+0j
+1k
+0l
+0m
+0n
+0o
+0p
+0q
+17
+08
+09
+0:
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+1"
+0#
+0$
+0%
+0&
+0'
+0(
+0)
+0*
+0+
+0,
+$end
+#30000
+1!
+16
+1[
+1]
+1X
+0\
+1^
+0f
+0i
+1j
+0k
+1l
+1o
+1@
+1+
+1R
+1U
+0V
+1;
+18
+07
+1&
+1#
+0"
+#60000
+0!
+06
+0[
+#90000
+1!
+16
+1[
+0]
+1_
+1Z
+0X
+1\
+1f
+1i
+0l
+0o
+1>
+0@
+0+
+1)
+0R
+0U
+0;
+08
+0&
+0#
+#120000
+0!
+06
+0[
+#150000
+1!
+16
+1[
+1]
+1X
+0\
+0^
+1`
+0g
+1n
+1@
+1+
+1S
+1:
+1%
+#180000
+0!
+06
+0[
+#210000
+1!
+16
+1[
+0]
+0_
+1a
+1W
+0Z
+0X
+1\
+0d
+0h
+0i
+0j
+1k
+1l
+1m
+1q
+1A
+0>
+0@
+1,
+0+
+0)
+1P
+1T
+1U
+1V
+1=
+19
+18
+17
+1(
+1$
+1#
+1"
+#240000
+0!
+06
+0[
+#270000
+1!
+16
+1[
+1]
+1X
+0\
+1^
+1d
+1g
+1j
+0k
+0n
+0q
+1@
+1+
+0P
+0S
+0V
+0=
+0:
+07
+0(
+0%
+0"
+#300000
+0!
+06
+0[
+#330000
+1!
+16
+1[
+0]
+1_
+1Z
+0X
+1\
+1i
+0l
+1>
+0@
+0+
+1)
+0U
+08
+0#
+#360000
+0!
+06
+0[
+#390000
+1!
+16
+1[
+1]
+1X
+0\
+0^
+0`
+1b
+0d
+0e
+1h
+0m
+1p
+1q
+1@
+1+
+1P
+1Q
+0T
+1=
+1<
+09
+1(
+1'
+0$
+#420000
+0!
+06
+0[
+#450000
+1!
+16
+1[
+0]
+0_
+0a
+1c
+1Y
+0W
+0Z
+0X
+1\
+1e
+0g
+0h
+1m
+1n
+0p
+1?
+0A
+0>
+0@
+0,
+0+
+1*
+0)
+0Q
+1S
+1T
+0<
+1:
+19
+0'
+1%
+1$
+#480000
+0!
+06
+0[
+#510000
+1!
+16
+1[
+1]
+1X
+0\
+1^
+1d
+0e
+1g
+1h
+0m
+0n
+1p
+0q
+1@
+1+
+0P
+1Q
+0S
+0T
+0=
+1<
+0:
+09
+0(
+1'
+0%
+0$
+#540000
+0!
+06
+0[
+#570000
+1!
+16
+1[
+0]
+1_
+1Z
+0X
+1\
+0f
+0j
+1k
+1o
+1>
+0@
+0+
+1)
+1R
+1V
+1;
+17
+1&
+1"
+#600000
+0!
+06
+0[
+#630000
+1!
+16
+1[
+1]
+1X
+0\
+0^
+1`
+1j
+0k
+1@
+1+
+0V
+07
+0"
+#660000
+0!
+06
+0[
+#690000
+1!
+16
+1[
+0]
+0_
+1a
+1W
+0Z
+0X
+1\
+1f
+0h
+1m
+0o
+1A
+0>
+0@
+1,
+0+
+0)
+0R
+1T
+0;
+19
+0&
+1$
+#720000
+0!
+06
+0[
+#750000
+1!
+16
+1[
+1]
+1X
+0\
+1^
+1e
+0g
+0i
+0j
+1k
+1l
+1n
+0p
+1@
+1+
+0Q
+1S
+1U
+1V
+0<
+1:
+18
+17
+0'
+1%
+1#
+1"
+#780000
+0!
+06
+0[
+#810000
+1!
+16
+1[
+0]
+1_
+1Z
+0X
+1\
+0d
+1g
+1h
+1j
+0k
+0m
+0n
+1q
+1>
+0@
+0+
+1)
+1P
+0S
+0T
+0V
+1=
+0:
+09
+07
+1(
+0%
+0$
+0"
+#840000
+0!
+06
+0[
+#870000
+1!
+16
+1[
+1]
+1X
+0\
+0^
+0`
+0b
+1d
+0e
+0f
+0g
+1i
+0l
+1n
+1o
+1p
+0q
+1@
+1+
+0P
+1Q
+1R
+1S
+0U
+0=
+1<
+1;
+1:
+08
+0(
+1'
+1&
+1%
+0#
+#900000
+0!
+06
+0[
+#930000
+1!
+16
+1[
+0]
+0_
+0a
+0c
+0Y
+0W
+0Z
+0X
+1\
+1e
+1f
+1g
+0j
+1k
+0n
+0o
+0p
+0?
+0A
+0>
+0@
+0,
+0+
+0*
+0)
+0Q
+0R
+0S
+1V
+0<
+0;
+0:
+17
+0'
+0&
+0%
+1"
+#960000
+0!
+06
+0[
+#990000
+1!
+16
+1[
+1]
+1X
+0\
+1^
+0f
+0i
+1j
+0k
+1l
+1o
+1@
+1+
+1R
+1U
+0V
+1;
+18
+07
+1&
+1#
+0"
+#1000000

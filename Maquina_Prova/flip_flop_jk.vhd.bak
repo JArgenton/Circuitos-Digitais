@@ -1,0 +1,31 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity flip_flop_jk is
+    Port (
+        J     : in  STD_LOGIC;  -- Entrada J
+        K     : in  STD_LOGIC;  -- Entrada K
+        Clk   : in  STD_LOGIC;  -- Clock
+        Q     : out STD_LOGIC   -- Saída Q
+    );
+end flip_flop_jk;
+
+architecture arch of flip_flop_jk is
+    signal Q_int : STD_LOGIC := '0'; -- Sinal interno para Q
+begin
+    process(clk, reset)
+    begin
+        elsif rising_edge(clk) then
+            case (J & K) is
+                when "00" => Q_int <= Q_int;  -- Mantém o estado
+                when "01" => Q_int <= '0';    -- Faz Q = 0
+                when "10" => Q_int <= '1';    -- Faz Q = 1
+                when "11" => Q_int <= not Q_int; -- Alterna o estado
+                when others => null;         -- Caso inválido
+            end case;
+        end if;
+    end process;
+
+    -- Saída
+    Q <= Q_int;
+end arch;

@@ -1,0 +1,29 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity flip_flop_D is
+    port (
+        D     : in  std_logic;  -- Entrada do Flip-Flop
+        CLK   : in  std_logic;  -- Sinal de clock
+        Q     : out std_logic;  -- Saída do Flip-Flop
+        Q_bar : out std_logic   -- Saída negada do Flip-Flop
+    );
+end flip_flop_D;
+
+architecture logic of flip_flop_D is
+    signal S, R, Q_int, Q_bar_int : std_logic;
+begin
+
+    -- NAND gates to implement SR latch
+    Q_int <= not (S and Q_bar_int);     -- Saída Q
+    Q_bar_int <= not (R and Q_int);    -- Saída Q_bar (complemento de Q)
+
+    -- NAND gates for the clocked D input
+    S <= not (D and CLK);             -- Entrada Set controlada pelo clock
+    R <= not (not D and CLK);         -- Entrada Reset controlada pelo clock
+
+    -- Atribuição das saídas externas
+    Q <= Q_int;
+    Q_bar <= Q_bar_int;
+
+end logic;

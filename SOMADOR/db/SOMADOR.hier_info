@@ -1,0 +1,71 @@
+|SOMADOR
+N1[0] => somador_1bit:S1.A
+N1[1] => somador_1bit:S2.A
+N1[2] => somador_1bit:S3.A
+N1[3] => somador_1bit:S4.A
+N2[0] => somador_1bit:S1.B
+N2[1] => somador_1bit:S2.B
+N2[2] => somador_1bit:S3.B
+N2[3] => somador_1bit:S4.B
+Sf[0] <= somador_1bit:S1.S
+Sf[1] <= somador_1bit:S2.S
+Sf[2] <= somador_1bit:S3.S
+Sf[3] <= somador_1bit:S4.S
+
+
+|SOMADOR|Somador_1bit:S1
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SOMADOR|Somador_1bit:S2
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SOMADOR|Somador_1bit:S3
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SOMADOR|Somador_1bit:S4
+A => S.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => S.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+

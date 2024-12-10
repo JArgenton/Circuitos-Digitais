@@ -1,0 +1,56 @@
+entity Lab_4_att is
+    Port (
+        clk_50MHz : in STD_LOGIC;   -- Clock de 50 MHz
+        reset     : in STD_LOGIC;   -- Reset
+        HEX0, HEX1, HEX2, HEX4, HEX5, HEX6 : out STD_LOGIC_VECTOR(6 downto 0) -- Displays
+    );
+end Lab_4_att;
+
+architecture Behavioral of Lab_4_att is
+    signal clk_1kHz : STD_LOGIC;
+    signal ms_count : integer range 0 to 999;
+    signal s_count  : integer range 0 to 59;
+    signal min_count : integer range 0 to 9;
+begin
+    -- Clock Divider
+    ClockDivider_inst: entity work.ClockDivider
+        Port map (
+            clk_in => clk_50MHz,
+            reset => reset,
+            clk_out => clk_1kHz
+        );
+
+    -- Millisecond Counter
+    MillisecondCounter_inst: entity work.MillisecondCounter
+        Port map (
+            clk_ms => clk_1kHz,
+            reset => reset,
+            count => ms_count
+        );
+
+    -- Second Counter
+    SecondCounter_inst: entity work.SecondCounter
+        Port map (
+            clk_s => (ms_count = 999),
+            reset => reset,
+            count => s_count
+        );
+
+    -- Minute Counter
+    MinuteCounter_inst: entity work.MinuteCounter
+        Port map (
+            clk_min => (s_count = 59),
+            reset => reset,
+            count => min_count
+        );
+
+    -- HEXto7SEG Connections
+    HEX0 <= HEXto7SEG(ms_count mod 10);
+    HEX1 <= HEXto7SEG((ms_count / 10) mod 10);
+    HEX2 <= HEXto7SEG(ms_count / 100);
+    HEX4 <= HEXto7SEG(s_count mod 10);
+    HEX5 <= HEXto7SEG(s_count / 10);
+    HEX6 <= HEXto7SEG(min_count);
+	 
+	 
+end Behavioral;

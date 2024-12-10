@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(10M50DAF484) Path("/home/pedro/Documents/Circuitos Digitais/Gerador_Sequencia/output_files/") File("Gerador_Sequencia.sof") MfrSpec(OpMask(1));
+		Device PartName(10M50DAF484) Path("/home/pedro/Documents/Circuitos Digitais/Contador_Assincrono/Circuitos-Digitais/Gerador_Sequencia/output_files/") File("Gerador_Sequencia.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

@@ -1,0 +1,81 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity Cronometro is
+port(
+	Clock : in std_logic;
+	Pause : in std_logic;
+	Stop : in std_logic
+	);
+end Cronometro;
+
+architecture arch of Cronometro is
+signal Clk : std_logic;
+signal Qaux : std_logic_vector(5 downto 0);
+begin
+
+freq : entity work.Time_Reference
+	port map(
+		clk => Clock,
+        clk_1kHz => Clk
+		  );
+
+jk0 : entity work.JK_FlipFlop
+	port map(
+		CLK => Clk,
+        J => "1",
+        K   => "1",
+        Q	=> Qaux(0),
+        QN => open
+		  );
+		  
+jk1 : entity work.JK_FlipFlop
+	port map(
+		CLK => Qaux(0),
+        J => "1",
+        K   => "1",
+        Q	=> Qaux(1),
+        QN => open
+		  );
+jk2 : entity work.JK_FlipFlop
+	port map(
+		CLK => Qaux(1),
+        J => "1",
+        K   => "1",
+        Q	=> Qaux(2),
+        QN => open
+		  );
+jk3 : entity work.JK_FlipFlop
+	port map(
+		CLK => Qaux(2),
+        J => "1",
+        K   => "1",
+        Q	=> Qaux(3),
+        QN => open
+		  );
+jk4 : entity work.JK_FlipFlop
+	port map(
+		CLK => Qaux(3),
+        J => "1",
+        K   => "1",
+        Q	=> Qaux(4),
+        QN => open
+		  );
+jk5 : entity work.JK_FlipFlop
+	port map(
+		CLK => Qaux(4),
+        J => "1",
+        K   => "1",
+        Q	=> Qaux(5),
+        QN => open
+		  );
+
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  

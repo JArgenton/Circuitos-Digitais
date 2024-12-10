@@ -1,0 +1,837 @@
+|Cronometro
+Double_freq => Clk.OUTPUTSELECT
+Clock => timing_reference:freq.clk
+Pause => jk_flipflop:jk0.CLK
+RST => contador:cont0.reset
+RST => contador:cont1.reset
+RST => contador:cont2.reset
+RST => contador:cont3.reset
+RST => contador_aux:cont4.reset
+RST => contador:cont5.reset
+H0[0] <= conversor_hexa:c0.Output[0]
+H0[1] <= conversor_hexa:c0.Output[1]
+H0[2] <= conversor_hexa:c0.Output[2]
+H0[3] <= conversor_hexa:c0.Output[3]
+H0[4] <= conversor_hexa:c0.Output[4]
+H0[5] <= conversor_hexa:c0.Output[5]
+H0[6] <= conversor_hexa:c0.Output[6]
+H1[0] <= conversor_hexa:c1.Output[0]
+H1[1] <= conversor_hexa:c1.Output[1]
+H1[2] <= conversor_hexa:c1.Output[2]
+H1[3] <= conversor_hexa:c1.Output[3]
+H1[4] <= conversor_hexa:c1.Output[4]
+H1[5] <= conversor_hexa:c1.Output[5]
+H1[6] <= conversor_hexa:c1.Output[6]
+H2[0] <= conversor_hexa:c2.Output[0]
+H2[1] <= conversor_hexa:c2.Output[1]
+H2[2] <= conversor_hexa:c2.Output[2]
+H2[3] <= conversor_hexa:c2.Output[3]
+H2[4] <= conversor_hexa:c2.Output[4]
+H2[5] <= conversor_hexa:c2.Output[5]
+H2[6] <= conversor_hexa:c2.Output[6]
+H3[0] <= conversor_hexa:c3.Output[0]
+H3[1] <= conversor_hexa:c3.Output[1]
+H3[2] <= conversor_hexa:c3.Output[2]
+H3[3] <= conversor_hexa:c3.Output[3]
+H3[4] <= conversor_hexa:c3.Output[4]
+H3[5] <= conversor_hexa:c3.Output[5]
+H3[6] <= conversor_hexa:c3.Output[6]
+H4[0] <= conversor_hexa:c4.Output[0]
+H4[1] <= conversor_hexa:c4.Output[1]
+H4[2] <= conversor_hexa:c4.Output[2]
+H4[3] <= conversor_hexa:c4.Output[3]
+H4[4] <= conversor_hexa:c4.Output[4]
+H4[5] <= conversor_hexa:c4.Output[5]
+H4[6] <= conversor_hexa:c4.Output[6]
+H5[0] <= conversor_hexa:c5.Output[0]
+H5[1] <= conversor_hexa:c5.Output[1]
+H5[2] <= conversor_hexa:c5.Output[2]
+H5[3] <= conversor_hexa:c5.Output[3]
+H5[4] <= conversor_hexa:c5.Output[4]
+H5[5] <= conversor_hexa:c5.Output[5]
+H5[6] <= conversor_hexa:c5.Output[6]
+
+
+|Cronometro|Timing_Reference:freq
+clk => tmp.CLK
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => count[4].CLK
+clk => count[5].CLK
+clk => count[6].CLK
+clk => count[7].CLK
+clk => count[8].CLK
+clk => count[9].CLK
+clk => count[10].CLK
+clk => count[11].CLK
+clk => count[12].CLK
+clk => count[13].CLK
+clk => count[14].CLK
+clk => count[15].CLK
+clk => count[16].CLK
+clk => count[17].CLK
+clk => count[18].CLK
+clk => count[19].CLK
+clk => count[20].CLK
+clk => count[21].CLK
+clk => count[22].CLK
+clk => count[23].CLK
+clk => count[24].CLK
+clk => count[25].CLK
+clk => count[26].CLK
+clk => count[27].CLK
+clk => count[28].CLK
+clk => count[29].CLK
+clk => count[30].CLK
+clk => count[31].CLK
+clk_1kHz <= tmp.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cronometro|JK_FlipFlop:jk0
+CLK => qsignal.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => qsignal.ACLR
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+QN <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cronometro|JK_FlipFlop:jk1
+CLK => qsignal.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => qsignal.ACLR
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+QN <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cronometro|Contador:cont0
+CK => jk_flipflop:jk0.CLK
+reset => rst.IN1
+Saidas[0] <= jk_flipflop:jk0.Q
+Saidas[1] <= jk_flipflop:jk1.Q
+Saidas[2] <= jk_flipflop:jk2.Q
+Saidas[3] <= jk_flipflop:jk3.Q
+Qout <= Qout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cronometro|Contador:cont0|JK_FlipFlop:jk0
+CLK => qsignal.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => qsignal.ACLR
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+QN <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cronometro|Contador:cont0|JK_FlipFlop:jk1
+CLK => qsignal.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => qsignal.ACLR
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+QN <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cronometro|Contador:cont0|JK_FlipFlop:jk2
+CLK => qsignal.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => qsignal.ACLR
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+QN <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cronometro|Contador:cont0|JK_FlipFlop:jk3
+CLK => qsignal.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => qsignal.ACLR
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+QN <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cronometro|Contador:cont1
+CK => jk_flipflop:jk0.CLK
+reset => rst.IN1
+Saidas[0] <= jk_flipflop:jk0.Q
+Saidas[1] <= jk_flipflop:jk1.Q
+Saidas[2] <= jk_flipflop:jk2.Q
+Saidas[3] <= jk_flipflop:jk3.Q
+Qout <= Qout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cronometro|Contador:cont1|JK_FlipFlop:jk0
+CLK => qsignal.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => qsignal.ACLR
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+QN <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cronometro|Contador:cont1|JK_FlipFlop:jk1
+CLK => qsignal.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => qsignal.ACLR
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+QN <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cronometro|Contador:cont1|JK_FlipFlop:jk2
+CLK => qsignal.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => qsignal.ACLR
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+QN <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cronometro|Contador:cont1|JK_FlipFlop:jk3
+CLK => qsignal.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => qsignal.ACLR
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+QN <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cronometro|Contador:cont2
+CK => jk_flipflop:jk0.CLK
+reset => rst.IN1
+Saidas[0] <= jk_flipflop:jk0.Q
+Saidas[1] <= jk_flipflop:jk1.Q
+Saidas[2] <= jk_flipflop:jk2.Q
+Saidas[3] <= jk_flipflop:jk3.Q
+Qout <= Qout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cronometro|Contador:cont2|JK_FlipFlop:jk0
+CLK => qsignal.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => qsignal.ACLR
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+QN <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cronometro|Contador:cont2|JK_FlipFlop:jk1
+CLK => qsignal.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => qsignal.ACLR
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+QN <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cronometro|Contador:cont2|JK_FlipFlop:jk2
+CLK => qsignal.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => qsignal.ACLR
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+QN <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cronometro|Contador:cont2|JK_FlipFlop:jk3
+CLK => qsignal.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => qsignal.ACLR
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+QN <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cronometro|Contador:cont3
+CK => jk_flipflop:jk0.CLK
+reset => rst.IN1
+Saidas[0] <= jk_flipflop:jk0.Q
+Saidas[1] <= jk_flipflop:jk1.Q
+Saidas[2] <= jk_flipflop:jk2.Q
+Saidas[3] <= jk_flipflop:jk3.Q
+Qout <= Qout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cronometro|Contador:cont3|JK_FlipFlop:jk0
+CLK => qsignal.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => qsignal.ACLR
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+QN <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cronometro|Contador:cont3|JK_FlipFlop:jk1
+CLK => qsignal.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => qsignal.ACLR
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+QN <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cronometro|Contador:cont3|JK_FlipFlop:jk2
+CLK => qsignal.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => qsignal.ACLR
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+QN <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cronometro|Contador:cont3|JK_FlipFlop:jk3
+CLK => qsignal.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => qsignal.ACLR
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+QN <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cronometro|Contador_aux:cont4
+CK => jk_flipflop:jk0.CLK
+reset => rst.IN1
+Saidas[0] <= jk_flipflop:jk0.Q
+Saidas[1] <= jk_flipflop:jk1.Q
+Saidas[2] <= jk_flipflop:jk2.Q
+Saidas[3] <= jk_flipflop:jk3.Q
+Qout <= Qout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cronometro|Contador_aux:cont4|JK_FlipFlop:jk0
+CLK => qsignal.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => qsignal.ACLR
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+QN <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cronometro|Contador_aux:cont4|JK_FlipFlop:jk1
+CLK => qsignal.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => qsignal.ACLR
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+QN <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cronometro|Contador_aux:cont4|JK_FlipFlop:jk2
+CLK => qsignal.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => qsignal.ACLR
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+QN <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cronometro|Contador_aux:cont4|JK_FlipFlop:jk3
+CLK => qsignal.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => qsignal.ACLR
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+QN <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cronometro|Contador:cont5
+CK => jk_flipflop:jk0.CLK
+reset => rst.IN1
+Saidas[0] <= jk_flipflop:jk0.Q
+Saidas[1] <= jk_flipflop:jk1.Q
+Saidas[2] <= jk_flipflop:jk2.Q
+Saidas[3] <= jk_flipflop:jk3.Q
+Qout <= Qout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cronometro|Contador:cont5|JK_FlipFlop:jk0
+CLK => qsignal.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => qsignal.ACLR
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+QN <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cronometro|Contador:cont5|JK_FlipFlop:jk1
+CLK => qsignal.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => qsignal.ACLR
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+QN <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cronometro|Contador:cont5|JK_FlipFlop:jk2
+CLK => qsignal.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => qsignal.ACLR
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+QN <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cronometro|Contador:cont5|JK_FlipFlop:jk3
+CLK => qsignal.CLK
+J => process_0.IN0
+J => process_0.IN0
+J => process_0.IN0
+K => process_0.IN1
+K => process_0.IN1
+K => process_0.IN1
+RESET => qsignal.ACLR
+Q <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+QN <= qsignal.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cronometro|Conversor_HEXA:c0
+Input[0] => a.IN1
+Input[0] => b.IN1
+Input[0] => b.IN1
+Input[0] => c.IN0
+Input[0] => c.IN0
+Input[0] => d.IN1
+Input[0] => d.IN1
+Input[0] => g.IN0
+Input[0] => g.IN0
+Input[0] => f.IN0
+Input[0] => f.IN0
+Input[0] => e.IN0
+Input[0] => d.IN1
+Input[0] => d.IN1
+Input[0] => b.IN1
+Input[0] => a.IN0
+Input[1] => b.IN0
+Input[1] => d.IN0
+Input[1] => f.IN0
+Input[1] => g.IN0
+Input[1] => g.IN1
+Input[1] => g.IN1
+Input[1] => f.IN1
+Input[1] => d.IN0
+Input[1] => d.IN0
+Input[1] => c.IN1
+Input[1] => c.IN0
+Input[1] => a.IN1
+Input[2] => d.IN1
+Input[2] => d.IN1
+Input[2] => e.IN0
+Input[2] => f.IN1
+Input[2] => g.IN0
+Input[2] => g.IN1
+Input[2] => g.IN0
+Input[2] => e.IN1
+Input[2] => d.IN0
+Input[3] => a.IN1
+Input[3] => d.IN1
+Input[3] => e.IN1
+Input[3] => f.IN1
+Input[3] => g.IN1
+Input[3] => g.IN1
+Input[3] => g.IN1
+Input[3] => d.IN1
+Input[3] => c.IN1
+Input[3] => c.IN1
+Input[3] => b.IN1
+Output[0] <= a.DB_MAX_OUTPUT_PORT_TYPE
+Output[1] <= b.DB_MAX_OUTPUT_PORT_TYPE
+Output[2] <= c.DB_MAX_OUTPUT_PORT_TYPE
+Output[3] <= d.DB_MAX_OUTPUT_PORT_TYPE
+Output[4] <= e.DB_MAX_OUTPUT_PORT_TYPE
+Output[5] <= f.DB_MAX_OUTPUT_PORT_TYPE
+Output[6] <= g.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cronometro|Conversor_HEXA:c1
+Input[0] => a.IN1
+Input[0] => b.IN1
+Input[0] => b.IN1
+Input[0] => c.IN0
+Input[0] => c.IN0
+Input[0] => d.IN1
+Input[0] => d.IN1
+Input[0] => g.IN0
+Input[0] => g.IN0
+Input[0] => f.IN0
+Input[0] => f.IN0
+Input[0] => e.IN0
+Input[0] => d.IN1
+Input[0] => d.IN1
+Input[0] => b.IN1
+Input[0] => a.IN0
+Input[1] => b.IN0
+Input[1] => d.IN0
+Input[1] => f.IN0
+Input[1] => g.IN0
+Input[1] => g.IN1
+Input[1] => g.IN1
+Input[1] => f.IN1
+Input[1] => d.IN0
+Input[1] => d.IN0
+Input[1] => c.IN1
+Input[1] => c.IN0
+Input[1] => a.IN1
+Input[2] => d.IN1
+Input[2] => d.IN1
+Input[2] => e.IN0
+Input[2] => f.IN1
+Input[2] => g.IN0
+Input[2] => g.IN1
+Input[2] => g.IN0
+Input[2] => e.IN1
+Input[2] => d.IN0
+Input[3] => a.IN1
+Input[3] => d.IN1
+Input[3] => e.IN1
+Input[3] => f.IN1
+Input[3] => g.IN1
+Input[3] => g.IN1
+Input[3] => g.IN1
+Input[3] => d.IN1
+Input[3] => c.IN1
+Input[3] => c.IN1
+Input[3] => b.IN1
+Output[0] <= a.DB_MAX_OUTPUT_PORT_TYPE
+Output[1] <= b.DB_MAX_OUTPUT_PORT_TYPE
+Output[2] <= c.DB_MAX_OUTPUT_PORT_TYPE
+Output[3] <= d.DB_MAX_OUTPUT_PORT_TYPE
+Output[4] <= e.DB_MAX_OUTPUT_PORT_TYPE
+Output[5] <= f.DB_MAX_OUTPUT_PORT_TYPE
+Output[6] <= g.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cronometro|Conversor_HEXA:c2
+Input[0] => a.IN1
+Input[0] => b.IN1
+Input[0] => b.IN1
+Input[0] => c.IN0
+Input[0] => c.IN0
+Input[0] => d.IN1
+Input[0] => d.IN1
+Input[0] => g.IN0
+Input[0] => g.IN0
+Input[0] => f.IN0
+Input[0] => f.IN0
+Input[0] => e.IN0
+Input[0] => d.IN1
+Input[0] => d.IN1
+Input[0] => b.IN1
+Input[0] => a.IN0
+Input[1] => b.IN0
+Input[1] => d.IN0
+Input[1] => f.IN0
+Input[1] => g.IN0
+Input[1] => g.IN1
+Input[1] => g.IN1
+Input[1] => f.IN1
+Input[1] => d.IN0
+Input[1] => d.IN0
+Input[1] => c.IN1
+Input[1] => c.IN0
+Input[1] => a.IN1
+Input[2] => d.IN1
+Input[2] => d.IN1
+Input[2] => e.IN0
+Input[2] => f.IN1
+Input[2] => g.IN0
+Input[2] => g.IN1
+Input[2] => g.IN0
+Input[2] => e.IN1
+Input[2] => d.IN0
+Input[3] => a.IN1
+Input[3] => d.IN1
+Input[3] => e.IN1
+Input[3] => f.IN1
+Input[3] => g.IN1
+Input[3] => g.IN1
+Input[3] => g.IN1
+Input[3] => d.IN1
+Input[3] => c.IN1
+Input[3] => c.IN1
+Input[3] => b.IN1
+Output[0] <= a.DB_MAX_OUTPUT_PORT_TYPE
+Output[1] <= b.DB_MAX_OUTPUT_PORT_TYPE
+Output[2] <= c.DB_MAX_OUTPUT_PORT_TYPE
+Output[3] <= d.DB_MAX_OUTPUT_PORT_TYPE
+Output[4] <= e.DB_MAX_OUTPUT_PORT_TYPE
+Output[5] <= f.DB_MAX_OUTPUT_PORT_TYPE
+Output[6] <= g.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cronometro|Conversor_HEXA:c3
+Input[0] => a.IN1
+Input[0] => b.IN1
+Input[0] => b.IN1
+Input[0] => c.IN0
+Input[0] => c.IN0
+Input[0] => d.IN1
+Input[0] => d.IN1
+Input[0] => g.IN0
+Input[0] => g.IN0
+Input[0] => f.IN0
+Input[0] => f.IN0
+Input[0] => e.IN0
+Input[0] => d.IN1
+Input[0] => d.IN1
+Input[0] => b.IN1
+Input[0] => a.IN0
+Input[1] => b.IN0
+Input[1] => d.IN0
+Input[1] => f.IN0
+Input[1] => g.IN0
+Input[1] => g.IN1
+Input[1] => g.IN1
+Input[1] => f.IN1
+Input[1] => d.IN0
+Input[1] => d.IN0
+Input[1] => c.IN1
+Input[1] => c.IN0
+Input[1] => a.IN1
+Input[2] => d.IN1
+Input[2] => d.IN1
+Input[2] => e.IN0
+Input[2] => f.IN1
+Input[2] => g.IN0
+Input[2] => g.IN1
+Input[2] => g.IN0
+Input[2] => e.IN1
+Input[2] => d.IN0
+Input[3] => a.IN1
+Input[3] => d.IN1
+Input[3] => e.IN1
+Input[3] => f.IN1
+Input[3] => g.IN1
+Input[3] => g.IN1
+Input[3] => g.IN1
+Input[3] => d.IN1
+Input[3] => c.IN1
+Input[3] => c.IN1
+Input[3] => b.IN1
+Output[0] <= a.DB_MAX_OUTPUT_PORT_TYPE
+Output[1] <= b.DB_MAX_OUTPUT_PORT_TYPE
+Output[2] <= c.DB_MAX_OUTPUT_PORT_TYPE
+Output[3] <= d.DB_MAX_OUTPUT_PORT_TYPE
+Output[4] <= e.DB_MAX_OUTPUT_PORT_TYPE
+Output[5] <= f.DB_MAX_OUTPUT_PORT_TYPE
+Output[6] <= g.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cronometro|Conversor_HEXA:c4
+Input[0] => a.IN1
+Input[0] => b.IN1
+Input[0] => b.IN1
+Input[0] => c.IN0
+Input[0] => c.IN0
+Input[0] => d.IN1
+Input[0] => d.IN1
+Input[0] => g.IN0
+Input[0] => g.IN0
+Input[0] => f.IN0
+Input[0] => f.IN0
+Input[0] => e.IN0
+Input[0] => d.IN1
+Input[0] => d.IN1
+Input[0] => b.IN1
+Input[0] => a.IN0
+Input[1] => b.IN0
+Input[1] => d.IN0
+Input[1] => f.IN0
+Input[1] => g.IN0
+Input[1] => g.IN1
+Input[1] => g.IN1
+Input[1] => f.IN1
+Input[1] => d.IN0
+Input[1] => d.IN0
+Input[1] => c.IN1
+Input[1] => c.IN0
+Input[1] => a.IN1
+Input[2] => d.IN1
+Input[2] => d.IN1
+Input[2] => e.IN0
+Input[2] => f.IN1
+Input[2] => g.IN0
+Input[2] => g.IN1
+Input[2] => g.IN0
+Input[2] => e.IN1
+Input[2] => d.IN0
+Input[3] => a.IN1
+Input[3] => d.IN1
+Input[3] => e.IN1
+Input[3] => f.IN1
+Input[3] => g.IN1
+Input[3] => g.IN1
+Input[3] => g.IN1
+Input[3] => d.IN1
+Input[3] => c.IN1
+Input[3] => c.IN1
+Input[3] => b.IN1
+Output[0] <= a.DB_MAX_OUTPUT_PORT_TYPE
+Output[1] <= b.DB_MAX_OUTPUT_PORT_TYPE
+Output[2] <= c.DB_MAX_OUTPUT_PORT_TYPE
+Output[3] <= d.DB_MAX_OUTPUT_PORT_TYPE
+Output[4] <= e.DB_MAX_OUTPUT_PORT_TYPE
+Output[5] <= f.DB_MAX_OUTPUT_PORT_TYPE
+Output[6] <= g.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cronometro|Conversor_HEXA:c5
+Input[0] => a.IN1
+Input[0] => b.IN1
+Input[0] => b.IN1
+Input[0] => c.IN0
+Input[0] => c.IN0
+Input[0] => d.IN1
+Input[0] => d.IN1
+Input[0] => g.IN0
+Input[0] => g.IN0
+Input[0] => f.IN0
+Input[0] => f.IN0
+Input[0] => e.IN0
+Input[0] => d.IN1
+Input[0] => d.IN1
+Input[0] => b.IN1
+Input[0] => a.IN0
+Input[1] => b.IN0
+Input[1] => d.IN0
+Input[1] => f.IN0
+Input[1] => g.IN0
+Input[1] => g.IN1
+Input[1] => g.IN1
+Input[1] => f.IN1
+Input[1] => d.IN0
+Input[1] => d.IN0
+Input[1] => c.IN1
+Input[1] => c.IN0
+Input[1] => a.IN1
+Input[2] => d.IN1
+Input[2] => d.IN1
+Input[2] => e.IN0
+Input[2] => f.IN1
+Input[2] => g.IN0
+Input[2] => g.IN1
+Input[2] => g.IN0
+Input[2] => e.IN1
+Input[2] => d.IN0
+Input[3] => a.IN1
+Input[3] => d.IN1
+Input[3] => e.IN1
+Input[3] => f.IN1
+Input[3] => g.IN1
+Input[3] => g.IN1
+Input[3] => g.IN1
+Input[3] => d.IN1
+Input[3] => c.IN1
+Input[3] => c.IN1
+Input[3] => b.IN1
+Output[0] <= a.DB_MAX_OUTPUT_PORT_TYPE
+Output[1] <= b.DB_MAX_OUTPUT_PORT_TYPE
+Output[2] <= c.DB_MAX_OUTPUT_PORT_TYPE
+Output[3] <= d.DB_MAX_OUTPUT_PORT_TYPE
+Output[4] <= e.DB_MAX_OUTPUT_PORT_TYPE
+Output[5] <= f.DB_MAX_OUTPUT_PORT_TYPE
+Output[6] <= g.DB_MAX_OUTPUT_PORT_TYPE
+
+

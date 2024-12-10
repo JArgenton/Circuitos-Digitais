@@ -1,0 +1,37 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity JK_FlipFlop is
+    Port (
+        CLK : in STD_LOGIC;  -- Clock input
+        J   : in STD_LOGIC;  -- J input
+        K   : in STD_LOGIC;  -- K input
+        Q   : out STD_LOGIC; -- Output Q
+        QN  : out STD_LOGIC  -- Complement output Q'
+    );
+end JK_FlipFlop;
+
+architecture Behavioral of JK_FlipFlop is
+    signal state : STD_LOGIC := '0'; -- Internal signal for state
+begin
+    process(CLK)
+    begin
+        if rising_edge(CLK) then
+            case (J & K) is
+                when "00" => -- No change
+                    state <= state;
+                when "01" => -- Reset
+                    state <= '0';
+                when "10" => -- Set
+                    state <= '1';
+                when "11" => -- Toggle
+                    state <= not state;
+                when others =>
+                    state <= state;
+            end case;
+        end if;
+    end process;
+    
+    Q <= state;     -- Assign state to output Q
+    QN <= not state; -- Complement of Q
+end Behavioral;

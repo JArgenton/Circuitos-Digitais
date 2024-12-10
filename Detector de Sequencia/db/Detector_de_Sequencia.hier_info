@@ -1,0 +1,88 @@
+|Detector_de_Sequencia
+Clk => gersequenciapedro:Gerador_Sequencia.clk
+input => gersequenciapedro:Gerador_Sequencia.entrada
+Reset => gersequenciapedro:Gerador_Sequencia.reset_n
+Hex0[0] <= conversor_hexa:Conversor_Hexa.Output[0]
+Hex0[1] <= conversor_hexa:Conversor_Hexa.Output[1]
+Hex0[2] <= conversor_hexa:Conversor_Hexa.Output[2]
+Hex0[3] <= conversor_hexa:Conversor_Hexa.Output[3]
+Hex0[4] <= conversor_hexa:Conversor_Hexa.Output[4]
+Hex0[5] <= conversor_hexa:Conversor_Hexa.Output[5]
+Hex0[6] <= conversor_hexa:Conversor_Hexa.Output[6]
+
+
+|Detector_de_Sequencia|GerSequenciaPedro:Gerador_Sequencia
+clk => estado~2.DATAIN
+entrada => estado.DATAA
+entrada => estado.DATAB
+entrada => estado.DATAB
+entrada => Selector0.IN1
+entrada => Selector1.IN1
+entrada => estado.DATAB
+entrada => estado.DATAB
+entrada => estado.DATAB
+reset_n => estado~4.DATAIN
+saida[0] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= <GND>
+
+
+|Detector_de_Sequencia|Conversor_HEXA:Conversor_Hexa
+Input[0] => a.IN1
+Input[0] => b.IN1
+Input[0] => b.IN1
+Input[0] => c.IN0
+Input[0] => c.IN0
+Input[0] => d.IN1
+Input[0] => d.IN1
+Input[0] => g.IN0
+Input[0] => g.IN0
+Input[0] => f.IN0
+Input[0] => f.IN0
+Input[0] => e.IN0
+Input[0] => d.IN1
+Input[0] => d.IN1
+Input[0] => b.IN1
+Input[0] => a.IN0
+Input[1] => b.IN0
+Input[1] => d.IN0
+Input[1] => f.IN0
+Input[1] => g.IN0
+Input[1] => g.IN1
+Input[1] => g.IN1
+Input[1] => f.IN1
+Input[1] => d.IN0
+Input[1] => d.IN0
+Input[1] => c.IN1
+Input[1] => c.IN0
+Input[1] => a.IN1
+Input[2] => d.IN1
+Input[2] => d.IN1
+Input[2] => e.IN0
+Input[2] => f.IN1
+Input[2] => g.IN0
+Input[2] => g.IN1
+Input[2] => g.IN0
+Input[2] => e.IN1
+Input[2] => d.IN0
+Input[3] => a.IN1
+Input[3] => d.IN1
+Input[3] => e.IN1
+Input[3] => f.IN1
+Input[3] => g.IN1
+Input[3] => g.IN1
+Input[3] => g.IN1
+Input[3] => d.IN1
+Input[3] => c.IN1
+Input[3] => c.IN1
+Input[3] => b.IN1
+Output[0] <= a.DB_MAX_OUTPUT_PORT_TYPE
+Output[1] <= b.DB_MAX_OUTPUT_PORT_TYPE
+Output[2] <= c.DB_MAX_OUTPUT_PORT_TYPE
+Output[3] <= d.DB_MAX_OUTPUT_PORT_TYPE
+Output[4] <= e.DB_MAX_OUTPUT_PORT_TYPE
+Output[5] <= f.DB_MAX_OUTPUT_PORT_TYPE
+Output[6] <= g.DB_MAX_OUTPUT_PORT_TYPE
+
+

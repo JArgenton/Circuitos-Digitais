@@ -1,7 +1,7 @@
 |Cronometro
 Double_freq => Clk.OUTPUTSELECT
 Clock => timing_reference:freq.clk
-Pause => jk_flipflop:jk0.CLK
+Pause => pause_or_ra.IN1
 RST => contador:cont0.reset
 RST => contador:cont1.reset
 RST => contador:cont2.reset

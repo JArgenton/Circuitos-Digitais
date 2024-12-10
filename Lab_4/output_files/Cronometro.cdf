@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(10M50DAF484) Path("/home/pedro/Documents/Circuitos Digitais/Contador_Assincrono/Circuitos-Digitais/Lab_4/output_files/") File("Cronometro.sof") MfrSpec(OpMask(1));
+		Device PartName(10M50DAF484) Path("/home/pedro/Documents/Circuitos Digitais/Circuitos-Digitais/Lab_4/output_files/") File("Cronometro.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

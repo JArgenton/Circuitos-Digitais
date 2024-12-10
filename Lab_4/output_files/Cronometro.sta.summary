@@ -2,333 +2,345 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'Clock'
-Slack : -4.514
-TNS   : -67.266
-
-Type  : Slow 1200mV 85C Model Setup 'Contador:cont0|JK_FlipFlop:jk1|qsignal'
-Slack : -2.003
-TNS   : -2.944
+Type  : Slow 1200mV 85C Model Setup 'Timing_Reference:freq|tmp'
+Slack : -5.043
+TNS   : -5.043
 
 Type  : Slow 1200mV 85C Model Setup 'Contador:cont3|JK_FlipFlop:jk2|qsignal'
-Slack : -1.823
-TNS   : -2.410
+Slack : -4.518
+TNS   : -4.763
 
-Type  : Slow 1200mV 85C Model Setup 'Timing_Reference:freq|tmp'
-Slack : -1.810
-TNS   : -1.810
-
-Type  : Slow 1200mV 85C Model Setup 'Contador:cont1|JK_FlipFlop:jk1|qsignal'
-Slack : -1.772
-TNS   : -2.036
-
-Type  : Slow 1200mV 85C Model Setup 'Contador:cont0|JK_FlipFlop:jk2|qsignal'
-Slack : -1.669
-TNS   : -2.259
-
-Type  : Slow 1200mV 85C Model Setup 'Contador:cont2|JK_FlipFlop:jk1|qsignal'
-Slack : -1.604
-TNS   : -2.823
-
-Type  : Slow 1200mV 85C Model Setup 'Contador_aux:cont4|JK_FlipFlop:jk1|qsignal'
-Slack : -1.560
-TNS   : -2.376
+Type  : Slow 1200mV 85C Model Setup 'Clock'
+Slack : -4.210
+TNS   : -65.473
 
 Type  : Slow 1200mV 85C Model Setup 'Contador:cont3|JK_FlipFlop:jk1|qsignal'
-Slack : -1.507
-TNS   : -2.298
-
-Type  : Slow 1200mV 85C Model Setup 'Contador_aux:cont4|JK_FlipFlop:jk0|qsignal'
-Slack : -1.504
-TNS   : -1.902
-
-Type  : Slow 1200mV 85C Model Setup 'Contador:cont1|JK_FlipFlop:jk0|qsignal'
-Slack : -1.442
-TNS   : -2.581
-
-Type  : Slow 1200mV 85C Model Setup 'Contador:cont1|JK_FlipFlop:jk2|qsignal'
-Slack : -1.344
-TNS   : -1.505
-
-Type  : Slow 1200mV 85C Model Setup 'Contador_aux:cont4|JK_FlipFlop:jk2|qsignal'
-Slack : -1.333
-TNS   : -1.758
-
-Type  : Slow 1200mV 85C Model Setup 'Contador:cont3|JK_FlipFlop:jk0|qsignal'
-Slack : -1.322
-TNS   : -1.938
-
-Type  : Slow 1200mV 85C Model Setup 'Contador:cont2|JK_FlipFlop:jk0|qsignal'
-Slack : -1.319
-TNS   : -2.265
-
-Type  : Slow 1200mV 85C Model Setup 'Contador:cont5|JK_FlipFlop:jk2|qsignal'
-Slack : -0.880
-TNS   : -0.880
-
-Type  : Slow 1200mV 85C Model Setup 'Contador:cont5|JK_FlipFlop:jk1|qsignal'
-Slack : -0.789
-TNS   : -1.397
-
-Type  : Slow 1200mV 85C Model Setup 'Contador:cont5|JK_FlipFlop:jk0|qsignal'
-Slack : -0.782
-TNS   : -0.995
-
-Type  : Slow 1200mV 85C Model Setup 'Contador:cont0|JK_FlipFlop:jk0|qsignal'
-Slack : -0.698
-TNS   : -1.163
+Slack : -4.101
+TNS   : -4.970
 
 Type  : Slow 1200mV 85C Model Setup 'Contador:cont2|JK_FlipFlop:jk2|qsignal'
-Slack : -0.692
-TNS   : -1.070
+Slack : -3.833
+TNS   : -4.317
 
-Type  : Slow 1200mV 85C Model Setup 'Pause'
-Slack : 0.298
-TNS   : 0.000
+Type  : Slow 1200mV 85C Model Setup 'Contador_aux:cont4|JK_FlipFlop:jk1|qsignal'
+Slack : -3.485
+TNS   : -4.728
 
-Type  : Slow 1200mV 85C Model Hold 'Contador:cont3|JK_FlipFlop:jk1|qsignal'
-Slack : 0.132
-TNS   : 0.000
+Type  : Slow 1200mV 85C Model Setup 'Contador:cont2|JK_FlipFlop:jk1|qsignal'
+Slack : -3.336
+TNS   : -4.244
 
-Type  : Slow 1200mV 85C Model Hold 'Contador:cont1|JK_FlipFlop:jk2|qsignal'
-Slack : 0.146
-TNS   : 0.000
+Type  : Slow 1200mV 85C Model Setup 'Contador_aux:cont4|JK_FlipFlop:jk0|qsignal'
+Slack : -3.232
+TNS   : -4.208
 
-Type  : Slow 1200mV 85C Model Hold 'Contador_aux:cont4|JK_FlipFlop:jk0|qsignal'
-Slack : 0.176
-TNS   : 0.000
+Type  : Slow 1200mV 85C Model Setup 'Contador:cont3|JK_FlipFlop:jk0|qsignal'
+Slack : -2.972
+TNS   : -3.690
 
-Type  : Slow 1200mV 85C Model Hold 'Contador:cont3|JK_FlipFlop:jk0|qsignal'
-Slack : 0.179
-TNS   : 0.000
+Type  : Slow 1200mV 85C Model Setup 'Contador:cont2|JK_FlipFlop:jk0|qsignal'
+Slack : -2.446
+TNS   : -3.408
 
-Type  : Slow 1200mV 85C Model Hold 'Contador:cont1|JK_FlipFlop:jk1|qsignal'
-Slack : 0.199
-TNS   : 0.000
+Type  : Slow 1200mV 85C Model Setup 'Double_freq'
+Slack : -2.287
+TNS   : -2.287
 
-Type  : Slow 1200mV 85C Model Hold 'Contador:cont5|JK_FlipFlop:jk0|qsignal'
-Slack : 0.278
-TNS   : 0.000
+Type  : Slow 1200mV 85C Model Setup 'Contador:cont5|JK_FlipFlop:jk2|qsignal'
+Slack : -2.075
+TNS   : -2.075
 
-Type  : Slow 1200mV 85C Model Hold 'Contador:cont2|JK_FlipFlop:jk2|qsignal'
-Slack : 0.333
-TNS   : 0.000
+Type  : Slow 1200mV 85C Model Setup 'Contador:cont5|JK_FlipFlop:jk0|qsignal'
+Slack : -2.008
+TNS   : -2.498
 
-Type  : Slow 1200mV 85C Model Hold 'Contador:cont0|JK_FlipFlop:jk0|qsignal'
-Slack : 0.364
-TNS   : 0.000
+Type  : Slow 1200mV 85C Model Setup 'Contador:cont0|JK_FlipFlop:jk2|qsignal'
+Slack : -1.865
+TNS   : -2.254
 
-Type  : Slow 1200mV 85C Model Hold 'Contador_aux:cont4|JK_FlipFlop:jk1|qsignal'
-Slack : 0.383
-TNS   : 0.000
+Type  : Slow 1200mV 85C Model Setup 'Contador:cont0|JK_FlipFlop:jk1|qsignal'
+Slack : -1.802
+TNS   : -2.670
 
-Type  : Slow 1200mV 85C Model Hold 'Contador:cont0|JK_FlipFlop:jk2|qsignal'
-Slack : 0.393
-TNS   : 0.000
+Type  : Slow 1200mV 85C Model Setup 'Contador:cont5|JK_FlipFlop:jk1|qsignal'
+Slack : -1.534
+TNS   : -2.211
 
-Type  : Slow 1200mV 85C Model Hold 'Contador:cont3|JK_FlipFlop:jk2|qsignal'
-Slack : 0.393
-TNS   : 0.000
+Type  : Slow 1200mV 85C Model Setup 'Contador:cont1|JK_FlipFlop:jk0|qsignal'
+Slack : -1.482
+TNS   : -2.214
 
-Type  : Slow 1200mV 85C Model Hold 'Contador:cont5|JK_FlipFlop:jk2|qsignal'
-Slack : 0.393
-TNS   : 0.000
+Type  : Slow 1200mV 85C Model Setup 'Contador:cont0|JK_FlipFlop:jk0|qsignal'
+Slack : -1.419
+TNS   : -2.188
+
+Type  : Slow 1200mV 85C Model Setup 'Contador:cont1|JK_FlipFlop:jk2|qsignal'
+Slack : -1.317
+TNS   : -1.942
+
+Type  : Slow 1200mV 85C Model Setup 'Contador:cont1|JK_FlipFlop:jk1|qsignal'
+Slack : -1.101
+TNS   : -2.496
+
+Type  : Slow 1200mV 85C Model Setup 'Contador_aux:cont4|JK_FlipFlop:jk2|qsignal'
+Slack : -0.700
+TNS   : -0.700
 
 Type  : Slow 1200mV 85C Model Hold 'Contador_aux:cont4|JK_FlipFlop:jk2|qsignal'
-Slack : 0.393
-TNS   : 0.000
+Slack : -3.423
+TNS   : -3.423
 
-Type  : Slow 1200mV 85C Model Hold 'Pause'
-Slack : 0.393
+Type  : Slow 1200mV 85C Model Hold 'Contador:cont1|JK_FlipFlop:jk0|qsignal'
+Slack : -2.855
+TNS   : -2.855
+
+Type  : Slow 1200mV 85C Model Hold 'Contador:cont0|JK_FlipFlop:jk1|qsignal'
+Slack : -2.521
+TNS   : -2.521
+
+Type  : Slow 1200mV 85C Model Hold 'Contador:cont0|JK_FlipFlop:jk2|qsignal'
+Slack : -2.454
+TNS   : -2.454
+
+Type  : Slow 1200mV 85C Model Hold 'Contador:cont5|JK_FlipFlop:jk0|qsignal'
+Slack : -2.305
+TNS   : -2.305
+
+Type  : Slow 1200mV 85C Model Hold 'Contador:cont5|JK_FlipFlop:jk2|qsignal'
+Slack : -2.236
+TNS   : -2.236
+
+Type  : Slow 1200mV 85C Model Hold 'Contador:cont1|JK_FlipFlop:jk1|qsignal'
+Slack : -2.230
+TNS   : -2.230
+
+Type  : Slow 1200mV 85C Model Hold 'Contador:cont1|JK_FlipFlop:jk2|qsignal'
+Slack : -2.005
+TNS   : -2.005
+
+Type  : Slow 1200mV 85C Model Hold 'Contador:cont0|JK_FlipFlop:jk0|qsignal'
+Slack : -1.899
+TNS   : -1.899
+
+Type  : Slow 1200mV 85C Model Hold 'Contador:cont5|JK_FlipFlop:jk1|qsignal'
+Slack : -1.779
+TNS   : -1.779
+
+Type  : Slow 1200mV 85C Model Hold 'Contador:cont3|JK_FlipFlop:jk0|qsignal'
+Slack : -1.301
+TNS   : -1.301
+
+Type  : Slow 1200mV 85C Model Hold 'Contador:cont2|JK_FlipFlop:jk1|qsignal'
+Slack : -0.922
+TNS   : -0.922
+
+Type  : Slow 1200mV 85C Model Hold 'Contador:cont2|JK_FlipFlop:jk0|qsignal'
+Slack : -0.827
+TNS   : -0.827
+
+Type  : Slow 1200mV 85C Model Hold 'Contador_aux:cont4|JK_FlipFlop:jk1|qsignal'
+Slack : -0.766
+TNS   : -0.766
+
+Type  : Slow 1200mV 85C Model Hold 'Contador:cont2|JK_FlipFlop:jk2|qsignal'
+Slack : -0.405
+TNS   : -0.405
+
+Type  : Slow 1200mV 85C Model Hold 'Contador:cont3|JK_FlipFlop:jk1|qsignal'
+Slack : -0.126
+TNS   : -0.126
+
+Type  : Slow 1200mV 85C Model Hold 'Contador_aux:cont4|JK_FlipFlop:jk0|qsignal'
+Slack : -0.010
+TNS   : -0.010
+
+Type  : Slow 1200mV 85C Model Hold 'Contador:cont3|JK_FlipFlop:jk2|qsignal'
+Slack : 0.245
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'Timing_Reference:freq|tmp'
 Slack : 0.393
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'Contador:cont0|JK_FlipFlop:jk1|qsignal'
-Slack : 0.397
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold 'Contador:cont2|JK_FlipFlop:jk0|qsignal'
-Slack : 0.533
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold 'Contador:cont1|JK_FlipFlop:jk0|qsignal'
-Slack : 0.555
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold 'Contador:cont5|JK_FlipFlop:jk1|qsignal'
-Slack : 0.598
-TNS   : 0.000
-
 Type  : Slow 1200mV 85C Model Hold 'Clock'
 Slack : 0.646
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'Contador:cont2|JK_FlipFlop:jk1|qsignal'
-Slack : 0.734
+Type  : Slow 1200mV 85C Model Hold 'Double_freq'
+Slack : 2.146
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Recovery 'Contador:cont0|JK_FlipFlop:jk2|qsignal'
-Slack : -4.443
-TNS   : -9.492
-
-Type  : Slow 1200mV 85C Model Recovery 'Contador:cont1|JK_FlipFlop:jk1|qsignal'
-Slack : -3.310
-TNS   : -6.263
-
-Type  : Slow 1200mV 85C Model Recovery 'Contador:cont0|JK_FlipFlop:jk1|qsignal'
-Slack : -3.218
-TNS   : -7.948
-
-Type  : Slow 1200mV 85C Model Recovery 'Contador_aux:cont4|JK_FlipFlop:jk0|qsignal'
-Slack : -3.042
-TNS   : -6.025
-
-Type  : Slow 1200mV 85C Model Recovery 'Contador:cont0|JK_FlipFlop:jk0|qsignal'
-Slack : -3.041
-TNS   : -5.210
-
-Type  : Slow 1200mV 85C Model Recovery 'Contador:cont3|JK_FlipFlop:jk2|qsignal'
-Slack : -2.912
-TNS   : -8.242
+Slack : -7.084
+TNS   : -9.228
 
 Type  : Slow 1200mV 85C Model Recovery 'Timing_Reference:freq|tmp'
-Slack : -2.896
-TNS   : -2.896
+Slack : -6.364
+TNS   : -6.364
 
-Type  : Slow 1200mV 85C Model Recovery 'Contador:cont1|JK_FlipFlop:jk2|qsignal'
-Slack : -2.882
-TNS   : -6.804
+Type  : Slow 1200mV 85C Model Recovery 'Contador:cont0|JK_FlipFlop:jk1|qsignal'
+Slack : -4.715
+TNS   : -6.256
 
-Type  : Slow 1200mV 85C Model Recovery 'Contador_aux:cont4|JK_FlipFlop:jk2|qsignal'
-Slack : -2.871
-TNS   : -6.641
+Type  : Slow 1200mV 85C Model Recovery 'Contador:cont0|JK_FlipFlop:jk0|qsignal'
+Slack : -4.487
+TNS   : -6.680
+
+Type  : Slow 1200mV 85C Model Recovery 'Double_freq'
+Slack : -3.608
+TNS   : -3.608
 
 Type  : Slow 1200mV 85C Model Recovery 'Contador:cont2|JK_FlipFlop:jk0|qsignal'
-Slack : -2.857
-TNS   : -7.747
+Slack : -3.124
+TNS   : -5.548
 
-Type  : Slow 1200mV 85C Model Recovery 'Contador:cont1|JK_FlipFlop:jk0|qsignal'
-Slack : -2.753
-TNS   : -7.355
-
-Type  : Slow 1200mV 85C Model Recovery 'Contador:cont2|JK_FlipFlop:jk1|qsignal'
-Slack : -2.690
-TNS   : -6.865
-
-Type  : Slow 1200mV 85C Model Recovery 'Contador_aux:cont4|JK_FlipFlop:jk1|qsignal'
-Slack : -2.646
-TNS   : -5.542
+Type  : Slow 1200mV 85C Model Recovery 'Contador:cont3|JK_FlipFlop:jk2|qsignal'
+Slack : -3.062
+TNS   : -4.593
 
 Type  : Slow 1200mV 85C Model Recovery 'Contador:cont3|JK_FlipFlop:jk1|qsignal'
-Slack : -2.593
-TNS   : -6.622
-
-Type  : Slow 1200mV 85C Model Recovery 'Contador:cont3|JK_FlipFlop:jk0|qsignal'
-Slack : -2.408
-TNS   : -6.846
+Slack : -2.581
+TNS   : -3.698
 
 Type  : Slow 1200mV 85C Model Recovery 'Contador:cont2|JK_FlipFlop:jk2|qsignal'
-Slack : -2.374
-TNS   : -6.296
+Slack : -2.465
+TNS   : -4.775
 
-Type  : Slow 1200mV 85C Model Recovery 'Contador:cont5|JK_FlipFlop:jk1|qsignal'
-Slack : -2.327
-TNS   : -3.460
+Type  : Slow 1200mV 85C Model Recovery 'Contador:cont1|JK_FlipFlop:jk2|qsignal'
+Slack : -2.385
+TNS   : -4.323
 
-Type  : Slow 1200mV 85C Model Recovery 'Contador:cont5|JK_FlipFlop:jk2|qsignal'
-Slack : -1.966
-TNS   : -3.304
+Type  : Slow 1200mV 85C Model Recovery 'Contador:cont3|JK_FlipFlop:jk0|qsignal'
+Slack : -2.378
+TNS   : -3.988
+
+Type  : Slow 1200mV 85C Model Recovery 'Contador:cont2|JK_FlipFlop:jk1|qsignal'
+Slack : -2.301
+TNS   : -4.157
+
+Type  : Slow 1200mV 85C Model Recovery 'Contador_aux:cont4|JK_FlipFlop:jk0|qsignal'
+Slack : -2.179
+TNS   : -3.319
+
+Type  : Slow 1200mV 85C Model Recovery 'Contador:cont1|JK_FlipFlop:jk1|qsignal'
+Slack : -2.158
+TNS   : -3.748
+
+Type  : Slow 1200mV 85C Model Recovery 'Contador_aux:cont4|JK_FlipFlop:jk2|qsignal'
+Slack : -1.951
+TNS   : -2.857
+
+Type  : Slow 1200mV 85C Model Recovery 'Contador:cont1|JK_FlipFlop:jk0|qsignal'
+Slack : -1.923
+TNS   : -3.656
+
+Type  : Slow 1200mV 85C Model Recovery 'Contador_aux:cont4|JK_FlipFlop:jk1|qsignal'
+Slack : -1.749
+TNS   : -2.606
 
 Type  : Slow 1200mV 85C Model Recovery 'Contador:cont5|JK_FlipFlop:jk0|qsignal'
-Slack : -1.868
-TNS   : -3.244
+Slack : -1.637
+TNS   : -1.637
 
-Type  : Slow 1200mV 85C Model Removal 'Contador:cont1|JK_FlipFlop:jk2|qsignal'
-Slack : 0.173
-TNS   : 0.000
+Type  : Slow 1200mV 85C Model Recovery 'Contador:cont5|JK_FlipFlop:jk2|qsignal'
+Slack : -1.353
+TNS   : -1.353
 
-Type  : Slow 1200mV 85C Model Removal 'Contador:cont1|JK_FlipFlop:jk1|qsignal'
-Slack : 0.305
-TNS   : 0.000
+Type  : Slow 1200mV 85C Model Recovery 'Contador:cont5|JK_FlipFlop:jk1|qsignal'
+Slack : -0.993
+TNS   : -0.993
 
-Type  : Slow 1200mV 85C Model Removal 'Contador:cont2|JK_FlipFlop:jk2|qsignal'
-Slack : 0.321
+Type  : Slow 1200mV 85C Model Removal 'Contador:cont3|JK_FlipFlop:jk2|qsignal'
+Slack : 0.352
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Removal 'Contador_aux:cont4|JK_FlipFlop:jk0|qsignal'
-Slack : 0.380
+Slack : 0.402
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Removal 'Contador:cont3|JK_FlipFlop:jk0|qsignal'
-Slack : 0.472
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Removal 'Contador:cont3|JK_FlipFlop:jk1|qsignal'
-Slack : 0.473
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Removal 'Contador_aux:cont4|JK_FlipFlop:jk1|qsignal'
-Slack : 0.576
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Removal 'Contador:cont1|JK_FlipFlop:jk0|qsignal'
-Slack : 0.582
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Removal 'Contador:cont2|JK_FlipFlop:jk0|qsignal'
-Slack : 0.614
+Slack : 0.434
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Removal 'Contador:cont0|JK_FlipFlop:jk1|qsignal'
-Slack : 0.714
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Removal 'Contador:cont2|JK_FlipFlop:jk1|qsignal'
-Slack : 0.717
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Removal 'Contador:cont0|JK_FlipFlop:jk0|qsignal'
-Slack : 0.719
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Removal 'Contador:cont3|JK_FlipFlop:jk2|qsignal'
-Slack : 0.794
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Removal 'Contador_aux:cont4|JK_FlipFlop:jk2|qsignal'
-Slack : 0.835
+Slack : 0.497
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Removal 'Contador:cont0|JK_FlipFlop:jk2|qsignal'
-Slack : 0.849
+Slack : 0.516
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'Contador:cont3|JK_FlipFlop:jk1|qsignal'
+Slack : 0.531
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'Contador:cont0|JK_FlipFlop:jk0|qsignal'
+Slack : 0.568
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'Contador:cont1|JK_FlipFlop:jk0|qsignal'
+Slack : 0.616
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'Contador_aux:cont4|JK_FlipFlop:jk1|qsignal'
+Slack : 0.666
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'Contador:cont2|JK_FlipFlop:jk2|qsignal'
+Slack : 0.673
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'Contador_aux:cont4|JK_FlipFlop:jk2|qsignal'
+Slack : 0.717
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'Contador:cont2|JK_FlipFlop:jk0|qsignal'
+Slack : 0.792
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Removal 'Contador:cont5|JK_FlipFlop:jk1|qsignal'
-Slack : 0.875
+Slack : 0.800
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Removal 'Contador:cont5|JK_FlipFlop:jk0|qsignal'
-Slack : 1.006
+Type  : Slow 1200mV 85C Model Removal 'Contador:cont2|JK_FlipFlop:jk1|qsignal'
+Slack : 0.827
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'Contador:cont1|JK_FlipFlop:jk2|qsignal'
+Slack : 0.830
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'Contador:cont1|JK_FlipFlop:jk1|qsignal'
+Slack : 1.078
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Removal 'Contador:cont5|JK_FlipFlop:jk2|qsignal'
-Slack : 1.108
+Slack : 1.190
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'Contador:cont5|JK_FlipFlop:jk0|qsignal'
+Slack : 1.477
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'Double_freq'
+Slack : 2.276
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Removal 'Timing_Reference:freq|tmp'
-Slack : 2.072
+Slack : 5.183
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Clock'
 Slack : -3.000
 TNS   : -49.299
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Pause'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Double_freq'
 Slack : -3.000
 TNS   : -4.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Contador:cont0|JK_FlipFlop:jk0|qsignal'
+Slack : -1.403
+TNS   : -4.209
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Contador:cont0|JK_FlipFlop:jk1|qsignal'
 Slack : -1.403
@@ -386,10 +398,6 @@ Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Contador_aux:cont4|JK_FlipFlo
 Slack : -1.403
 TNS   : -4.209
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Contador:cont0|JK_FlipFlop:jk0|qsignal'
-Slack : -1.403
-TNS   : -2.806
-
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Contador:cont5|JK_FlipFlop:jk0|qsignal'
 Slack : -1.403
 TNS   : -2.806
@@ -406,339 +414,359 @@ Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Timing_Reference:freq|tmp'
 Slack : -1.403
 TNS   : -2.806
 
-Type  : Slow 1200mV 0C Model Setup 'Clock'
-Slack : -4.103
-TNS   : -57.837
-
-Type  : Slow 1200mV 0C Model Setup 'Contador:cont0|JK_FlipFlop:jk1|qsignal'
-Slack : -1.752
-TNS   : -2.539
-
 Type  : Slow 1200mV 0C Model Setup 'Timing_Reference:freq|tmp'
-Slack : -1.609
-TNS   : -1.609
+Slack : -4.588
+TNS   : -4.588
 
 Type  : Slow 1200mV 0C Model Setup 'Contador:cont3|JK_FlipFlop:jk2|qsignal'
-Slack : -1.569
-TNS   : -2.040
+Slack : -4.205
+TNS   : -4.346
 
-Type  : Slow 1200mV 0C Model Setup 'Contador:cont1|JK_FlipFlop:jk1|qsignal'
-Slack : -1.551
-TNS   : -1.729
-
-Type  : Slow 1200mV 0C Model Setup 'Contador:cont0|JK_FlipFlop:jk2|qsignal'
-Slack : -1.448
-TNS   : -1.929
-
-Type  : Slow 1200mV 0C Model Setup 'Contador:cont2|JK_FlipFlop:jk1|qsignal'
-Slack : -1.378
-TNS   : -2.415
-
-Type  : Slow 1200mV 0C Model Setup 'Contador_aux:cont4|JK_FlipFlop:jk1|qsignal'
-Slack : -1.347
-TNS   : -2.000
-
-Type  : Slow 1200mV 0C Model Setup 'Contador_aux:cont4|JK_FlipFlop:jk0|qsignal'
-Slack : -1.287
-TNS   : -1.548
+Type  : Slow 1200mV 0C Model Setup 'Clock'
+Slack : -3.841
+TNS   : -56.172
 
 Type  : Slow 1200mV 0C Model Setup 'Contador:cont3|JK_FlipFlop:jk1|qsignal'
-Slack : -1.281
-TNS   : -1.898
-
-Type  : Slow 1200mV 0C Model Setup 'Contador:cont1|JK_FlipFlop:jk0|qsignal'
-Slack : -1.256
-TNS   : -2.200
-
-Type  : Slow 1200mV 0C Model Setup 'Contador_aux:cont4|JK_FlipFlop:jk2|qsignal'
-Slack : -1.142
-TNS   : -1.470
-
-Type  : Slow 1200mV 0C Model Setup 'Contador:cont1|JK_FlipFlop:jk2|qsignal'
-Slack : -1.140
-TNS   : -1.207
-
-Type  : Slow 1200mV 0C Model Setup 'Contador:cont2|JK_FlipFlop:jk0|qsignal'
-Slack : -1.129
-TNS   : -1.900
-
-Type  : Slow 1200mV 0C Model Setup 'Contador:cont3|JK_FlipFlop:jk0|qsignal'
-Slack : -1.125
-TNS   : -1.585
-
-Type  : Slow 1200mV 0C Model Setup 'Contador:cont5|JK_FlipFlop:jk2|qsignal'
-Slack : -0.715
-TNS   : -0.715
-
-Type  : Slow 1200mV 0C Model Setup 'Contador:cont5|JK_FlipFlop:jk0|qsignal'
-Slack : -0.636
-TNS   : -0.814
-
-Type  : Slow 1200mV 0C Model Setup 'Contador:cont0|JK_FlipFlop:jk0|qsignal'
-Slack : -0.628
-TNS   : -0.989
-
-Type  : Slow 1200mV 0C Model Setup 'Contador:cont5|JK_FlipFlop:jk1|qsignal'
-Slack : -0.621
-TNS   : -1.144
+Slack : -3.840
+TNS   : -4.577
 
 Type  : Slow 1200mV 0C Model Setup 'Contador:cont2|JK_FlipFlop:jk2|qsignal'
-Slack : -0.551
-TNS   : -0.824
+Slack : -3.600
+TNS   : -3.977
 
-Type  : Slow 1200mV 0C Model Setup 'Pause'
-Slack : 0.361
-TNS   : 0.000
+Type  : Slow 1200mV 0C Model Setup 'Contador_aux:cont4|JK_FlipFlop:jk1|qsignal'
+Slack : -3.246
+TNS   : -4.317
 
-Type  : Slow 1200mV 0C Model Hold 'Contador:cont3|JK_FlipFlop:jk1|qsignal'
-Slack : 0.094
-TNS   : 0.000
+Type  : Slow 1200mV 0C Model Setup 'Contador:cont2|JK_FlipFlop:jk1|qsignal'
+Slack : -3.105
+TNS   : -3.868
 
-Type  : Slow 1200mV 0C Model Hold 'Contador:cont1|JK_FlipFlop:jk2|qsignal'
-Slack : 0.097
-TNS   : 0.000
+Type  : Slow 1200mV 0C Model Setup 'Contador_aux:cont4|JK_FlipFlop:jk0|qsignal'
+Slack : -2.943
+TNS   : -3.734
 
-Type  : Slow 1200mV 0C Model Hold 'Contador:cont3|JK_FlipFlop:jk0|qsignal'
-Slack : 0.112
-TNS   : 0.000
+Type  : Slow 1200mV 0C Model Setup 'Contador:cont3|JK_FlipFlop:jk0|qsignal'
+Slack : -2.782
+TNS   : -3.331
 
-Type  : Slow 1200mV 0C Model Hold 'Contador_aux:cont4|JK_FlipFlop:jk0|qsignal'
-Slack : 0.120
-TNS   : 0.000
+Type  : Slow 1200mV 0C Model Setup 'Contador:cont2|JK_FlipFlop:jk0|qsignal'
+Slack : -2.234
+TNS   : -3.028
 
-Type  : Slow 1200mV 0C Model Hold 'Contador:cont1|JK_FlipFlop:jk1|qsignal'
-Slack : 0.158
-TNS   : 0.000
+Type  : Slow 1200mV 0C Model Setup 'Double_freq'
+Slack : -2.044
+TNS   : -2.044
 
-Type  : Slow 1200mV 0C Model Hold 'Contador:cont2|JK_FlipFlop:jk2|qsignal'
-Slack : 0.268
-TNS   : 0.000
+Type  : Slow 1200mV 0C Model Setup 'Contador:cont5|JK_FlipFlop:jk2|qsignal'
+Slack : -1.963
+TNS   : -1.963
 
-Type  : Slow 1200mV 0C Model Hold 'Contador:cont5|JK_FlipFlop:jk0|qsignal'
-Slack : 0.277
-TNS   : 0.000
+Type  : Slow 1200mV 0C Model Setup 'Contador:cont5|JK_FlipFlop:jk0|qsignal'
+Slack : -1.904
+TNS   : -2.334
 
-Type  : Slow 1200mV 0C Model Hold 'Contador:cont0|JK_FlipFlop:jk0|qsignal'
-Slack : 0.302
-TNS   : 0.000
+Type  : Slow 1200mV 0C Model Setup 'Contador:cont0|JK_FlipFlop:jk2|qsignal'
+Slack : -1.723
+TNS   : -2.011
 
-Type  : Slow 1200mV 0C Model Hold 'Contador_aux:cont4|JK_FlipFlop:jk1|qsignal'
-Slack : 0.328
-TNS   : 0.000
+Type  : Slow 1200mV 0C Model Setup 'Contador:cont0|JK_FlipFlop:jk1|qsignal'
+Slack : -1.666
+TNS   : -2.362
 
-Type  : Slow 1200mV 0C Model Hold 'Contador:cont0|JK_FlipFlop:jk2|qsignal'
-Slack : 0.354
-TNS   : 0.000
+Type  : Slow 1200mV 0C Model Setup 'Contador:cont1|JK_FlipFlop:jk0|qsignal'
+Slack : -1.389
+TNS   : -1.950
 
-Type  : Slow 1200mV 0C Model Hold 'Contador:cont3|JK_FlipFlop:jk2|qsignal'
-Slack : 0.354
-TNS   : 0.000
+Type  : Slow 1200mV 0C Model Setup 'Contador:cont5|JK_FlipFlop:jk1|qsignal'
+Slack : -1.375
+TNS   : -1.978
 
-Type  : Slow 1200mV 0C Model Hold 'Contador:cont5|JK_FlipFlop:jk2|qsignal'
-Slack : 0.354
-TNS   : 0.000
+Type  : Slow 1200mV 0C Model Setup 'Contador:cont0|JK_FlipFlop:jk0|qsignal'
+Slack : -1.256
+TNS   : -1.866
+
+Type  : Slow 1200mV 0C Model Setup 'Contador:cont1|JK_FlipFlop:jk2|qsignal'
+Slack : -1.160
+TNS   : -1.644
+
+Type  : Slow 1200mV 0C Model Setup 'Contador:cont1|JK_FlipFlop:jk1|qsignal'
+Slack : -0.957
+TNS   : -2.135
+
+Type  : Slow 1200mV 0C Model Setup 'Contador_aux:cont4|JK_FlipFlop:jk2|qsignal'
+Slack : -0.586
+TNS   : -0.586
 
 Type  : Slow 1200mV 0C Model Hold 'Contador_aux:cont4|JK_FlipFlop:jk2|qsignal'
-Slack : 0.354
-TNS   : 0.000
+Slack : -3.212
+TNS   : -3.212
 
-Type  : Slow 1200mV 0C Model Hold 'Pause'
-Slack : 0.354
+Type  : Slow 1200mV 0C Model Hold 'Contador:cont1|JK_FlipFlop:jk0|qsignal'
+Slack : -2.657
+TNS   : -2.657
+
+Type  : Slow 1200mV 0C Model Hold 'Contador:cont0|JK_FlipFlop:jk1|qsignal'
+Slack : -2.368
+TNS   : -2.368
+
+Type  : Slow 1200mV 0C Model Hold 'Contador:cont0|JK_FlipFlop:jk2|qsignal'
+Slack : -2.309
+TNS   : -2.309
+
+Type  : Slow 1200mV 0C Model Hold 'Contador:cont5|JK_FlipFlop:jk0|qsignal'
+Slack : -2.120
+TNS   : -2.120
+
+Type  : Slow 1200mV 0C Model Hold 'Contador:cont1|JK_FlipFlop:jk1|qsignal'
+Slack : -2.087
+TNS   : -2.087
+
+Type  : Slow 1200mV 0C Model Hold 'Contador:cont5|JK_FlipFlop:jk2|qsignal'
+Slack : -2.058
+TNS   : -2.058
+
+Type  : Slow 1200mV 0C Model Hold 'Contador:cont1|JK_FlipFlop:jk2|qsignal'
+Slack : -1.874
+TNS   : -1.874
+
+Type  : Slow 1200mV 0C Model Hold 'Contador:cont0|JK_FlipFlop:jk0|qsignal'
+Slack : -1.774
+TNS   : -1.774
+
+Type  : Slow 1200mV 0C Model Hold 'Contador:cont5|JK_FlipFlop:jk1|qsignal'
+Slack : -1.651
+TNS   : -1.651
+
+Type  : Slow 1200mV 0C Model Hold 'Contador:cont3|JK_FlipFlop:jk0|qsignal'
+Slack : -1.205
+TNS   : -1.205
+
+Type  : Slow 1200mV 0C Model Hold 'Contador:cont2|JK_FlipFlop:jk1|qsignal'
+Slack : -0.869
+TNS   : -0.869
+
+Type  : Slow 1200mV 0C Model Hold 'Contador:cont2|JK_FlipFlop:jk0|qsignal'
+Slack : -0.757
+TNS   : -0.757
+
+Type  : Slow 1200mV 0C Model Hold 'Contador_aux:cont4|JK_FlipFlop:jk1|qsignal'
+Slack : -0.721
+TNS   : -0.721
+
+Type  : Slow 1200mV 0C Model Hold 'Contador:cont2|JK_FlipFlop:jk2|qsignal'
+Slack : -0.353
+TNS   : -0.353
+
+Type  : Slow 1200mV 0C Model Hold 'Contador:cont3|JK_FlipFlop:jk1|qsignal'
+Slack : -0.102
+TNS   : -0.102
+
+Type  : Slow 1200mV 0C Model Hold 'Contador_aux:cont4|JK_FlipFlop:jk0|qsignal'
+Slack : -0.016
+TNS   : -0.016
+
+Type  : Slow 1200mV 0C Model Hold 'Contador:cont3|JK_FlipFlop:jk2|qsignal'
+Slack : 0.196
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'Timing_Reference:freq|tmp'
 Slack : 0.354
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'Contador:cont0|JK_FlipFlop:jk1|qsignal'
-Slack : 0.356
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'Contador:cont5|JK_FlipFlop:jk1|qsignal'
-Slack : 0.453
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'Contador:cont1|JK_FlipFlop:jk0|qsignal'
-Slack : 0.487
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'Contador:cont2|JK_FlipFlop:jk0|qsignal'
-Slack : 0.512
-TNS   : 0.000
-
 Type  : Slow 1200mV 0C Model Hold 'Clock'
-Slack : 0.598
+Slack : 0.597
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'Contador:cont2|JK_FlipFlop:jk1|qsignal'
-Slack : 0.666
+Type  : Slow 1200mV 0C Model Hold 'Double_freq'
+Slack : 1.983
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Recovery 'Contador:cont0|JK_FlipFlop:jk2|qsignal'
-Slack : -3.960
-TNS   : -8.339
-
-Type  : Slow 1200mV 0C Model Recovery 'Contador:cont1|JK_FlipFlop:jk1|qsignal'
-Slack : -2.905
-TNS   : -5.408
-
-Type  : Slow 1200mV 0C Model Recovery 'Contador:cont0|JK_FlipFlop:jk1|qsignal'
-Slack : -2.864
-TNS   : -6.923
-
-Type  : Slow 1200mV 0C Model Recovery 'Contador:cont0|JK_FlipFlop:jk0|qsignal'
-Slack : -2.718
-TNS   : -4.600
-
-Type  : Slow 1200mV 0C Model Recovery 'Contador_aux:cont4|JK_FlipFlop:jk0|qsignal'
-Slack : -2.641
-TNS   : -5.193
-
-Type  : Slow 1200mV 0C Model Recovery 'Contador:cont3|JK_FlipFlop:jk2|qsignal'
-Slack : -2.560
-TNS   : -7.185
+Slack : -6.400
+TNS   : -8.259
 
 Type  : Slow 1200mV 0C Model Recovery 'Timing_Reference:freq|tmp'
-Slack : -2.538
-TNS   : -2.538
+Slack : -5.735
+TNS   : -5.735
 
-Type  : Slow 1200mV 0C Model Recovery 'Contador_aux:cont4|JK_FlipFlop:jk2|qsignal'
-Slack : -2.496
-TNS   : -5.725
+Type  : Slow 1200mV 0C Model Recovery 'Contador:cont0|JK_FlipFlop:jk1|qsignal'
+Slack : -4.277
+TNS   : -5.549
 
-Type  : Slow 1200mV 0C Model Recovery 'Contador:cont1|JK_FlipFlop:jk2|qsignal'
-Slack : -2.494
-TNS   : -5.887
+Type  : Slow 1200mV 0C Model Recovery 'Contador:cont0|JK_FlipFlop:jk0|qsignal'
+Slack : -4.083
+TNS   : -5.982
+
+Type  : Slow 1200mV 0C Model Recovery 'Double_freq'
+Slack : -3.191
+TNS   : -3.191
 
 Type  : Slow 1200mV 0C Model Recovery 'Contador:cont2|JK_FlipFlop:jk0|qsignal'
-Slack : -2.483
-TNS   : -6.758
+Slack : -2.761
+TNS   : -4.895
 
-Type  : Slow 1200mV 0C Model Recovery 'Contador:cont1|JK_FlipFlop:jk0|qsignal'
-Slack : -2.417
-TNS   : -6.402
-
-Type  : Slow 1200mV 0C Model Recovery 'Contador:cont2|JK_FlipFlop:jk1|qsignal'
-Slack : -2.307
-TNS   : -5.908
-
-Type  : Slow 1200mV 0C Model Recovery 'Contador_aux:cont4|JK_FlipFlop:jk1|qsignal'
-Slack : -2.276
-TNS   : -4.712
+Type  : Slow 1200mV 0C Model Recovery 'Contador:cont3|JK_FlipFlop:jk2|qsignal'
+Slack : -2.716
+TNS   : -4.026
 
 Type  : Slow 1200mV 0C Model Recovery 'Contador:cont3|JK_FlipFlop:jk1|qsignal'
-Slack : -2.210
-TNS   : -5.677
+Slack : -2.285
+TNS   : -3.212
 
 Type  : Slow 1200mV 0C Model Recovery 'Contador:cont2|JK_FlipFlop:jk2|qsignal'
-Slack : -2.079
-TNS   : -5.398
+Slack : -2.176
+TNS   : -4.198
 
 Type  : Slow 1200mV 0C Model Recovery 'Contador:cont3|JK_FlipFlop:jk0|qsignal'
-Slack : -2.054
-TNS   : -5.929
+Slack : -2.114
+TNS   : -3.504
 
-Type  : Slow 1200mV 0C Model Recovery 'Contador:cont5|JK_FlipFlop:jk1|qsignal'
-Slack : -1.975
-TNS   : -2.932
+Type  : Slow 1200mV 0C Model Recovery 'Contador:cont1|JK_FlipFlop:jk2|qsignal'
+Slack : -2.086
+TNS   : -3.742
 
-Type  : Slow 1200mV 0C Model Recovery 'Contador:cont5|JK_FlipFlop:jk2|qsignal'
-Slack : -1.644
-TNS   : -2.774
+Type  : Slow 1200mV 0C Model Recovery 'Contador:cont2|JK_FlipFlop:jk1|qsignal'
+Slack : -2.036
+TNS   : -3.616
+
+Type  : Slow 1200mV 0C Model Recovery 'Contador_aux:cont4|JK_FlipFlop:jk0|qsignal'
+Slack : -1.911
+TNS   : -2.833
+
+Type  : Slow 1200mV 0C Model Recovery 'Contador:cont1|JK_FlipFlop:jk1|qsignal'
+Slack : -1.892
+TNS   : -3.204
+
+Type  : Slow 1200mV 0C Model Recovery 'Contador_aux:cont4|JK_FlipFlop:jk2|qsignal'
+Slack : -1.699
+TNS   : -2.509
+
+Type  : Slow 1200mV 0C Model Recovery 'Contador:cont1|JK_FlipFlop:jk0|qsignal'
+Slack : -1.689
+TNS   : -3.152
+
+Type  : Slow 1200mV 0C Model Recovery 'Contador_aux:cont4|JK_FlipFlop:jk1|qsignal'
+Slack : -1.525
+TNS   : -2.305
 
 Type  : Slow 1200mV 0C Model Recovery 'Contador:cont5|JK_FlipFlop:jk0|qsignal'
-Slack : -1.565
-TNS   : -2.726
+Slack : -1.515
+TNS   : -1.515
 
-Type  : Slow 1200mV 0C Model Removal 'Contador:cont1|JK_FlipFlop:jk2|qsignal'
-Slack : 0.101
-TNS   : 0.000
+Type  : Slow 1200mV 0C Model Recovery 'Contador:cont5|JK_FlipFlop:jk2|qsignal'
+Slack : -1.199
+TNS   : -1.199
 
-Type  : Slow 1200mV 0C Model Removal 'Contador:cont1|JK_FlipFlop:jk1|qsignal'
-Slack : 0.231
-TNS   : 0.000
+Type  : Slow 1200mV 0C Model Recovery 'Contador:cont5|JK_FlipFlop:jk1|qsignal'
+Slack : -0.873
+TNS   : -0.873
 
-Type  : Slow 1200mV 0C Model Removal 'Contador:cont2|JK_FlipFlop:jk2|qsignal'
-Slack : 0.246
+Type  : Slow 1200mV 0C Model Removal 'Contador:cont3|JK_FlipFlop:jk2|qsignal'
+Slack : 0.276
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Removal 'Contador_aux:cont4|JK_FlipFlop:jk0|qsignal'
-Slack : 0.282
+Slack : 0.299
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Removal 'Contador:cont3|JK_FlipFlop:jk0|qsignal'
-Slack : 0.396
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Removal 'Contador:cont3|JK_FlipFlop:jk1|qsignal'
-Slack : 0.400
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Removal 'Contador:cont1|JK_FlipFlop:jk0|qsignal'
-Slack : 0.491
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Removal 'Contador_aux:cont4|JK_FlipFlop:jk1|qsignal'
-Slack : 0.521
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Removal 'Contador:cont2|JK_FlipFlop:jk0|qsignal'
-Slack : 0.530
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Removal 'Contador:cont0|JK_FlipFlop:jk0|qsignal'
-Slack : 0.609
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Removal 'Contador:cont2|JK_FlipFlop:jk1|qsignal'
-Slack : 0.639
+Slack : 0.359
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Removal 'Contador:cont0|JK_FlipFlop:jk1|qsignal'
-Slack : 0.647
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Removal 'Contador:cont3|JK_FlipFlop:jk2|qsignal'
-Slack : 0.704
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Removal 'Contador:cont5|JK_FlipFlop:jk1|qsignal'
-Slack : 0.722
+Slack : 0.417
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Removal 'Contador:cont0|JK_FlipFlop:jk2|qsignal'
-Slack : 0.734
+Slack : 0.448
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'Contador:cont3|JK_FlipFlop:jk1|qsignal'
+Slack : 0.479
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'Contador:cont0|JK_FlipFlop:jk0|qsignal'
+Slack : 0.489
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'Contador:cont1|JK_FlipFlop:jk0|qsignal'
+Slack : 0.518
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'Contador:cont2|JK_FlipFlop:jk2|qsignal'
+Slack : 0.604
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'Contador_aux:cont4|JK_FlipFlop:jk1|qsignal'
+Slack : 0.627
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Removal 'Contador_aux:cont4|JK_FlipFlop:jk2|qsignal'
-Slack : 0.756
+Slack : 0.658
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Removal 'Contador:cont5|JK_FlipFlop:jk0|qsignal'
-Slack : 0.893
+Type  : Slow 1200mV 0C Model Removal 'Contador:cont1|JK_FlipFlop:jk2|qsignal'
+Slack : 0.720
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'Contador:cont2|JK_FlipFlop:jk0|qsignal'
+Slack : 0.721
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'Contador:cont2|JK_FlipFlop:jk1|qsignal'
+Slack : 0.729
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'Contador:cont5|JK_FlipFlop:jk1|qsignal'
+Slack : 0.757
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'Contador:cont1|JK_FlipFlop:jk1|qsignal'
+Slack : 0.942
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Removal 'Contador:cont5|JK_FlipFlop:jk2|qsignal'
-Slack : 0.976
+Slack : 1.096
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'Contador:cont5|JK_FlipFlop:jk0|qsignal'
+Slack : 1.391
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'Double_freq'
+Slack : 2.091
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Removal 'Timing_Reference:freq|tmp'
-Slack : 1.902
+Slack : 4.774
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Clock'
 Slack : -3.000
 TNS   : -49.299
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Pause'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Double_freq'
 Slack : -3.000
 TNS   : -4.403
 
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Contador_aux:cont4|JK_FlipFlop:jk2|qsignal'
+Slack : -1.403
+TNS   : -4.303
+
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Contador:cont0|JK_FlipFlop:jk1|qsignal'
 Slack : -1.403
-TNS   : -4.209
+TNS   : -4.269
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Contador:cont0|JK_FlipFlop:jk2|qsignal'
+Slack : -1.403
+TNS   : -4.261
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Contador:cont1|JK_FlipFlop:jk2|qsignal'
+Slack : -1.403
+TNS   : -4.212
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Contador:cont0|JK_FlipFlop:jk0|qsignal'
 Slack : -1.403
 TNS   : -4.209
 
@@ -747,10 +775,6 @@ Slack : -1.403
 TNS   : -4.209
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Contador:cont1|JK_FlipFlop:jk1|qsignal'
-Slack : -1.403
-TNS   : -4.209
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Contador:cont1|JK_FlipFlop:jk2|qsignal'
 Slack : -1.403
 TNS   : -4.209
 
@@ -786,14 +810,6 @@ Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Contador_aux:cont4|JK_FlipFlop
 Slack : -1.403
 TNS   : -4.209
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Contador_aux:cont4|JK_FlipFlop:jk2|qsignal'
-Slack : -1.403
-TNS   : -4.209
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Contador:cont0|JK_FlipFlop:jk0|qsignal'
-Slack : -1.403
-TNS   : -2.806
-
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Contador:cont5|JK_FlipFlop:jk0|qsignal'
 Slack : -1.403
 TNS   : -2.806
@@ -810,333 +826,349 @@ Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Timing_Reference:freq|tmp'
 Slack : -1.403
 TNS   : -2.806
 
-Type  : Fast 1200mV 0C Model Setup 'Clock'
-Slack : -1.429
-TNS   : -8.465
-
-Type  : Fast 1200mV 0C Model Setup 'Contador:cont0|JK_FlipFlop:jk1|qsignal'
-Slack : -0.749
-TNS   : -0.749
+Type  : Fast 1200mV 0C Model Setup 'Timing_Reference:freq|tmp'
+Slack : -2.078
+TNS   : -2.078
 
 Type  : Fast 1200mV 0C Model Setup 'Contador:cont3|JK_FlipFlop:jk2|qsignal'
-Slack : -0.639
-TNS   : -0.639
-
-Type  : Fast 1200mV 0C Model Setup 'Contador:cont1|JK_FlipFlop:jk1|qsignal'
-Slack : -0.629
-TNS   : -0.629
-
-Type  : Fast 1200mV 0C Model Setup 'Timing_Reference:freq|tmp'
-Slack : -0.610
-TNS   : -0.610
-
-Type  : Fast 1200mV 0C Model Setup 'Contador:cont0|JK_FlipFlop:jk2|qsignal'
-Slack : -0.601
-TNS   : -0.601
-
-Type  : Fast 1200mV 0C Model Setup 'Contador:cont2|JK_FlipFlop:jk1|qsignal'
-Slack : -0.590
-TNS   : -0.632
-
-Type  : Fast 1200mV 0C Model Setup 'Contador_aux:cont4|JK_FlipFlop:jk0|qsignal'
-Slack : -0.522
-TNS   : -0.522
-
-Type  : Fast 1200mV 0C Model Setup 'Contador_aux:cont4|JK_FlipFlop:jk1|qsignal'
-Slack : -0.506
-TNS   : -0.506
+Slack : -1.644
+TNS   : -1.644
 
 Type  : Fast 1200mV 0C Model Setup 'Contador:cont3|JK_FlipFlop:jk1|qsignal'
-Slack : -0.505
-TNS   : -0.505
+Slack : -1.441
+TNS   : -1.441
 
-Type  : Fast 1200mV 0C Model Setup 'Contador:cont1|JK_FlipFlop:jk2|qsignal'
-Slack : -0.474
-TNS   : -0.474
-
-Type  : Fast 1200mV 0C Model Setup 'Contador:cont1|JK_FlipFlop:jk0|qsignal'
-Slack : -0.460
-TNS   : -0.460
-
-Type  : Fast 1200mV 0C Model Setup 'Contador_aux:cont4|JK_FlipFlop:jk2|qsignal'
-Slack : -0.453
-TNS   : -0.453
-
-Type  : Fast 1200mV 0C Model Setup 'Contador:cont2|JK_FlipFlop:jk0|qsignal'
-Slack : -0.452
-TNS   : -0.494
-
-Type  : Fast 1200mV 0C Model Setup 'Contador:cont3|JK_FlipFlop:jk0|qsignal'
-Slack : -0.397
-TNS   : -0.397
-
-Type  : Fast 1200mV 0C Model Setup 'Contador:cont5|JK_FlipFlop:jk2|qsignal'
-Slack : -0.254
-TNS   : -0.254
-
-Type  : Fast 1200mV 0C Model Setup 'Contador:cont5|JK_FlipFlop:jk1|qsignal'
-Slack : -0.240
-TNS   : -0.240
-
-Type  : Fast 1200mV 0C Model Setup 'Contador:cont5|JK_FlipFlop:jk0|qsignal'
-Slack : -0.186
-TNS   : -0.186
+Type  : Fast 1200mV 0C Model Setup 'Clock'
+Slack : -1.341
+TNS   : -7.750
 
 Type  : Fast 1200mV 0C Model Setup 'Contador:cont2|JK_FlipFlop:jk2|qsignal'
-Slack : -0.089
-TNS   : -0.089
+Slack : -1.272
+TNS   : -1.272
+
+Type  : Fast 1200mV 0C Model Setup 'Contador_aux:cont4|JK_FlipFlop:jk1|qsignal'
+Slack : -1.184
+TNS   : -1.184
+
+Type  : Fast 1200mV 0C Model Setup 'Contador:cont2|JK_FlipFlop:jk1|qsignal'
+Slack : -1.154
+TNS   : -1.154
+
+Type  : Fast 1200mV 0C Model Setup 'Contador:cont3|JK_FlipFlop:jk0|qsignal'
+Slack : -0.925
+TNS   : -0.925
+
+Type  : Fast 1200mV 0C Model Setup 'Contador_aux:cont4|JK_FlipFlop:jk0|qsignal'
+Slack : -0.875
+TNS   : -0.875
+
+Type  : Fast 1200mV 0C Model Setup 'Double_freq'
+Slack : -0.625
+TNS   : -0.625
+
+Type  : Fast 1200mV 0C Model Setup 'Contador:cont2|JK_FlipFlop:jk0|qsignal'
+Slack : -0.563
+TNS   : -0.563
+
+Type  : Fast 1200mV 0C Model Setup 'Contador:cont5|JK_FlipFlop:jk2|qsignal'
+Slack : -0.550
+TNS   : -0.550
+
+Type  : Fast 1200mV 0C Model Setup 'Contador:cont0|JK_FlipFlop:jk2|qsignal'
+Slack : -0.525
+TNS   : -0.525
+
+Type  : Fast 1200mV 0C Model Setup 'Contador:cont5|JK_FlipFlop:jk0|qsignal'
+Slack : -0.514
+TNS   : -0.514
+
+Type  : Fast 1200mV 0C Model Setup 'Contador:cont0|JK_FlipFlop:jk1|qsignal'
+Slack : -0.494
+TNS   : -0.494
+
+Type  : Fast 1200mV 0C Model Setup 'Contador:cont1|JK_FlipFlop:jk0|qsignal'
+Slack : -0.336
+TNS   : -0.336
+
+Type  : Fast 1200mV 0C Model Setup 'Contador:cont5|JK_FlipFlop:jk1|qsignal'
+Slack : -0.168
+TNS   : -0.168
 
 Type  : Fast 1200mV 0C Model Setup 'Contador:cont0|JK_FlipFlop:jk0|qsignal'
-Slack : 0.070
-TNS   : 0.000
+Slack : -0.118
+TNS   : -0.118
 
-Type  : Fast 1200mV 0C Model Setup 'Pause'
-Slack : 0.693
-TNS   : 0.000
+Type  : Fast 1200mV 0C Model Setup 'Contador:cont1|JK_FlipFlop:jk2|qsignal'
+Slack : -0.079
+TNS   : -0.091
 
-Type  : Fast 1200mV 0C Model Hold 'Contador:cont1|JK_FlipFlop:jk1|qsignal'
+Type  : Fast 1200mV 0C Model Setup 'Contador:cont1|JK_FlipFlop:jk1|qsignal'
+Slack : -0.062
+TNS   : -0.062
+
+Type  : Fast 1200mV 0C Model Setup 'Contador_aux:cont4|JK_FlipFlop:jk2|qsignal'
 Slack : -0.006
 TNS   : -0.006
 
-Type  : Fast 1200mV 0C Model Hold 'Contador:cont3|JK_FlipFlop:jk1|qsignal'
-Slack : 0.031
-TNS   : 0.000
+Type  : Fast 1200mV 0C Model Hold 'Contador_aux:cont4|JK_FlipFlop:jk2|qsignal'
+Slack : -1.339
+TNS   : -1.339
 
-Type  : Fast 1200mV 0C Model Hold 'Contador:cont5|JK_FlipFlop:jk0|qsignal'
-Slack : 0.043
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'Contador:cont3|JK_FlipFlop:jk0|qsignal'
-Slack : 0.078
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'Contador_aux:cont4|JK_FlipFlop:jk0|qsignal'
-Slack : 0.094
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'Contador:cont1|JK_FlipFlop:jk2|qsignal'
-Slack : 0.105
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'Contador:cont2|JK_FlipFlop:jk0|qsignal'
-Slack : 0.144
-TNS   : 0.000
+Type  : Fast 1200mV 0C Model Hold 'Contador:cont1|JK_FlipFlop:jk0|qsignal'
+Slack : -1.228
+TNS   : -1.228
 
 Type  : Fast 1200mV 0C Model Hold 'Contador:cont0|JK_FlipFlop:jk1|qsignal'
-Slack : 0.145
-TNS   : 0.000
+Slack : -1.064
+TNS   : -1.064
 
-Type  : Fast 1200mV 0C Model Hold 'Contador_aux:cont4|JK_FlipFlop:jk1|qsignal'
-Slack : 0.156
-TNS   : 0.000
+Type  : Fast 1200mV 0C Model Hold 'Contador:cont5|JK_FlipFlop:jk0|qsignal'
+Slack : -1.040
+TNS   : -1.040
 
 Type  : Fast 1200mV 0C Model Hold 'Contador:cont0|JK_FlipFlop:jk2|qsignal'
-Slack : 0.169
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'Contador:cont2|JK_FlipFlop:jk2|qsignal'
-Slack : 0.169
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'Contador:cont3|JK_FlipFlop:jk2|qsignal'
-Slack : 0.169
-TNS   : 0.000
+Slack : -1.031
+TNS   : -1.031
 
 Type  : Fast 1200mV 0C Model Hold 'Contador:cont5|JK_FlipFlop:jk2|qsignal'
-Slack : 0.169
-TNS   : 0.000
+Slack : -1.004
+TNS   : -1.004
 
-Type  : Fast 1200mV 0C Model Hold 'Contador_aux:cont4|JK_FlipFlop:jk2|qsignal'
-Slack : 0.169
-TNS   : 0.000
+Type  : Fast 1200mV 0C Model Hold 'Contador:cont1|JK_FlipFlop:jk1|qsignal'
+Slack : -0.793
+TNS   : -0.793
 
-Type  : Fast 1200mV 0C Model Hold 'Pause'
-Slack : 0.169
+Type  : Fast 1200mV 0C Model Hold 'Contador:cont1|JK_FlipFlop:jk2|qsignal'
+Slack : -0.707
+TNS   : -0.707
+
+Type  : Fast 1200mV 0C Model Hold 'Contador:cont0|JK_FlipFlop:jk0|qsignal'
+Slack : -0.667
+TNS   : -0.667
+
+Type  : Fast 1200mV 0C Model Hold 'Contador:cont5|JK_FlipFlop:jk1|qsignal'
+Slack : -0.614
+TNS   : -0.614
+
+Type  : Fast 1200mV 0C Model Hold 'Contador:cont3|JK_FlipFlop:jk0|qsignal'
+Slack : -0.613
+TNS   : -0.613
+
+Type  : Fast 1200mV 0C Model Hold 'Contador:cont2|JK_FlipFlop:jk1|qsignal'
+Slack : -0.375
+TNS   : -0.375
+
+Type  : Fast 1200mV 0C Model Hold 'Contador_aux:cont4|JK_FlipFlop:jk1|qsignal'
+Slack : -0.343
+TNS   : -0.343
+
+Type  : Fast 1200mV 0C Model Hold 'Contador:cont2|JK_FlipFlop:jk2|qsignal'
+Slack : -0.252
+TNS   : -0.252
+
+Type  : Fast 1200mV 0C Model Hold 'Contador:cont2|JK_FlipFlop:jk0|qsignal'
+Slack : -0.202
+TNS   : -0.202
+
+Type  : Fast 1200mV 0C Model Hold 'Contador:cont3|JK_FlipFlop:jk1|qsignal'
+Slack : -0.077
+TNS   : -0.077
+
+Type  : Fast 1200mV 0C Model Hold 'Contador:cont3|JK_FlipFlop:jk2|qsignal'
+Slack : 0.122
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'Timing_Reference:freq|tmp'
 Slack : 0.169
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'Contador:cont0|JK_FlipFlop:jk0|qsignal'
-Slack : 0.172
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'Contador:cont2|JK_FlipFlop:jk1|qsignal'
-Slack : 0.218
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'Contador:cont1|JK_FlipFlop:jk0|qsignal'
-Slack : 0.228
+Type  : Fast 1200mV 0C Model Hold 'Contador_aux:cont4|JK_FlipFlop:jk0|qsignal'
+Slack : 0.170
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'Clock'
 Slack : 0.250
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'Contador:cont5|JK_FlipFlop:jk1|qsignal'
-Slack : 0.254
+Type  : Fast 1200mV 0C Model Hold 'Double_freq'
+Slack : 0.820
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Recovery 'Contador:cont0|JK_FlipFlop:jk2|qsignal'
-Slack : -1.421
-TNS   : -2.967
-
-Type  : Fast 1200mV 0C Model Recovery 'Contador:cont1|JK_FlipFlop:jk1|qsignal'
-Slack : -1.331
-TNS   : -1.471
-
-Type  : Fast 1200mV 0C Model Recovery 'Contador_aux:cont4|JK_FlipFlop:jk0|qsignal'
-Slack : -1.224
-TNS   : -1.760
-
-Type  : Fast 1200mV 0C Model Recovery 'Contador:cont1|JK_FlipFlop:jk2|qsignal'
-Slack : -1.176
-TNS   : -2.053
-
-Type  : Fast 1200mV 0C Model Recovery 'Contador_aux:cont4|JK_FlipFlop:jk2|qsignal'
-Slack : -1.155
-TNS   : -1.842
-
-Type  : Fast 1200mV 0C Model Recovery 'Contador:cont2|JK_FlipFlop:jk0|qsignal'
-Slack : -1.154
-TNS   : -2.451
-
-Type  : Fast 1200mV 0C Model Recovery 'Contador:cont0|JK_FlipFlop:jk1|qsignal'
-Slack : -0.947
-TNS   : -1.932
-
-Type  : Fast 1200mV 0C Model Recovery 'Contador:cont5|JK_FlipFlop:jk1|qsignal'
-Slack : -0.942
-TNS   : -0.964
-
-Type  : Fast 1200mV 0C Model Recovery 'Contador:cont3|JK_FlipFlop:jk2|qsignal'
-Slack : -0.837
-TNS   : -2.343
+Slack : -2.694
+TNS   : -3.395
 
 Type  : Fast 1200mV 0C Model Recovery 'Timing_Reference:freq|tmp'
-Slack : -0.808
-TNS   : -0.808
+Slack : -2.410
+TNS   : -2.410
 
-Type  : Fast 1200mV 0C Model Recovery 'Contador:cont2|JK_FlipFlop:jk1|qsignal'
-Slack : -0.788
-TNS   : -1.468
+Type  : Fast 1200mV 0C Model Recovery 'Contador:cont0|JK_FlipFlop:jk1|qsignal'
+Slack : -1.554
+TNS   : -1.698
 
 Type  : Fast 1200mV 0C Model Recovery 'Contador:cont0|JK_FlipFlop:jk0|qsignal'
-Slack : -0.728
-TNS   : -1.441
+Slack : -1.439
+TNS   : -2.165
 
-Type  : Fast 1200mV 0C Model Recovery 'Contador:cont3|JK_FlipFlop:jk0|qsignal'
-Slack : -0.704
-TNS   : -1.701
+Type  : Fast 1200mV 0C Model Recovery 'Double_freq'
+Slack : -0.957
+TNS   : -0.957
 
-Type  : Fast 1200mV 0C Model Recovery 'Contador_aux:cont4|JK_FlipFlop:jk1|qsignal'
-Slack : -0.704
-TNS   : -1.086
-
-Type  : Fast 1200mV 0C Model Recovery 'Contador:cont3|JK_FlipFlop:jk1|qsignal'
-Slack : -0.703
-TNS   : -1.337
+Type  : Fast 1200mV 0C Model Recovery 'Contador:cont2|JK_FlipFlop:jk0|qsignal'
+Slack : -0.837
+TNS   : -1.634
 
 Type  : Fast 1200mV 0C Model Recovery 'Contador:cont2|JK_FlipFlop:jk2|qsignal'
-Slack : -0.700
-TNS   : -1.432
+Slack : -0.807
+TNS   : -1.299
+
+Type  : Fast 1200mV 0C Model Recovery 'Contador:cont3|JK_FlipFlop:jk2|qsignal'
+Slack : -0.774
+TNS   : -1.192
+
+Type  : Fast 1200mV 0C Model Recovery 'Contador:cont1|JK_FlipFlop:jk2|qsignal'
+Slack : -0.616
+TNS   : -1.071
+
+Type  : Fast 1200mV 0C Model Recovery 'Contador:cont3|JK_FlipFlop:jk1|qsignal'
+Slack : -0.541
+TNS   : -0.541
 
 Type  : Fast 1200mV 0C Model Recovery 'Contador:cont1|JK_FlipFlop:jk0|qsignal'
-Slack : -0.658
-TNS   : -1.923
+Slack : -0.535
+TNS   : -0.767
 
-Type  : Fast 1200mV 0C Model Recovery 'Contador:cont5|JK_FlipFlop:jk2|qsignal'
-Slack : -0.452
-TNS   : -0.583
+Type  : Fast 1200mV 0C Model Recovery 'Contador:cont3|JK_FlipFlop:jk0|qsignal'
+Slack : -0.459
+TNS   : -0.900
+
+Type  : Fast 1200mV 0C Model Recovery 'Contador_aux:cont4|JK_FlipFlop:jk0|qsignal'
+Slack : -0.436
+TNS   : -0.740
+
+Type  : Fast 1200mV 0C Model Recovery 'Contador:cont2|JK_FlipFlop:jk1|qsignal'
+Slack : -0.404
+TNS   : -0.709
 
 Type  : Fast 1200mV 0C Model Recovery 'Contador:cont5|JK_FlipFlop:jk0|qsignal'
-Slack : -0.384
-TNS   : -0.523
+Slack : -0.361
+TNS   : -0.361
 
-Type  : Fast 1200mV 0C Model Removal 'Contador:cont1|JK_FlipFlop:jk2|qsignal'
-Slack : 0.092
-TNS   : 0.000
+Type  : Fast 1200mV 0C Model Recovery 'Contador:cont1|JK_FlipFlop:jk1|qsignal'
+Slack : -0.351
+TNS   : -0.520
 
-Type  : Fast 1200mV 0C Model Removal 'Contador:cont1|JK_FlipFlop:jk1|qsignal'
-Slack : 0.129
-TNS   : 0.000
+Type  : Fast 1200mV 0C Model Recovery 'Contador_aux:cont4|JK_FlipFlop:jk2|qsignal'
+Slack : -0.338
+TNS   : -0.442
 
-Type  : Fast 1200mV 0C Model Removal 'Contador:cont2|JK_FlipFlop:jk2|qsignal'
-Slack : 0.145
-TNS   : 0.000
+Type  : Fast 1200mV 0C Model Recovery 'Contador:cont5|JK_FlipFlop:jk2|qsignal'
+Slack : -0.230
+TNS   : -0.230
 
-Type  : Fast 1200mV 0C Model Removal 'Contador_aux:cont4|JK_FlipFlop:jk0|qsignal'
-Slack : 0.194
-TNS   : 0.000
+Type  : Fast 1200mV 0C Model Recovery 'Contador_aux:cont4|JK_FlipFlop:jk1|qsignal'
+Slack : -0.229
+TNS   : -0.290
 
-Type  : Fast 1200mV 0C Model Removal 'Contador_aux:cont4|JK_FlipFlop:jk1|qsignal'
-Slack : 0.232
+Type  : Fast 1200mV 0C Model Recovery 'Contador:cont5|JK_FlipFlop:jk1|qsignal'
+Slack : -0.045
+TNS   : -0.045
+
+Type  : Fast 1200mV 0C Model Removal 'Contador:cont3|JK_FlipFlop:jk2|qsignal'
+Slack : 0.157
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Removal 'Contador:cont3|JK_FlipFlop:jk0|qsignal'
-Slack : 0.240
+Slack : 0.199
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Removal 'Contador:cont3|JK_FlipFlop:jk1|qsignal'
-Slack : 0.245
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Removal 'Contador:cont1|JK_FlipFlop:jk0|qsignal'
-Slack : 0.249
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Removal 'Contador:cont2|JK_FlipFlop:jk0|qsignal'
-Slack : 0.264
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Removal 'Contador:cont2|JK_FlipFlop:jk1|qsignal'
-Slack : 0.289
+Slack : 0.207
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Removal 'Contador:cont0|JK_FlipFlop:jk1|qsignal'
-Slack : 0.295
+Slack : 0.225
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Removal 'Contador:cont0|JK_FlipFlop:jk0|qsignal'
-Slack : 0.337
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Removal 'Contador_aux:cont4|JK_FlipFlop:jk2|qsignal'
-Slack : 0.345
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Removal 'Contador:cont5|JK_FlipFlop:jk1|qsignal'
-Slack : 0.351
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Removal 'Contador:cont3|JK_FlipFlop:jk2|qsignal'
-Slack : 0.361
+Type  : Fast 1200mV 0C Model Removal 'Contador_aux:cont4|JK_FlipFlop:jk0|qsignal'
+Slack : 0.228
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Removal 'Contador:cont0|JK_FlipFlop:jk2|qsignal'
-Slack : 0.374
+Slack : 0.232
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Removal 'Contador:cont5|JK_FlipFlop:jk0|qsignal'
-Slack : 0.435
+Type  : Fast 1200mV 0C Model Removal 'Contador_aux:cont4|JK_FlipFlop:jk1|qsignal'
+Slack : 0.258
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'Contador:cont0|JK_FlipFlop:jk0|qsignal'
+Slack : 0.259
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'Contador:cont1|JK_FlipFlop:jk0|qsignal'
+Slack : 0.272
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'Contador:cont5|JK_FlipFlop:jk1|qsignal'
+Slack : 0.276
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'Contador_aux:cont4|JK_FlipFlop:jk2|qsignal'
+Slack : 0.303
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'Contador:cont2|JK_FlipFlop:jk2|qsignal'
+Slack : 0.308
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'Contador:cont2|JK_FlipFlop:jk0|qsignal'
+Slack : 0.340
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'Contador:cont1|JK_FlipFlop:jk2|qsignal'
+Slack : 0.356
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'Contador:cont2|JK_FlipFlop:jk1|qsignal'
+Slack : 0.368
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'Contador:cont1|JK_FlipFlop:jk1|qsignal'
+Slack : 0.458
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Removal 'Contador:cont5|JK_FlipFlop:jk2|qsignal'
-Slack : 0.463
+Slack : 0.469
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'Contador:cont5|JK_FlipFlop:jk0|qsignal'
+Slack : 0.569
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'Double_freq'
+Slack : 0.866
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Removal 'Timing_Reference:freq|tmp'
-Slack : 0.952
+Slack : 2.409
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Clock'
 Slack : -3.000
 TNS   : -37.122
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Pause'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Double_freq'
 Slack : -3.000
-TNS   : -4.134
+TNS   : -4.207
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Contador_aux:cont4|JK_FlipFlop:jk2|qsignal'
+Slack : -1.000
+TNS   : -3.048
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Contador:cont0|JK_FlipFlop:jk0|qsignal'
+Slack : -1.000
+TNS   : -3.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Contador:cont0|JK_FlipFlop:jk1|qsignal'
 Slack : -1.000
@@ -1189,14 +1221,6 @@ TNS   : -3.000
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Contador_aux:cont4|JK_FlipFlop:jk1|qsignal'
 Slack : -1.000
 TNS   : -3.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Contador_aux:cont4|JK_FlipFlop:jk2|qsignal'
-Slack : -1.000
-TNS   : -3.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Contador:cont0|JK_FlipFlop:jk0|qsignal'
-Slack : -1.000
-TNS   : -2.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Contador:cont5|JK_FlipFlop:jk0|qsignal'
 Slack : -1.000

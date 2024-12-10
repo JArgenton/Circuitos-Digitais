@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Cronometro
-Tue Dec 10 18:49:08 2024
+Tue Dec 10 19:35:46 2024
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -54,7 +54,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Dec 10 18:49:08 2024       ;
+; Analysis & Synthesis Status        ; Successful - Tue Dec 10 19:35:46 2024       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Cronometro                                  ;
 ; Top-level Entity Name              ; Cronometro                                  ;
@@ -177,18 +177,18 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                           ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                    ; Library ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------+---------+
-; conversor_hexadecimal.vhd        ; yes             ; User VHDL File  ; /home/pedro/Documents/Circuitos Digitais/Contador_Assincrono/Circuitos-Digitais/Lab_4/conversor_hexadecimal.vhd ;         ;
-; Timing_Reference.vhd             ; yes             ; User VHDL File  ; /home/pedro/Documents/Circuitos Digitais/Contador_Assincrono/Circuitos-Digitais/Lab_4/Timing_Reference.vhd      ;         ;
-; JK.vhd                           ; yes             ; User VHDL File  ; /home/pedro/Documents/Circuitos Digitais/Contador_Assincrono/Circuitos-Digitais/Lab_4/JK.vhd                    ;         ;
-; Cronometro.vhd                   ; yes             ; User VHDL File  ; /home/pedro/Documents/Circuitos Digitais/Contador_Assincrono/Circuitos-Digitais/Lab_4/Cronometro.vhd            ;         ;
-; Contador.vhd                     ; yes             ; User VHDL File  ; /home/pedro/Documents/Circuitos Digitais/Contador_Assincrono/Circuitos-Digitais/Lab_4/Contador.vhd              ;         ;
-; Contador_aux.vhd                 ; yes             ; User VHDL File  ; /home/pedro/Documents/Circuitos Digitais/Contador_Assincrono/Circuitos-Digitais/Lab_4/Contador_aux.vhd          ;         ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                       ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                ; Library ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------+---------+
+; conversor_hexadecimal.vhd        ; yes             ; User VHDL File  ; /home/pedro/Documents/Circuitos Digitais/Circuitos-Digitais/Lab_4/conversor_hexadecimal.vhd ;         ;
+; Timing_Reference.vhd             ; yes             ; User VHDL File  ; /home/pedro/Documents/Circuitos Digitais/Circuitos-Digitais/Lab_4/Timing_Reference.vhd      ;         ;
+; JK.vhd                           ; yes             ; User VHDL File  ; /home/pedro/Documents/Circuitos Digitais/Circuitos-Digitais/Lab_4/JK.vhd                    ;         ;
+; Cronometro.vhd                   ; yes             ; User VHDL File  ; /home/pedro/Documents/Circuitos Digitais/Circuitos-Digitais/Lab_4/Cronometro.vhd            ;         ;
+; Contador.vhd                     ; yes             ; User VHDL File  ; /home/pedro/Documents/Circuitos Digitais/Circuitos-Digitais/Lab_4/Contador.vhd              ;         ;
+; Contador_aux.vhd                 ; yes             ; User VHDL File  ; /home/pedro/Documents/Circuitos Digitais/Circuitos-Digitais/Lab_4/Contador_aux.vhd          ;         ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -437,7 +437,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;         4 data inputs ; 66                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.10                        ;
-; Average LUT depth     ; 2.51                        ;
+; Average LUT depth     ; 2.50                        ;
 +-----------------------+-----------------------------+
 
 
@@ -456,39 +456,39 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Dec 10 18:48:58 2024
+    Info: Processing started: Tue Dec 10 19:35:36 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Cronometro -c Cronometro
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file conversor_hexadecimal.vhd
-    Info (12022): Found design unit 1: Conversor_HEXA-Conversao File: /home/pedro/Documents/Circuitos Digitais/Contador_Assincrono/Circuitos-Digitais/Lab_4/conversor_hexadecimal.vhd Line: 11
-    Info (12023): Found entity 1: Conversor_HEXA File: /home/pedro/Documents/Circuitos Digitais/Contador_Assincrono/Circuitos-Digitais/Lab_4/conversor_hexadecimal.vhd Line: 4
+    Info (12022): Found design unit 1: Conversor_HEXA-Conversao File: /home/pedro/Documents/Circuitos Digitais/Circuitos-Digitais/Lab_4/conversor_hexadecimal.vhd Line: 11
+    Info (12023): Found entity 1: Conversor_HEXA File: /home/pedro/Documents/Circuitos Digitais/Circuitos-Digitais/Lab_4/conversor_hexadecimal.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file Timing_Reference.vhd
-    Info (12022): Found design unit 1: Timing_Reference-freq_div File: /home/pedro/Documents/Circuitos Digitais/Contador_Assincrono/Circuitos-Digitais/Lab_4/Timing_Reference.vhd Line: 12
-    Info (12023): Found entity 1: Timing_Reference File: /home/pedro/Documents/Circuitos Digitais/Contador_Assincrono/Circuitos-Digitais/Lab_4/Timing_Reference.vhd Line: 5
+    Info (12022): Found design unit 1: Timing_Reference-freq_div File: /home/pedro/Documents/Circuitos Digitais/Circuitos-Digitais/Lab_4/Timing_Reference.vhd Line: 12
+    Info (12023): Found entity 1: Timing_Reference File: /home/pedro/Documents/Circuitos Digitais/Circuitos-Digitais/Lab_4/Timing_Reference.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file JK.vhd
-    Info (12022): Found design unit 1: JK_FlipFlop-comportamento File: /home/pedro/Documents/Circuitos Digitais/Contador_Assincrono/Circuitos-Digitais/Lab_4/JK.vhd Line: 15
-    Info (12023): Found entity 1: JK_FlipFlop File: /home/pedro/Documents/Circuitos Digitais/Contador_Assincrono/Circuitos-Digitais/Lab_4/JK.vhd Line: 4
+    Info (12022): Found design unit 1: JK_FlipFlop-comportamento File: /home/pedro/Documents/Circuitos Digitais/Circuitos-Digitais/Lab_4/JK.vhd Line: 15
+    Info (12023): Found entity 1: JK_FlipFlop File: /home/pedro/Documents/Circuitos Digitais/Circuitos-Digitais/Lab_4/JK.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file Cronometro.vhd
-    Info (12022): Found design unit 1: Cronometro-arch File: /home/pedro/Documents/Circuitos Digitais/Contador_Assincrono/Circuitos-Digitais/Lab_4/Cronometro.vhd Line: 19
-    Info (12023): Found entity 1: Cronometro File: /home/pedro/Documents/Circuitos Digitais/Contador_Assincrono/Circuitos-Digitais/Lab_4/Cronometro.vhd Line: 4
+    Info (12022): Found design unit 1: Cronometro-arch File: /home/pedro/Documents/Circuitos Digitais/Circuitos-Digitais/Lab_4/Cronometro.vhd Line: 19
+    Info (12023): Found entity 1: Cronometro File: /home/pedro/Documents/Circuitos Digitais/Circuitos-Digitais/Lab_4/Cronometro.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file Contador.vhd
-    Info (12022): Found design unit 1: Contador-arch File: /home/pedro/Documents/Circuitos Digitais/Contador_Assincrono/Circuitos-Digitais/Lab_4/Contador.vhd Line: 14
-    Info (12023): Found entity 1: Contador File: /home/pedro/Documents/Circuitos Digitais/Contador_Assincrono/Circuitos-Digitais/Lab_4/Contador.vhd Line: 4
+    Info (12022): Found design unit 1: Contador-arch File: /home/pedro/Documents/Circuitos Digitais/Circuitos-Digitais/Lab_4/Contador.vhd Line: 14
+    Info (12023): Found entity 1: Contador File: /home/pedro/Documents/Circuitos Digitais/Circuitos-Digitais/Lab_4/Contador.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file Contador_aux.vhd
-    Info (12022): Found design unit 1: Contador_aux-arch File: /home/pedro/Documents/Circuitos Digitais/Contador_Assincrono/Circuitos-Digitais/Lab_4/Contador_aux.vhd Line: 14
-    Info (12023): Found entity 1: Contador_aux File: /home/pedro/Documents/Circuitos Digitais/Contador_Assincrono/Circuitos-Digitais/Lab_4/Contador_aux.vhd Line: 4
+    Info (12022): Found design unit 1: Contador_aux-arch File: /home/pedro/Documents/Circuitos Digitais/Circuitos-Digitais/Lab_4/Contador_aux.vhd Line: 14
+    Info (12023): Found entity 1: Contador_aux File: /home/pedro/Documents/Circuitos Digitais/Circuitos-Digitais/Lab_4/Contador_aux.vhd Line: 4
 Info (12127): Elaborating entity "Cronometro" for the top level hierarchy
-Warning (10492): VHDL Process Statement warning at Cronometro.vhd(55): signal "Double_freq" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pedro/Documents/Circuitos Digitais/Contador_Assincrono/Circuitos-Digitais/Lab_4/Cronometro.vhd Line: 55
-Warning (10492): VHDL Process Statement warning at Cronometro.vhd(56): signal "aux_clk2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pedro/Documents/Circuitos Digitais/Contador_Assincrono/Circuitos-Digitais/Lab_4/Cronometro.vhd Line: 56
-Info (12128): Elaborating entity "Timing_Reference" for hierarchy "Timing_Reference:freq" File: /home/pedro/Documents/Circuitos Digitais/Contador_Assincrono/Circuitos-Digitais/Lab_4/Cronometro.vhd Line: 29
-Warning (10492): VHDL Process Statement warning at Timing_Reference.vhd(26): signal "tmp" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pedro/Documents/Circuitos Digitais/Contador_Assincrono/Circuitos-Digitais/Lab_4/Timing_Reference.vhd Line: 26
-Info (12128): Elaborating entity "JK_FlipFlop" for hierarchy "JK_FlipFlop:jk0" File: /home/pedro/Documents/Circuitos Digitais/Contador_Assincrono/Circuitos-Digitais/Lab_4/Cronometro.vhd Line: 34
-Info (12128): Elaborating entity "Contador" for hierarchy "Contador:cont0" File: /home/pedro/Documents/Circuitos Digitais/Contador_Assincrono/Circuitos-Digitais/Lab_4/Cronometro.vhd Line: 71
-Info (12128): Elaborating entity "Contador_aux" for hierarchy "Contador_aux:cont4" File: /home/pedro/Documents/Circuitos Digitais/Contador_Assincrono/Circuitos-Digitais/Lab_4/Cronometro.vhd Line: 99
-Info (12128): Elaborating entity "Conversor_HEXA" for hierarchy "Conversor_HEXA:c0" File: /home/pedro/Documents/Circuitos Digitais/Contador_Assincrono/Circuitos-Digitais/Lab_4/Cronometro.vhd Line: 115
+Warning (10492): VHDL Process Statement warning at Cronometro.vhd(62): signal "Double_freq" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pedro/Documents/Circuitos Digitais/Circuitos-Digitais/Lab_4/Cronometro.vhd Line: 62
+Warning (10492): VHDL Process Statement warning at Cronometro.vhd(63): signal "aux_clk2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pedro/Documents/Circuitos Digitais/Circuitos-Digitais/Lab_4/Cronometro.vhd Line: 63
+Info (12128): Elaborating entity "Timing_Reference" for hierarchy "Timing_Reference:freq" File: /home/pedro/Documents/Circuitos Digitais/Circuitos-Digitais/Lab_4/Cronometro.vhd Line: 30
+Warning (10492): VHDL Process Statement warning at Timing_Reference.vhd(26): signal "tmp" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pedro/Documents/Circuitos Digitais/Circuitos-Digitais/Lab_4/Timing_Reference.vhd Line: 26
+Info (12128): Elaborating entity "JK_FlipFlop" for hierarchy "JK_FlipFlop:jk0" File: /home/pedro/Documents/Circuitos Digitais/Circuitos-Digitais/Lab_4/Cronometro.vhd Line: 41
+Info (12128): Elaborating entity "Contador" for hierarchy "Contador:cont0" File: /home/pedro/Documents/Circuitos Digitais/Circuitos-Digitais/Lab_4/Cronometro.vhd Line: 73
+Info (12128): Elaborating entity "Contador_aux" for hierarchy "Contador_aux:cont4" File: /home/pedro/Documents/Circuitos Digitais/Circuitos-Digitais/Lab_4/Cronometro.vhd Line: 101
+Info (12128): Elaborating entity "Conversor_HEXA" for hierarchy "Conversor_HEXA:c0" File: /home/pedro/Documents/Circuitos Digitais/Circuitos-Digitais/Lab_4/Cronometro.vhd Line: 117
 Warning (19016): Clock multiplexers are found and protected
-    Warning (19017): Found clock multiplexer Clk File: /home/pedro/Documents/Circuitos Digitais/Contador_Assincrono/Circuitos-Digitais/Lab_4/Cronometro.vhd Line: 20
+    Warning (19017): Found clock multiplexer Clk File: /home/pedro/Documents/Circuitos Digitais/Circuitos-Digitais/Lab_4/Cronometro.vhd Line: 20
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -497,9 +497,9 @@ Info (21057): Implemented 186 device resources after synthesis - the final resou
     Info (21059): Implemented 42 output pins
     Info (21061): Implemented 140 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 1035 megabytes
-    Info: Processing ended: Tue Dec 10 18:49:08 2024
+    Info: Peak virtual memory: 1027 megabytes
+    Info: Processing ended: Tue Dec 10 19:35:46 2024
     Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:26
+    Info: Total CPU time (on all processors): 00:00:28
 
 

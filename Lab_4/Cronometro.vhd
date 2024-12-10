@@ -23,6 +23,7 @@ signal aux_clk1, aux_clk2, aux_clk3 : std_logic;
 signal Reset : std_logic;
 signal aux_pause : std_logic;
 signal Qo : std_logic_vector(5 downto 0);
+signal pause_or_ra : std_logic;
 begin
 
 Reset <= not RST;
@@ -31,9 +32,15 @@ freq : entity work.Timing_Reference
 		clk => Clock,
         clk_1kHz => aux_clk3
 		  );
+pause_or_ra <= (Pause xor ((not s4(3) and s4(2) and not s4(1) and s4(0)) and 
+(s3(3) and not s3(2) and not s3(1) and not s3(0)) and 
+(not s2(3) and not s2(2) and not s2(1) and s2(0)) and
+(not s1(3) and s1(2) and s1(1) and not s1(0)) and
+(s0(3) and not s0(2) and not s0(1) and s0(0)) and
+(not s5(3) and not s5(2) and s5(1) and not s5(0))));
 jk0 : entity work.JK_FlipFlop
 	port map(
-		CLK => Pause,
+		CLK => pause_or_ra,
         J => '1',
         K   => '1',
 		  RESET => '0',
@@ -59,12 +66,7 @@ process(aux_clk3)
 		end if;
 	end process;
 		
-aux_clk1 <= (Clk and (aux_pause) and (not((not s4(3) and s4(2) and not s4(1) and s4(0)) and 
-(s3(3) and not s3(2) and not s3(1) and not s3(0)) and 
-(not s2(3) and not s2(2) and not s2(1) and s2(0)) and
-(not s1(3) and s1(2) and s1(1) and not s1(0)) and
-(s0(3) and not s0(2) and not s0(1) and s0(0)) and
-(not s5(3) and not s5(2) and s5(1) and not s5(0)))));
+aux_clk1 <= (Clk and (aux_pause));
 
 --colocar um not no s0(0) e da o do argenton
 	
